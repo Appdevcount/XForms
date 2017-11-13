@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XForms.Views
+namespace XForms.Views                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage
@@ -15,6 +15,12 @@ namespace XForms.Views
         public Home()
         {
             InitializeComponent();
+            Title = "Home Title";
+        }
+
+        private void Display_Clicked(object sender, EventArgs e)
+        {
+            Displaylbl.Text ="Entered Name is "+ FName.Text;
         }
     }
 }

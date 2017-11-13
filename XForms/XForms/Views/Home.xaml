@@ -3,10 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.Home">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+        <StackLayout 
+            Margin="10,10,10,10">
+            <!--<Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" />-->
+            <Label Text="FirstName :" TextColor="BlueViolet"></Label>
+            <Entry x:Name="FName" TextColor="Black"></Entry>
+            <Button TextColor="White" BackgroundColor="Green"  Text="Display"  x:Name="Display" Clicked="Display_Clicked"  ></Button>
+            <Label x:Name="Displaylbl" TextColor="Purple" FontAttributes="Italic" FontSize="Medium"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                   Margin="0,50,0,0"></Label>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
