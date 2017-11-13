@@ -12,7 +12,7 @@ namespace XForms.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage
     {
-        public Home()
+        public Home()                                                                                                                       
         {
             InitializeComponent();
             Title = "Home Title";
@@ -21,6 +21,11 @@ namespace XForms.Views
         private void Display_Clicked(object sender, EventArgs e)
         {
             Displaylbl.Text ="Entered Name is "+ FName.Text;
+        }
+
+        private async void Navigate_Clicked(object sender, EventArgs e)
+        {
+           await Navigation.PushAsync(new GenPage("Test param from Home"));
         }
     }
 }

@@ -18,10 +18,22 @@ namespace XForms
             //else
             //    MainPage = new NavigationPage(new MainPage());
 
-            if (Device.RuntimePlatform == Device.iOS)
-                MainPage = new Home();
-            else
-                MainPage = new NavigationPage(new Home());
+
+            //if (Device.RuntimePlatform == Device.iOS)
+            //    MainPage = new Home();
+            //else
+            //    MainPage = new NavigationPage(new Home());
+
+
+            MainPage = new TabbedPage
+            {
+                Children =
+                {
+                    new Home(),
+                    new XamControls("Tabbed Page Load")
+                }
+            };
+
 
         }
     }

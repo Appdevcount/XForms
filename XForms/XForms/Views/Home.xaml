@@ -14,6 +14,8 @@
             <Label x:Name="Displaylbl" TextColor="Purple" FontAttributes="Italic" FontSize="Medium"
                    HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
                    Margin="0,50,0,0"></Label>
+
+            <Button x:Name="Navigate" Text="Navigate" BackgroundColor="Chocolate" Clicked="Navigate_Clicked"></Button>
             
         </StackLayout>
     </ContentPage.Content>
