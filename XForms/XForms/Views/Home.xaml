@@ -15,7 +15,7 @@
                    HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
                    Margin="0,50,0,0"></Label>
 
-            <Button x:Name="Navigate" Text="Navigate" BackgroundColor="Chocolate" Clicked="Navigate_Clicked"></Button>
+            <Button x:Name="Navigate" Text="Navigate" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Chocolate" Clicked="Navigate_Clicked"></Button>
             
         </StackLayout>
     </ContentPage.Content>
