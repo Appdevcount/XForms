@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XForms.Views.GenPage">
+             x:Class="XForms.Views.Tabbed.Tab1Page"
+             Title="Tab1Page">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="GPagelbl" Text="Welcome to Xamarin.Forms!"
+            <Label x:Name="PageParamLbl" Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                TextColor="Purple" FontSize="Micro" />
+                HorizontalOptions="CenterAndExpand" TextColor="Purple" FontSize="Small" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.XControls.ListView"
+             Title="ListView">
+    <ContentPage.Content>
+        <!--<StackLayout>
+            <ListView x:Name="LVstring" BackgroundColor="Purple" >
+
+            </ListView>
+        </StackLayout>-->
+        <!--<Grid BackgroundColor="BlueViolet" HeightRequest="10"></Grid>--> 
+        <!--This Grid is added to have space between 2 Listview in the page--> 
+        
+        <StackLayout Margin="20">
+            <ListView x:Name="LVobject" BackgroundColor="Coral"  SeparatorColor="DarkBlue" HasUnevenRows="True">
+                <!--HasUnevenRows="True" is required as it crashes the app if not - as per a online demo-->
+                <!--In Real practice - actually it makes rows evenly arranged according to content. Without this -rows are clumsy with content-->
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<Grid> --><!--For spacing between items--><!-- 
+                            <Grid HeightRequest="10" BackgroundColor="Blue"></Grid>-->
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding ItemName}" TextColor="White" FontSize="Medium"  FontAttributes="Bold"></Label>
+                                    <Label Text="{Binding Price}" TextColor="White" FontSize="Small" Opacity="0.6"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        <!--</Grid>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

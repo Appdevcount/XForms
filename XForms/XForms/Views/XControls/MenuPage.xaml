@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.XControls.MenuPage"
+                  xmlns:local="clr-namespace:XForms.Views.XControls">
+    <!--Added required namespace to display desired Page in Deatil part of MasterDetailPage-->
+
+    <MasterDetailPage.Master>
+        <!--SideMenu Part-->
+        <ContentPage Title="Menus" >
+            <!--Title is a must property-->
+            <StackLayout Orientation="Vertical">
+                <Button Text="Clothing"></Button>
+                <Button Text="Electronics"></Button>
+                <Button Text="Furniture"></Button>
+                <Button Text="Food"></Button>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <local:ListView></local:ListView>
+        <!--Added required namespace to display desired Page in Deatil part of MasterDetailPage-->
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

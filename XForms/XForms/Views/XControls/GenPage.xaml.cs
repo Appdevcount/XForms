@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XForms.Views
+namespace XForms.Views.XControls
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class XamControls : ContentPage
+    public partial class GenPage : ContentPage
     {
-        public XamControls(string PageParameter)
+        public GenPage(string GenPageParam)
         {
             InitializeComponent();
-            PageParamLbl.Text = PageParameter;
+            GPagelbl.Text = GenPageParam;
         }
     }
 }

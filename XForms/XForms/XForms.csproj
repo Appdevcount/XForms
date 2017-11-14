@@ -38,7 +38,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DAL\StaticData.cs" />
     <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\XModel\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IDataStore.cs" />
     <Compile Include="Services\MockDataStore.cs" />
@@ -46,7 +48,15 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\ItemDetailViewModel.cs" />
     <Compile Include="ViewModels\ItemsViewModel.cs" />
-    <Compile Include="Views\GenPage.xaml.cs">
+    <Compile Include="ViewModels\XViewModels\PersonViewModelTwoWay.cs" />
+    <Compile Include="ViewModels\XViewModels\PersonViewModel.cs" />
+    <Compile Include="Views\MVVM\TwoWayBindedPage.xaml.cs">
+      <DependentUpon>TwoWayBindedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MVVM\BindedPage.xaml.cs">
+      <DependentUpon>BindedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XControls\GenPage.xaml.cs">
       <DependentUpon>GenPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Home.xaml.cs">
@@ -65,8 +75,17 @@
     <Compile Include="Views\NewItemPage.xaml.cs">
       <DependentUpon>NewItemPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\XamControls.xaml.cs">
-      <DependentUpon>XamControls.xaml</DependentUpon>
+    <Compile Include="Views\Tabbed\Tab1Page.xaml.cs">
+      <DependentUpon>Tab1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XControls\ListView.xaml.cs">
+      <DependentUpon>ListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XControls\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XControls\Styles.xaml.cs">
+      <DependentUpon>Styles.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -112,13 +131,43 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\XamControls.xaml">
+    <EmbeddedResource Include="Views\XControls\GenPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\GenPage.xaml">
+    <EmbeddedResource Include="Views\XControls\ListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Tabbed\Tab1Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XControls\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XControls\Styles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MVVM\TwoWayBindedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MVVM\BindedPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

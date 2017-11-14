@@ -5,10 +5,10 @@
     <ContentPage.Content>
         <StackLayout 
             Margin="10,10,10,10">
-            <!--<Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />-->
-            <Label Text="FirstName :" TextColor="BlueViolet"></Label>
+
+            <Label Text="FirstName" TextColor="BlueViolet"
+                   VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" ></Label>
             <Entry x:Name="FName" TextColor="Black"></Entry>
             <Button TextColor="White" BackgroundColor="Green"  Text="Display"  x:Name="Display" Clicked="Display_Clicked"  ></Button>
             <Label x:Name="Displaylbl" TextColor="Purple" FontAttributes="Italic" FontSize="Medium"
@@ -16,7 +16,9 @@
                    Margin="0,50,0,0"></Label>
 
             <Button x:Name="Navigate" Text="Navigate" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Chocolate" Clicked="Navigate_Clicked"></Button>
-            
+            <!--HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" - These propertied will make the control to shrink to its contained content size and align-->
+            <!--Navigating from Tabbed page to normal page crashes the app-->
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

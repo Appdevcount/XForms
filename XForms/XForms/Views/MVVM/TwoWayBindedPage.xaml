@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.MVVM.TwoWayBindedPage"
+             Title="MVVM Binding Two Way">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="20">
+            
+            <Label Text="FName"></Label>
+            <Entry Text="{Binding Person.FName,Mode=TwoWay}" TextColor="Blue"></Entry> <!--Binding Mode is Two way-->
+            <Label Text="LName"></Label>
+            <Entry Text="{Binding Person.LName,Mode=TwoWay}" TextColor="Blue"></Entry>
+            
+            <Button Text="Save name!!" Command="{Binding SaveComand}" TextColor="Green"></Button> <!--Using custom command from control for confirmation message-->
+            <Label Text="{Binding Message}" TextColor="Purple"></Label> <!--confirmation message from view model property-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

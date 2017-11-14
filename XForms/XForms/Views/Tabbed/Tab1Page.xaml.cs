@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XForms.Views
+namespace XForms.Views.Tabbed
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GenPage : ContentPage
+    public partial class Tab1Page : ContentPage
     {
-        public GenPage(string GenPageParam)
+       
+        public Tab1Page(string PageParameter)
         {
             InitializeComponent();
-            GPagelbl.Text = GenPageParam;
+            PageParamLbl.Text = PageParameter;
         }
     }
 }
