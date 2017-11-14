@@ -18,7 +18,7 @@ namespace XForms.Views.MVVM
 		{
 			InitializeComponent();
 
-            BindingContext = new PersonViewModel();//View Model object Binded to the context
+            BindingContext = new PersonViewModelTwoWay();//View Model object Binded to the context
 		}
 
 

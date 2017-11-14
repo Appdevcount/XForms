@@ -53,7 +53,9 @@ namespace XForms
 
             //MainPage = new Views.XControls.Styles();
 
-            MainPage = new BindedPage();
+            //MainPage = new BindedPage();
+
+            MainPage = new Views.MVVM.TwoWayBindedPage();
         }
     }
 }
