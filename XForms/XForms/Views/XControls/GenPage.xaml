@@ -2,7 +2,33 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.XControls.GenPage">
+
+    <!--Application Toolbar Items-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New" 
+                      Priority="0"
+                     Order="Primary" >
+
+            <!--Icon="Addsign.png"-->
+            <!--Clicked="ToolbarItem_Clicked">-->
+            <!--Order -Primary,Secondary denote position of Toolbar item [leftmost or rightmost]
+            Priority - 0 shows icon 1 shows : which needs to be clicked again-->
+        </ToolbarItem>
+        <ToolbarItem Text="NewOther" 
+                      Priority="1"
+                     Order="Secondary">
+            <!--Clicked="ToolbarItem_Clicked">-->
+        </ToolbarItem>
+        <!--<ToolbarItem Text="New" 
+                     Icon="Addsign.png"
+                      Priority="2"
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked">
+        </ToolbarItem>-->
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
+        
         <StackLayout Orientation="Vertical" HorizontalOptions="Center">
             <Label x:Name="GPagelbl" Text="Welcome to Xamarin.Forms!"                TextColor="Purple" FontSize="Micro" />
 
@@ -29,7 +55,9 @@
             <!--Text="{Binding Progress ,Source={x:Reference Uploadprogressor}}"
             Here in above Binding
             Progress - is a property of source[Progressbar] Uploadprogressor which will give current progress position-->
-            
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -62,5 +62,10 @@ namespace XForms.Views.XControls
         {
             SliderLbl.Text = PriceSlider.Value.ToString();
         }
+
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
