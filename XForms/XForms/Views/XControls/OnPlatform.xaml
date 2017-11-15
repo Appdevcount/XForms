@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.XControls.OnPlatform">
+    <ContentPage.Content>
+        <StackLayout Margin="50">
+            <!--Platform specific cutom styling options using OnPlatform Element-->
+            <Label VerticalOptions="CenterAndExpand" HorizontalOptions="Center" >
+                <Label.Text>
+                    <OnPlatform x:TypeArguments="x:String"
+                                Android="Welcome Android"
+                                iOS="Welcome iOS"
+                                WinPhone="Welcome WinPhone"/>
+                </Label.Text>
+                <Label.TextColor>
+                    <OnPlatform x:TypeArguments="Color"
+                                Android="LawnGreen"
+                                iOS="HotPink"
+                                WinPhone="Wheat"/>
+                </Label.TextColor>
+                <Label.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double"
+                                Android="40"
+                                iOS="45"
+                                WinPhone="25"/>
+                </Label.FontSize>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

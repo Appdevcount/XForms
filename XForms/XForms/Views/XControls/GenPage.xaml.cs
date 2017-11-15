@@ -17,5 +17,50 @@ namespace XForms.Views.XControls
             InitializeComponent();
             GPagelbl.Text = GenPageParam;
         }
+
+        protected override async void OnAppearing()
+        //Overriding the OnAppearing of ContentPage just for the purpose of displaying the GRADUAL PROGRESS MOTION IN BAR  status in label
+        {
+            base.OnAppearing();
+
+            await Uploadprogressor.ProgressTo(0.8, 10000, Easing.Linear);
+        }
+
+        //Alert option to accept or reject
+        private void DisplaySaveAlert_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Permission Title", "Do you want to save?", "Save", "No");//From ContentPage class
+            GPagelbl.Text = FName.Text;
+        }
+
+        //Popup menu option
+        private async void DisplayActionSheet_Clicked(object sender, EventArgs e)
+        {
+            string[] Colors = { "Blue", "Green", "Yellow" };
+            string color = await DisplayActionSheet("ActionSheet", "Cancel", "Destroy", Colors);
+
+            switch (color)
+            {
+                case "Blue":
+                    BackgroundColor = Color.Blue;
+                    break;
+                case "Green":
+                    BackgroundColor = Color.Green;
+                    break;
+                case "Yellow":
+                    BackgroundColor = Color.Yellow;
+                    break;
+                default:
+                    BackgroundColor = Color.Pink;
+                    break;
+            }
+
+        }
+
+        //Price Slider
+        private void PriceSlider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            SliderLbl.Text = PriceSlider.Value.ToString();
+        }
     }
 }

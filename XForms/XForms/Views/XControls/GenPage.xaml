@@ -3,11 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.XControls.GenPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="GPagelbl" Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                TextColor="Purple" FontSize="Micro" />
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Label x:Name="GPagelbl" Text="Welcome to Xamarin.Forms!"                TextColor="Purple" FontSize="Micro" />
+
+            <Entry x:Name="FName" Placeholder="Some random text"></Entry>
+            <!--Alert option to accept or reject-->
+            <Button Clicked="DisplaySaveAlert_Clicked" Text="DisplaySaveAlert"></Button>
+
+            <!--Popup menu option-->
+            <Button Clicked="DisplayActionSheet_Clicked" Text="DisplayActionSheet"></Button>
+
+
+            <Label  Text="Slider"></Label>
+            <!--Price Slider-->
+            <Slider x:Name="PriceSlider" Minimum="0" Maximum="5000" ValueChanged="PriceSlider_ValueChanged"></Slider>
+
+            <Label x:Name="SliderLbl" TextColor="Navy"></Label>
+
+
+            <Label  Text="Progressbar"></Label>
+            <!--Loading progressbar-->
+            <ProgressBar x:Name="Uploadprogressor" HeightRequest="20" WidthRequest="300" Progress="0.2"></ProgressBar>
+
+            <Label x:Name="Progresslbl" Text="{Binding Progress ,Source={x:Reference Uploadprogressor}}" TextColor="Navy" FontSize="Medium"></Label>
+            <!--Text="{Binding Progress ,Source={x:Reference Uploadprogressor}}"
+            Here in above Binding
+            Progress - is a property of source[Progressbar] Uploadprogressor which will give current progress position-->
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

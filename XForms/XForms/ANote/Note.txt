@@ -1,0 +1,16 @@
+Using Charts
+============
+Add CrossPieChart nuget package in solution for all projects
+It will add CrossPieChart folder in each folder and its associated implementation class in each project folders
+
+MainPage = new CrossPieCharts.FormsPlugin.Abstractions.CrossPieChartSample().GetPageWithPieChart();//Call the method of auto implemented sample class to display chart
+
+    Supported platforms:
+      1) Xamarin for Android
+      2) Windows Phone Silverlight
+      3) Windows Phone RT
+      4) Windows Store
+      iOS is not supported yet!
+
+//The smaller charts not appearing fully horizontally.Its truncated
+

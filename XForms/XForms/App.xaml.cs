@@ -3,6 +3,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XForms.Views;
+//using XForms.Views.Converters;
 using XForms.Views.MVVM;
 using XForms.Views.Tabbed;
 using XForms.Views.XControls;
@@ -55,7 +56,18 @@ namespace XForms
 
             //MainPage = new BindedPage();
 
-            MainPage = new Views.MVVM.TwoWayBindedPage();
+            //MainPage = new Views.MVVM.TwoWayBindedPage();
+
+            //MainPage = new Views.Converters.TypeConverterPage();//Refer TwoWayBindedPage for this demo. This one remved from project
+
+            //MainPage = new Views.XControls.OnPlatform();
+
+            //MainPage = new CrossPieCharts.FormsPlugin.Abstractions.CrossPieChartSample().GetPageWithPieChart();//Call the method of auto implemented sample class to display chart 
+            //The smaller charts not appearing fully horizontally.Its truncated
+
+            MainPage = new GenPage("Initial Load");
+
+
         }
     }
 }
