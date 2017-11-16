@@ -65,7 +65,10 @@ namespace XForms
             //MainPage = new CrossPieCharts.FormsPlugin.Abstractions.CrossPieChartSample().GetPageWithPieChart();//Call the method of auto implemented sample class to display chart 
             //The smaller charts not appearing fully horizontally.Its truncated
 
-            MainPage = new GenPage("Initial Load");
+            MainPage = new NavigationPage( new GenPage("Initial Load"));
+            //Your ToolbarItems will not show if your app does not have a Toolbar. The simplest way to add one is to wrap your page in a NavigationPage - 
+            //https://stackoverflow.com/questions/25495348/xamarin-forms-toolbar-items-not-displaying-on-view
+            //Toolbar won't come for home page by default
 
 
         }

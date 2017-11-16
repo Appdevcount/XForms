@@ -3,32 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.XControls.GenPage">
 
-    <!--Application Toolbar Items-->
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="New" 
+        <!--Application Toolbar-->
+        <ToolbarItem Text="New"
+                     Icon="Addsign.png" 
                       Priority="0"
-                     Order="Primary" >
-
-            <!--Icon="Addsign.png"-->
-            <!--Clicked="ToolbarItem_Clicked">-->
-            <!--Order -Primary,Secondary denote position of Toolbar item [leftmost or rightmost]
-            Priority - 0 shows icon 1 shows : which needs to be clicked again-->
+                     Order="Primary">
+            <!--There are some default folders for each platform to store the images to display-->
         </ToolbarItem>
-        <ToolbarItem Text="NewOther" 
+        <ToolbarItem Text="Mail"
+                     Icon="sendmail.png" 
                       Priority="1"
-                     Order="Secondary">
-            <!--Clicked="ToolbarItem_Clicked">-->
+                     Order="Primary">
         </ToolbarItem>
-        <!--<ToolbarItem Text="New" 
-                     Icon="Addsign.png"
-                      Priority="2"
-                     Order="Secondary"
-                     Clicked="ToolbarItem_Clicked">
-        </ToolbarItem>-->
+        <ToolbarItem Text="Mail"
+                     Icon="sendmail.png" 
+                      Priority="0"
+                     Order="Secondary">
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
-
+   
     <ContentPage.Content>
-        
+
         <StackLayout Orientation="Vertical" HorizontalOptions="Center">
             <Label x:Name="GPagelbl" Text="Welcome to Xamarin.Forms!"                TextColor="Purple" FontSize="Micro" />
 
@@ -40,24 +36,36 @@
             <Button Clicked="DisplayActionSheet_Clicked" Text="DisplayActionSheet"></Button>
 
 
-            <Label  Text="Slider"></Label>
+            <!--<Label  Text="Slider"></Label>
+            -->
             <!--Price Slider-->
+            <!--
             <Slider x:Name="PriceSlider" Minimum="0" Maximum="5000" ValueChanged="PriceSlider_ValueChanged"></Slider>
+            <Label x:Name="SliderLbl" TextColor="Navy"></Label>-->
 
-            <Label x:Name="SliderLbl" TextColor="Navy"></Label>
 
-
-            <Label  Text="Progressbar"></Label>
+            <!--<Label  Text="Progressbar"></Label>
+            -->
             <!--Loading progressbar-->
+            <!--
             <ProgressBar x:Name="Uploadprogressor" HeightRequest="20" WidthRequest="300" Progress="0.2"></ProgressBar>
-
-            <Label x:Name="Progresslbl" Text="{Binding Progress ,Source={x:Reference Uploadprogressor}}" TextColor="Navy" FontSize="Medium"></Label>
+            <Label x:Name="Progresslbl" Text="{Binding Progress ,Source={x:Reference Uploadprogressor}}" TextColor="Navy" FontSize="Medium"></Label>-->
             <!--Text="{Binding Progress ,Source={x:Reference Uploadprogressor}}"
             Here in above Binding
             Progress - is a property of source[Progressbar] Uploadprogressor which will give current progress position-->
 
+            <!--Datepicker-->
+            <!--<DatePicker x:Name="DatePkr" MinimumDate="11/16/2017" MaximumDate="11/20/2017" DateSelected="DatePicker_DateSelected"></DatePicker>
+            <Label Text="{Binding Date,Source={x:Reference DatePkr}}"></Label>-->
+            <!--Displaying the Date property of DatePkr object using Binding .Binding is an alternative to using DateSelected event-->
+
+            <!--Switch-->
+            <Switch x:Name="Swtch" HorizontalOptions="Center" Toggled="Switch_Toggled"></Switch>
+            <Label Text="{Binding IsToggled,Source={x:Reference Swtch}}"></Label>
+            <!--Displaying the IsToggled property of Swtch object using Binding .Binding is an alternative to using Switch_Toggled event-->
 
 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+   

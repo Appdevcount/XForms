@@ -14,3 +14,7 @@ MainPage = new CrossPieCharts.FormsPlugin.Abstractions.CrossPieChartSample().Get
 
 //The smaller charts not appearing fully horizontally.Its truncated
 
+Using Plugin.SQLite
+==================
+Add Plugin.SQLite nuget package in solution for all projects
+

@@ -23,7 +23,7 @@ namespace XForms.Views.XControls
         {
             base.OnAppearing();
 
-            await Uploadprogressor.ProgressTo(0.8, 10000, Easing.Linear);
+            //await Uploadprogressor.ProgressTo(0.8, 10000, Easing.Linear);
         }
 
         //Alert option to accept or reject
@@ -57,14 +57,27 @@ namespace XForms.Views.XControls
 
         }
 
-        //Price Slider
-        private void PriceSlider_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            SliderLbl.Text = PriceSlider.Value.ToString();
-        }
+        ////Price Slider
+        //private void PriceSlider_ValueChanged(object sender, ValueChangedEventArgs e)
+        //{
+        //    SliderLbl.Text = PriceSlider.Value.ToString();
+        //}
 
+        //ToolbarItem menu Item click
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
+
+        }
+
+        //private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
+        //{
+        //    string Dateselected = e.NewDate.ToString();
+        //    string PrevDateselected = e.OldDate.ToString();
+        //}
+
+        private void Switch_Toggled(object sender, ToggledEventArgs e)
+        {
+            string isToggled = e.Value.ToString();//Boolean to string
 
         }
     }
