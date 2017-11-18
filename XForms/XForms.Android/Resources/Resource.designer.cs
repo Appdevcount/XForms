@@ -4445,8 +4445,8 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f0b0178
 			public const int Animation_Design_BottomSheetDialog = 2131427704;
 			
-			// aapt resource value: 0x7f0b019f
-			public const int AppCompatDialogStyle = 2131427743;
+			// aapt resource value: 0x7f0b01a0
+			public const int AppCompatDialogStyle = 2131427744;
 			
 			// aapt resource value: 0x7f0b00b1
 			public const int Base_AlertDialog_AppCompat = 2131427505;
@@ -4955,11 +4955,11 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f0b019c
 			public const int CircularProgressBarLight = 2131427740;
 			
-			// aapt resource value: 0x7f0b019d
-			public const int MyTheme = 2131427741;
-			
 			// aapt resource value: 0x7f0b019e
-			public const int MyTheme_Base = 2131427742;
+			public const int MyTheme = 2131427742;
+			
+			// aapt resource value: 0x7f0b019f
+			public const int MyTheme_Base = 2131427743;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int Platform_AppCompat = 2131427373;
@@ -5386,6 +5386,9 @@ namespace XForms.Droid
 			
 			// aapt resource value: 0x7f0b0006
 			public const int Theme_MediaRouter_LightControlPanel = 2131427334;
+			
+			// aapt resource value: 0x7f0b019d
+			public const int Theme_Splash = 2131427741;
 			
 			// aapt resource value: 0x7f0b0120
 			public const int ThemeOverlay_AppCompat = 2131427616;

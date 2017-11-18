@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.XControls.GenPage1"
+             xmlns:MyDataTemplateSel="clr-namespace:XForms.ViewModels.XViewModels">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <MyDataTemplateSel:MyDataTemplateSelector x:Key="MyDataTemplateSelector"></MyDataTemplateSel:MyDataTemplateSelector>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Margin="30" >
+            <!--Searchbar - Working with enter key but not working when pressed searchbutton-->
+            <!--
+            <SearchBar x:Name="Srchbar" SearchButtonPressed="Srchbar_SearchButtonPressed" ></SearchBar>
+            <ListView x:Name="Lstvw"></ListView>-->
+
+            <!--Grid Column definition-->
+            <!--Below is normal split using width,which is not solution for multiple size screens-->
+            <!--
+            <Grid>
+                <Grid WidthRequest="150" BackgroundColor="Teal" HorizontalOptions="Start"></Grid>
+                <Grid WidthRequest="150" BackgroundColor="Gold" HorizontalOptions="End"></Grid>
+            </Grid>
+            -->
+            <!--Below is using Grid column definition which is perfect with space allocation (3*  means 3 times of other)-->
+            <!--
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0"  BackgroundColor="Purple"></Grid>
+                <Grid Grid.Column="1"  BackgroundColor="Gold"></Grid>
+            </Grid>-->
+
+            <!--For controls which don't have Click event , we can use Gesture Recognizers as an alternative-->
+            <!--
+            <Grid x:Name="GestGrid" HeightRequest="150" WidthRequest="150" BackgroundColor="Teal">
+                <Label Text="Click for Gesture Recognizer"></Label>
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                </Grid.GestureRecognizers>
+            </Grid>-->
+
+            
+            
+            <!--Header and Footer attribute is must for Listview Header and Footer templates to display or else app will crash-->
+            <!--<ListView x:Name="LstvwTmpl" 
+                      Header="" 
+                      Footer="" 
+                      HasUnevenRows="True"
+                ItemTemplate="{StaticResource MyDataTemplateSelector }">
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="Header" BackgroundColor="Pink"></Label>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+                <ListView.FooterTemplate>
+                    <DataTemplate>
+                        <Label Text="Footer" BackgroundColor="BlueViolet"></Label>
+                    </DataTemplate>
+                </ListView.FooterTemplate>
+                --><!--Either this or ItemTemplate as attribute in ListView should be present , not both-->
+                <!--<ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <Grid>
+                                <Label Text="{Binding .}"></Label>
+                            </Grid>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>--><!--
+            </ListView>-->
+
+
+
+            <ListView x:Name="LstvwTmpl2" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!--ContextActions on ListView Menu Item, There is some issue as the  ContextActions 
+                element is not recognized.
+                It is because this element needs to be within Item Template element ViewCell
+                            Still its not working-->
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Add" Clicked="MenuItem_Clicked"></MenuItem>
+                                <MenuItem Text="Change" Clicked="MenuItem_Clicked_1"></MenuItem>
+                                <MenuItem Text="Delete" Clicked="MenuItem_Clicked_2"></MenuItem>
+                            </ViewCell.ContextActions>
+                            <Grid>
+                                <Label Text="{Binding .}" BackgroundColor="Yellow"></Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+            <!--Dropdown like Item picker-->
+            <Picker x:Name="Ddlikeitempkr" SelectedIndexChanged="Ddlikeitempkr_SelectedIndexChanged">
+                
+            </Picker>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

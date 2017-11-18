@@ -18,3 +18,4 @@ Using Plugin.SQLite
 ==================
 Add Plugin.SQLite nuget package in solution for all projects
 
+It will add SQLite related folder in each project
