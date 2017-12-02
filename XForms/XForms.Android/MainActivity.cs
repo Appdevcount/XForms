@@ -20,12 +20,16 @@ namespace XForms.Droid
     //Changed MainLauncher = false, to not have this class as startup 
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        protected override void OnCreate(Bundle bundle)
+        protected override async void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+
+            //Added beow line for Xam.Plugin.Media intialization for platforms separately,
+            //since its async method call , added await and async to this calling parent menthod
+            await Plugin.Media.CrossMedia.Current.Initialize();
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 

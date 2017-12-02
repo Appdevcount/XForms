@@ -5,6 +5,7 @@ using Xamarin.Forms.Xaml;
 using XForms.Views;
 //using XForms.Views.Converters;
 using XForms.Views.MVVM;
+using XForms.Views.XPlugins;
 using XForms.Views.Tabbed;
 using XForms.Views.XControls;
 
@@ -75,9 +76,14 @@ namespace XForms
             //libmonosgen-64bit-2.0.so . unauthorized access to "/system/lib64/libsqlite.so"
             //But still worked after clearing the message
 
-            MainPage = new GenPage1();
+            //MainPage = new GenPage1();
 
 
+            //MainPage = new CarouselV();
+
+            //MainPage = new MicroCharts();
+
+            MainPage = new GenPlugins();
         }
     }
 }

@@ -19,3 +19,33 @@ Using Plugin.SQLite
 Add Plugin.SQLite nuget package in solution for all projects
 
 It will add SQLite related folder in each project
+
+Using CaruselView  Plugin
+==========================
+
+Add Xamarin.Forms.CarouselView from Nuget prerelese package
+
+
+Using MicroCharts.Forms Plugin
+=========================
+Add MicroCharts.Forms[SkiaSharp dll] from Nuget prerelease package
+
+Changed the Generic Chartview Control to specific Chart Control in XAML . Because the Generic ChartView control is not recognized in Microcharts nmespace for the XAML.
+That still has some unknown issue so,
+Replace ChartView to Chart as Generic Control
+Actuall issue is that i installed microchart instead of microchart.forms plugin
+
+Using Plugin.Multilingual Plugin
+================================
+It added a Helpers folder with TranslateExtension.txt file for helper. I renamed it to .cs file
+
+Added required language resource files in root of project 
+
+Using Xam.Plugin.Media Plugin
+=================================
+
+Add the plugin common to the solution, there is a separate call should be made in each platform for the plugin in Main Activity(Android or other)
+
+For this, there should be permissions required for the app for Camera access.
+For lower version of plugin, we need to add the permissions manually in manifest, For Higher versions its not required
+

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.XPlugins.MicroCharts"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms">
+    <!--Added Microcharts Assembly namespace-->
+    <ContentPage.Content>
+        <StackLayout>
+
+            <!--<forms:ChartView x:Name="MChartGen">
+
+            </forms:ChartView>-->
+
+            <!--Replace ChartView to Chart as Generic Control-->
+            <!--<forms:Chart x:Name="MChartGen">
+
+            </forms:Chart>-->
+
+            <forms:ChartView x:Name="MChart1" HeightRequest="120">
+
+            </forms:ChartView>
+
+            <forms:ChartView x:Name="MChart2" HeightRequest="120">
+
+            </forms:ChartView>
+
+            <forms:ChartView x:Name="MChart3" HeightRequest="120">
+
+            </forms:ChartView>
+
+            <forms:ChartView x:Name="MChart4" HeightRequest="120">
+
+            </forms:ChartView>
+
+            <forms:ChartView x:Name="MChart5" HeightRequest="120">
+
+            </forms:ChartView>
+
+            <forms:ChartView x:Name="MChart6" HeightRequest="120">
+
+            </forms:ChartView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
