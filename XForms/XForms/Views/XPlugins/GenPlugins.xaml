@@ -18,7 +18,8 @@
             <Button x:Name="TakeVideo" Text="TakeVideo" Clicked="TakeVideo_Clicked"></Button>
             <Button x:Name="PickVideo" Text="PickVideo" Clicked="PickVideo_Clicked"></Button>
             <Label x:Name="FilePath" ></Label>
-            <Image x:Name="PicDisplay"></Image>
+            <!--Image not rendering in Phone-->
+            <Image x:Name="PicDisplay" ></Image>
             
             
         </StackLayout>

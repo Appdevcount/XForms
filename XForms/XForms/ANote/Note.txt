@@ -49,3 +49,8 @@ Add the plugin common to the solution, there is a separate call should be made i
 For this, there should be permissions required for the app for Camera access.
 For lower version of plugin, we need to add the permissions manually in manifest, For Higher versions its not required
 
+
+Using xam.plugins.messaging Plugin
+===================================
+Add the plugin common to the solution and refer https://github.com/cjlotz/Xamarin.Plugins/blob/master/Messaging/Details.md for Using API topic 
+

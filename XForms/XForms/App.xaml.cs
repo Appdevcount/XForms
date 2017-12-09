@@ -78,12 +78,15 @@ namespace XForms
 
             //MainPage = new GenPage1();
 
-
             //MainPage = new CarouselV();
 
             //MainPage = new MicroCharts();
 
-            MainPage = new GenPlugins();
+            //MainPage = new GenPlugins();
+
+            //MainPage = new Communicator();
+
+            MainPage = new GenPage2();
         }
     }
 }
