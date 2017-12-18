@@ -36,9 +36,9 @@
                 <Label x:Name="pageCountLabel" Grid.Column="2" FontSize="18" VerticalTextAlignment="Center" 
                        HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Center" 
                        Text="{Binding PageCount, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Button x:Name="goToNextButton"  Grid.Column="3" BackgroundColor="Transparent" Image="PageDown.png" 
+                <Button x:Name="goToNextButton"  Grid.Column="3" BackgroundColor="Transparent" Image="MediaForward.png" 
                         HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToNextPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
-                <Button x:Name="goToPreviousButton" Grid.Column="4" BackgroundColor="Transparent" Image="PageUp.png" 
+                <Button x:Name="goToPreviousButton" Grid.Column="4" BackgroundColor="Transparent" Image="MediaBackward.png" 
                         HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding GoToPreviousPageCommand, Source={x:Reference Name=pdfViewerControl}}"/>
             </Grid>
         </AbsoluteLayout>
