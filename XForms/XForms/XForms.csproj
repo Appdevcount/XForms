@@ -54,6 +54,7 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\ItemDetailViewModel.cs" />
     <Compile Include="ViewModels\ItemsViewModel.cs" />
+    <Compile Include="ViewModels\SfViewModel\PdfViewerViewModel.cs" />
     <Compile Include="ViewModels\XViewModels\DataTemplateSelector.cs" />
     <Compile Include="ViewModels\XViewModels\PersonViewModelTwoWay.cs" />
     <Compile Include="ViewModels\XViewModels\PersonViewModel.cs" />
@@ -78,6 +79,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SfControls\SfPDFViewer.xaml.cs">
+      <DependentUpon>SfPDFViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SfControls\SfGen.xaml.cs">
+      <DependentUpon>SfGen.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\XControls\GenPage2.xaml.cs">
       <DependentUpon>GenPage2.xaml</DependentUpon>
@@ -226,6 +233,7 @@
     <Content Include="SQLite-AppSample\readme.txt" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Assets\BlaBla.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +272,18 @@
     </Reference>
     <Reference Include="SQLitePCL.raw, Version=0.8.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\SQLitePCL.raw.0.8.6\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Portable, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.Compression.15.4.0.17\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.Compression.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Portable, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.Pdf.15.4.0.17\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.Pdf.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNavigationDrawer.XForms, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfNavigationDrawer.15.4.0.17\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfNavigationDrawer.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfPdfViewer.XForms, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfPdfViewer.15.4.0.17\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfPdfViewer.XForms.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
@@ -328,6 +348,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\XControls\GenPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SfControls\SfGen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SfControls\SfPDFViewer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

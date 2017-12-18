@@ -132,6 +132,14 @@ namespace XForms.Droid
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme = global::XForms.Droid.Resource.Styleable.Theme;
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme_circularProgressBarStyle = global::XForms.Droid.Resource.Styleable.Theme_circularProgressBarStyle;
 			global::Microcharts.Droid.Resource.String.library_name = global::XForms.Droid.Resource.String.library_name;
+			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_copy = global::XForms.Droid.Resource.String.sfpdfviewer_copy;
+			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_highlight = global::XForms.Droid.Resource.String.sfpdfviewer_highlight;
+			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_hyperlink_cancel = global::XForms.Droid.Resource.String.sfpdfviewer_hyperlink_cancel;
+			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_hyperlink_message = global::XForms.Droid.Resource.String.sfpdfviewer_hyperlink_message;
+			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_hyperlink_open = global::XForms.Droid.Resource.String.sfpdfviewer_hyperlink_open;
+			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_hyperlink_title = global::XForms.Droid.Resource.String.sfpdfviewer_hyperlink_title;
+			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_strikethrough = global::XForms.Droid.Resource.String.sfpdfviewer_strikethrough;
+			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_underline = global::XForms.Droid.Resource.String.sfpdfviewer_underline;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::XForms.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -4376,8 +4384,8 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f090038
 			public const int character_counter_pattern = 2131296312;
 			
-			// aapt resource value: 0x7f09003e
-			public const int library_name = 2131296318;
+			// aapt resource value: 0x7f090046
+			public const int library_name = 2131296326;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;
@@ -4459,6 +4467,30 @@ namespace XForms.Droid
 			
 			// aapt resource value: 0x7f090028
 			public const int search_menu_title = 2131296296;
+			
+			// aapt resource value: 0x7f09003e
+			public const int sfpdfviewer_copy = 2131296318;
+			
+			// aapt resource value: 0x7f09003f
+			public const int sfpdfviewer_highlight = 2131296319;
+			
+			// aapt resource value: 0x7f090045
+			public const int sfpdfviewer_hyperlink_cancel = 2131296325;
+			
+			// aapt resource value: 0x7f090043
+			public const int sfpdfviewer_hyperlink_message = 2131296323;
+			
+			// aapt resource value: 0x7f090044
+			public const int sfpdfviewer_hyperlink_open = 2131296324;
+			
+			// aapt resource value: 0x7f090042
+			public const int sfpdfviewer_hyperlink_title = 2131296322;
+			
+			// aapt resource value: 0x7f090041
+			public const int sfpdfviewer_strikethrough = 2131296321;
+			
+			// aapt resource value: 0x7f090040
+			public const int sfpdfviewer_underline = 2131296320;
 			
 			// aapt resource value: 0x7f090029
 			public const int status_bar_notification_info_overflow = 2131296297;
