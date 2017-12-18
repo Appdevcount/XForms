@@ -11,10 +11,10 @@ using Android.OS;
 
 namespace XForms.Droid
 {
-    [Activity(Label = "Android App", //XForms.Android
-        Icon = "@drawable/XamApp", //drawable/icon
-        Theme = "@style/MyTheme",   
-        MainLauncher = true, 
+    [Activity(Label = "XForms.Android", 
+        Icon = "@drawable/icon", 
+        Theme = "@style/MyTheme", 
+        MainLauncher = false, 
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 
     //Changed MainLauncher = false, to not have this class as startup 
@@ -32,9 +32,6 @@ namespace XForms.Droid
             await Plugin.Media.CrossMedia.Current.Initialize();
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
-            FormsPlugin.Iconize.Droid.IconControls.Init(Resource.Id.toolbar);
-            Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeModule());
 
             LoadApplication(new App());
         }

@@ -79,9 +79,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Views\SfControls\SfGen.xaml.cs">
-      <DependentUpon>SfGen.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\XControls\GenPage2.xaml.cs">
       <DependentUpon>GenPage2.xaml</DependentUpon>
     </Compile>
@@ -231,20 +228,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="FormsPlugin.Iconize, Version=1.5.0.13, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xam.FormsPlugin.Iconize.1.5.0.13-beta\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\FormsPlugin.Iconize.dll</HintPath>
-    </Reference>
     <Reference Include="Microcharts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microcharts.0.8.3-pre\lib\portable-net45+win8+wpa81+wp8\Microcharts.dll</HintPath>
     </Reference>
     <Reference Include="Microcharts.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microcharts.Forms.0.8.3-pre\lib\portable-net45+win8+wpa81+wp8\Microcharts.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Iconize, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xam.Plugin.Iconize.2.0.0.37-beta\lib\netstandard1.0\Plugin.Iconize.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.Iconize.FontAwesome, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xam.Plugin.Iconize.FontAwesome.2.0.0.37-beta\lib\netstandard1.0\Plugin.Iconize.FontAwesome.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.Media, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.Media.3.0.1\lib\netstandard1.0\Plugin.Media.dll</HintPath>
@@ -275,12 +263,6 @@
     </Reference>
     <Reference Include="SQLitePCL.raw, Version=0.8.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\SQLitePCL.raw.0.8.6\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfBusyIndicator.XForms, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Syncfusion.Xamarin.SfBusyIndicator.15.4.0.17\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfBusyIndicator.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNavigationDrawer.XForms, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Syncfusion.Xamarin.SfNavigationDrawer.15.4.0.17\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfNavigationDrawer.XForms.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
@@ -345,12 +327,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\XControls\GenPage2.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\SfControls\SfGen.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

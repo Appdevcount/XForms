@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <resources>
-  <!--<style name="Theme.Splash" parent="android:Theme">
-    --><!--Splash screen activity style--><!--
+  <style name="Theme.Splash" parent="android:Theme">
+    <!--Splash screen activity style-->
     <item name="android:windowBackground">@drawable/SplashImage</item>
     <item name="android:windowNoTitle">true</item>
-  </style>-->
+  </style>
   
     
   

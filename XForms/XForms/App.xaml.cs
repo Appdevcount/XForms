@@ -8,7 +8,6 @@ using XForms.Views.MVVM;
 using XForms.Views.XPlugins;
 using XForms.Views.Tabbed;
 using XForms.Views.XControls;
-using XForms.Views.SfControls;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XForms
@@ -87,10 +86,7 @@ namespace XForms
 
             //MainPage = new Communicator();
 
-            //MainPage = new GenPage2();
-
-            MainPage = new SfGen();
-
+            MainPage = new GenPage2();
         }
     }
 }
