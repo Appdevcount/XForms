@@ -239,6 +239,15 @@
   <ItemGroup>
     <Content Include="Helpers\TranslateExtension.txt" />
     <AndroidResource Include="Resources\drawable\XamApp.png" />
+    <AndroidResource Include="Resources\drawable\CompanyLogo.jpg" />
+    <AndroidResource Include="Resources\drawable\User.png" />
+    <AndroidResource Include="Resources\drawable\NavigationDrawer.png" />
+    <AndroidResource Include="Resources\drawable\NavigationDrawer1.png" />
+    <AndroidResource Include="Resources\drawable\NavigationDrawer2.png" />
+    <AndroidResource Include="Resources\drawable\NavigationDrawer3.png" />
+    <AndroidResource Include="Resources\drawable\NavigationDrawer3Small.png" />
+    <AndroidResource Include="Resources\drawable\NavigationDrawerGif.gif" />
+    <AndroidResource Include="Resources\drawable\NavigationDrawerGIF1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

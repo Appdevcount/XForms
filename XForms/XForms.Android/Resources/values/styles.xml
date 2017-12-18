@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <resources>
+  <!--<style name="Theme.Splash" parent="android:Theme">
+    --><!--Splash screen activity style--><!--
+    <item name="android:windowBackground">@drawable/CompanyLogo</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>-->
+  
+      <!--Splash screen activity style-->
   <style name="Theme.Splash" parent="android:Theme">
-    <!--Splash screen activity style-->
-    <item name="android:windowBackground">@drawable/SplashImage</item>
+    <item name="android:windowBackground">@drawable/CompanyLogo</item><!--//This is directly pointing to Splash screen image-->
+    <!--<item name="android:windowBackground">@drawable/SplashBackgroundStyle</item>--><!--//This is pointing to image layout customization xml file-->
     <item name="android:windowNoTitle">true</item>
   </style>
-  
     
   
   

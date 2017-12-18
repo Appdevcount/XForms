@@ -12,9 +12,9 @@ using Android.OS;
 namespace XForms.Droid
 {
     [Activity(Label = "XForms.Android", 
-        Icon = "@drawable/icon", 
+        Icon = "@drawable/XamApp", 
         Theme = "@style/MyTheme", 
-        MainLauncher = false, 
+        MainLauncher = false, //MainLauncher is responsible for making this activity the first activity to show 
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 
     //Changed MainLauncher = false, to not have this class as startup 
@@ -27,7 +27,7 @@ namespace XForms.Droid
 
             base.OnCreate(bundle);
 
-            //Added beow line for Xam.Plugin.Media intialization for platforms separately,
+            //Added below line for Xam.Plugin.Media intialization for platforms separately,
             //since its async method call , added await and async to this calling parent menthod
             await Plugin.Media.CrossMedia.Current.Initialize();
 

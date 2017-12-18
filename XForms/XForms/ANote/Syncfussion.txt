@@ -1,0 +1,13 @@
+﻿Using Syncfussion Plugin Controls - Through Nuget by configuring syncfussion components nuget source URL under Nuget Package manager settings
+==============================================================================================================================================
+
+Images are resized based on pixel size requirement in Online tool for Buttons as Image Icons
+
+Actually single component plgin takes care installing dependencies automatically
+
+Using sfNavigationdrawer
+========================
+
+
+Using sfBusyIndicator 
+=====================

@@ -222,6 +222,7 @@
   <ItemGroup>
     <Content Include="ANote\Note.txt" />
     <Compile Include="Helpers\TranslateExtension.cs" />
+    <Content Include="ANote\Syncfussion.txt" />
     <Content Include="SQLite-AppSample\readme.txt" />
   </ItemGroup>
   <ItemGroup>

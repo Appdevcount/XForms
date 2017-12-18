@@ -14,8 +14,9 @@ namespace XForms.Droid
 {
     [Activity(Label = "Android App",
         Theme ="@style/Theme.Splash",
-        MainLauncher =true,
-        NoHistory =true)]
+        MainLauncher =true, //MainLauncher is responsible for making this activity the first activity to show 
+        NoHistory = true //NoHistory is responsible for preventing navigation back to this activity
+        )]
     //This custom class is implemented for intial splash screen using image addsign in @drawable folder
     public class MyMainActivity : Activity
     {
