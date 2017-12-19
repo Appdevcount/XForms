@@ -271,6 +271,8 @@
     <AndroidResource Include="Resources\drawable\NavigationDrawerGIF1.gif" />
     <AndroidResource Include="Resources\drawable\MediaForward.png" />
     <AndroidResource Include="Resources\drawable\MediaBackward.png" />
+    <AndroidResource Include="Resources\drawable\NvgDrwr.png" />
+    <AndroidResource Include="Resources\drawable\NvgDrwrGreyBig.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
