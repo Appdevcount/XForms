@@ -1,10 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<MasterDetailPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.SfControls.SfGen"
+             xmlns:sfnvgdrwr="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms">
+    <MasterDetailPage.Master>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        
+    </MasterDetailPage.Detail>
+</MasterDetailPage>-->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.SfControls.SfGen"
              xmlns:sfnvgdrwr="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms">
     <ContentPage.Content>
-        
+
         <!--Navigation Drawer-->
         <sfnvgdrwr:SfNavigationDrawer x:Name="NavgDrwr" DrawerWidth ="200" DrawerHeaderHeight="160" DrawerFooterHeight="50">
             <sfnvgdrwr:SfNavigationDrawer.ContentView>
@@ -41,14 +51,33 @@
             </sfnvgdrwr:SfNavigationDrawer.DrawerHeaderView>
 
             <sfnvgdrwr:SfNavigationDrawer.DrawerContentView>
-                <ListView x:Name="listView" >
+                <ListView x:Name="navigationDrawerList" ItemSelected="navigationDrawerList_ItemSelected" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
+                                
+                                <!--Below is from Syncfussion without icons for menus--><!--
                                 <StackLayout HeightRequest="30">
-                                    <Label Margin="10,7,0,7" Text="{Binding}" FontSize="16" FontAttributes="Bold" />
-                                    <!--Margin="10,7,0,0"  HorizontalTextAlignment="Center"-->
+                                    --><!--<Label Margin="10,7,0,7" Text="{Binding}" FontSize="16" FontAttributes="Bold" />-->
+                                    <!--Margin="10,7,0,0"  HorizontalTextAlignment="Center"--><!--
+                                </StackLayout>-->
+                                
+                                <!--Below is from https://almirvuk.blogspot.com/2016/10/how-to-make-master-detail-page.html for menus with icons-->
+                                <!-- Main design for our menu items -->
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                 Orientation="Horizontal"
+                                 Padding="20,10,0,10"
+                                 Spacing="20">
+                                 <Image Source="{Binding Icon}"
+                                 WidthRequest="40"
+                                 HeightRequest="40"
+                                 VerticalOptions="Center" />
+                                 <Label Text="{Binding Title}"
+                                 FontSize="Medium"
+                                 VerticalOptions="Center"
+                                 TextColor="Black"/>
                                 </StackLayout>
+                                
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
