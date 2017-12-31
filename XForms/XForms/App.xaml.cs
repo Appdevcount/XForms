@@ -89,9 +89,11 @@ namespace XForms
 
             //MainPage = new GenPage2();
 
-            MainPage = new SfGen();
+            //MainPage = new SfGen();
 
             //MainPage = new SfPDFViewer();
+
+            MainPage = new SfFormUI();
         }
     }
 }

@@ -11,3 +11,14 @@ Using sfNavigationdrawer
 
 Using sfBusyIndicator 
 =====================
+
+
+Using sfNumericUpDown  - Nuget download has some error - Package 'Syncfusion.Xamarin.SfNumericUpDown.15.4.0.20 : Xamarin.Forms [2.4.0.280, )' is not found on source 'http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/'.
+=====================
+so added the offline reference dll
+
+
+Using sfDatagrid - thru Nuget
+====================================
+
+

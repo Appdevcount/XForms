@@ -15,6 +15,7 @@ namespace XForms.Views.SfControls
         public SfFormUI()
         {
             InitializeComponent();
+            //sfnumupdwn2.IncrementButtonSettings= 
         }
     }
 }

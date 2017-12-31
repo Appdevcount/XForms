@@ -104,8 +104,23 @@
     <Reference Include="Syncfusion.Compression.Portable, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Syncfusion.Xamarin.Compression.15.4.0.17\lib\MonoAndroid10\Syncfusion.Compression.Portable.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.Core.XForms, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.Core.15.4.0.20\lib\MonoAndroid10\Syncfusion.Core.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Data.Portable, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfDataGrid.15.4.0.20\lib\MonoAndroid10\Syncfusion.Data.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.Portable, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.GridCommon.15.4.0.20\lib\MonoAndroid10\Syncfusion.GridCommon.Portable.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Pdf.Portable, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Syncfusion.Xamarin.Pdf.15.4.0.17\lib\MonoAndroid10\Syncfusion.Pdf.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.XForms, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfDataGrid.15.4.0.20\lib\MonoAndroid10\Syncfusion.SfDataGrid.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfDataGrid.XForms.Android, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfDataGrid.15.4.0.20\lib\MonoAndroid10\Syncfusion.SfDataGrid.XForms.Android.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfNavigationDrawer.Android, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Syncfusion.Xamarin.SfNavigationDrawer.15.4.0.17\lib\MonoAndroid10\Syncfusion.SfNavigationDrawer.Android.dll</HintPath>
@@ -115,6 +130,21 @@
     </Reference>
     <Reference Include="Syncfusion.SfNavigationDrawer.XForms.Android, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Syncfusion.Xamarin.SfNavigationDrawer.15.4.0.17\lib\MonoAndroid10\Syncfusion.SfNavigationDrawer.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.Android, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfNumericTextBox.15.4.0.20\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfNumericTextBox.15.4.0.20\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms.Android, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfNumericTextBox.15.4.0.20\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericUpDown.Android">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib\android\Syncfusion.SfNumericUpDown.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericUpDown.XForms.Android">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib\android\Syncfusion.SfNumericUpDown.XForms.Android.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfPdfViewer.XForms, Version=15.4451.0.17, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Syncfusion.Xamarin.SfPdfViewer.15.4.0.17\lib\MonoAndroid10\Syncfusion.SfPdfViewer.XForms.dll</HintPath>
@@ -277,8 +307,8 @@
     <AndroidResource Include="Resources\drawable\Add.png" />
     <AndroidResource Include="Resources\drawable\Camera.png" />
     <AndroidResource Include="Resources\drawable\Save.png" />
-    <AndroidResource Include="Resources\drawable\Logo Small.png" />
-    <AndroidResource Include="Resources\drawable\Logo Big.png" />
+    <AndroidResource Include="Resources\drawable\LogoSmall.png" />
+    <AndroidResource Include="Resources\drawable\LogoBig.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -307,6 +337,7 @@
     <Error Condition="!Exists('..\..\packages\SQLitePCL.raw.0.8.6\build\MonoAndroid\SQLitePCL.raw.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\SQLitePCL.raw.0.8.6\build\MonoAndroid\SQLitePCL.raw.targets'))" />
     <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.props'))" />
     <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets'))" />
+    <Error Condition="!Exists('..\..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets'))" />
   </Target>
   <Import Project="..\..\packages\Xamarin.Android.Support.Annotations.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Annotations.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />
   <Import Project="..\..\packages\Xamarin.Android.Arch.Core.Common.1.0.0\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets" Condition="Exists('..\..\packages\Xamarin.Android.Arch.Core.Common.1.0.0\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets')" />
@@ -329,4 +360,5 @@
   <Import Project="..\..\packages\Xamarin.Android.Support.v7.MediaRouter.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.v7.MediaRouter.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.v7.MediaRouter.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.v7.MediaRouter.targets')" />
   <Import Project="..\..\packages\SQLitePCL.raw.0.8.6\build\MonoAndroid\SQLitePCL.raw.targets" Condition="Exists('..\..\packages\SQLitePCL.raw.0.8.6\build\MonoAndroid\SQLitePCL.raw.targets')" />
   <Import Project="..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
+  <Import Project="..\..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
 </Project>

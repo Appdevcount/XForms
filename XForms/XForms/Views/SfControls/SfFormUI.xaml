@@ -1,12 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XForms.Views.SfControls.SfFormUI">
+             x:Class="XForms.Views.SfControls.SfFormUI"
+             xmlns:sfnumud="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="10,10,10,10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Enter Value" FontSize="Large"  Grid.Row="0" Grid.Column="0" FontAttributes="Bold"
+                       HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                <sfnumud:SfNumericUpDown Grid.Row="0"  Grid.Column="1" x:Name="sfnumupdwn2" MaximumDecimalDigits="3" Minimum="2"
+                                         Maximum="10" Value="3" StepValue="1"
+                                   UpDownButtonColor="Purple" HorizontalOptions="Center" VerticalOptions="Center"   ></sfnumud:SfNumericUpDown>
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
