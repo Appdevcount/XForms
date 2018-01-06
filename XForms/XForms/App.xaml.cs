@@ -9,6 +9,7 @@ using XForms.Views.XPlugins;
 using XForms.Views.Tabbed;
 using XForms.Views.XControls;
 using XForms.Views.SfControls;
+using XForms.Views.NavgDrawer;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XForms
@@ -93,7 +94,9 @@ namespace XForms
 
             //MainPage = new SfPDFViewer();
 
-            MainPage = new SfFormUI();
+            //MainPage = new SfFormUI();
+
+            MainPage = new MasterDetailNav();
         }
     }
 }

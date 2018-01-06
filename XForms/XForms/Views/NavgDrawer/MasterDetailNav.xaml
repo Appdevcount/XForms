@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="XForms.Views.NavgDrawer.MasterDetailNav"
+                  xmlns:mn="clr-namespace:XForms.Views.NavgDrawer">
+    
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Orientation="Vertical">
+                
+                <StackLayout.Children>
+                    <!--<Label Text="{Binding Header}"></Label>
+                    <Image Source="{Binding Image}" Aspect="Fill"></Image>
+                    <Label Text="{Binding Footer}"></Label>-->
+
+                    <Label Text="TEST"></Label>
+                    
+                </StackLayout.Children>
+
+                <!--<ListView x:Name="nvgdrwr" SeparatorVisibility="Default" ItemSelected="nvgdrwr_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                                    <Image Source="{Binding Icon}" VerticalOptions="Start"></Image>
+                                    <Label Text="{Binding Title}" VerticalOptions="End"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>-->
+                
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        
+        <!--<NavigationPage>-->
+            
+            <!--<x:Arguments>-->
+                <mn:View1 />
+            <!--</x:Arguments>-->
+        <!--</NavigationPage>-->
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
+    
+    
