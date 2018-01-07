@@ -54,3 +54,6 @@ Using xam.plugins.messaging Plugin
 ===================================
 Add the plugin common to the solution and refer https://github.com/cjlotz/Xamarin.Plugins/blob/master/Messaging/Details.md for Using API topic 
 
+
+Master Detail Page Navigation drawer - Added the Master details page item from the Visual studio template
+=============================================================================================================

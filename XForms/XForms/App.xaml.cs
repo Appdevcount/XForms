@@ -10,6 +10,7 @@ using XForms.Views.Tabbed;
 using XForms.Views.XControls;
 using XForms.Views.SfControls;
 using XForms.Views.NavgDrawer;
+using XForms.Views.MasterDetNavg;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XForms
@@ -96,7 +97,9 @@ namespace XForms
 
             //MainPage = new SfFormUI();
 
-            MainPage = new MasterDetailNav();
+            //MainPage = new MasterDetailNav();
+
+            MainPage = new MasterDetailPage1();
         }
     }
 }
