@@ -99,7 +99,9 @@ namespace XForms
 
             //MainPage = new MasterDetailNav();
 
-            MainPage = new MasterDetailPage1();
+            //MainPage = new MasterDetailPage1();//Working with Xamarin forms Master detail template
+
+            MainPage = new SfListview();
         }
     }
 }

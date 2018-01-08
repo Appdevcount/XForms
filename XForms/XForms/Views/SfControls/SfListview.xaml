@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.SfControls.SfListview"
+             xmlns:sflv="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:datarepository="clr-namespace:XForms.Views.SfControls">
+    <ContentPage.BindingContext>
+        <datarepository:BookInfoRepository />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+           
+            <!--<sflv:SfListView x:Name="listView" ItemsSource="{Binding BookInfo}" />-->
+
+            <sflv:SfListView x:Name="listView" 
+                   ItemsSource="{Binding BookInfo}"
+                   ItemSize="100" AllowGroupExpandCollapse="True">
+                <sflv:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.4*" />
+                                <RowDefinition Height="0.6*" />
+                            </Grid.RowDefinitions>
+                            <Label Text="{Binding BookName}" FontAttributes="Bold" TextColor="Teal" FontSize="21" />
+                            <Label Grid.Row="1" Text="{Binding BookDescription}" TextColor="Teal" FontSize="15"/>
+                        </Grid>
+                    </DataTemplate>
+                </sflv:SfListView.ItemTemplate>
+            </sflv:SfListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

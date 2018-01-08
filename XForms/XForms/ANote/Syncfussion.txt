@@ -7,6 +7,7 @@ Actually single component plgin takes care installing dependencies automatically
 
 Using sfNavigationdrawer
 ========================
+This plugin doesnt help to navigate from menus . so implementated this feature from Xamarin MasterDetail navigation itself
 
 
 Using sfBusyIndicator 

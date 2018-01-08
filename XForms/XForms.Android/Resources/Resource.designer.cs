@@ -132,6 +132,68 @@ namespace XForms.Droid
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme = global::XForms.Droid.Resource.Styleable.Theme;
 			global::com.refractored.monodroidtoolkit.Resource.Styleable.Theme_circularProgressBarStyle = global::XForms.Droid.Resource.Styleable.Theme_circularProgressBarStyle;
 			global::Microcharts.Droid.Resource.String.library_name = global::XForms.Droid.Resource.String.library_name;
+			global::Com.Syncfusion.Autocomplete.Resource.Attribute.layoutManager = global::XForms.Droid.Resource.Attribute.layoutManager;
+			global::Com.Syncfusion.Autocomplete.Resource.Attribute.reverseLayout = global::XForms.Droid.Resource.Attribute.reverseLayout;
+			global::Com.Syncfusion.Autocomplete.Resource.Attribute.spanCount = global::XForms.Droid.Resource.Attribute.spanCount;
+			global::Com.Syncfusion.Autocomplete.Resource.Attribute.stackFromEnd = global::XForms.Droid.Resource.Attribute.stackFromEnd;
+			global::Com.Syncfusion.Autocomplete.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::XForms.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Com.Syncfusion.Autocomplete.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::XForms.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Com.Syncfusion.Autocomplete.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::XForms.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Com.Syncfusion.Autocomplete.Resource.Drawable.sfclosebutton = global::XForms.Droid.Resource.Drawable.sfclosebutton;
+			global::Com.Syncfusion.Autocomplete.Resource.Drawable.styleinfo = global::XForms.Droid.Resource.Drawable.styleinfo;
+			global::Com.Syncfusion.Autocomplete.Resource.Id.Itemname = global::XForms.Droid.Resource.Id.Itemname;
+			global::Com.Syncfusion.Autocomplete.Resource.Id.icon = global::XForms.Droid.Resource.Id.icon;
+			global::Com.Syncfusion.Autocomplete.Resource.Id.item_touch_helper_previous_elevation = global::XForms.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Com.Syncfusion.Autocomplete.Resource.Layout.CustomizedView = global::XForms.Droid.Resource.Layout.CustomizedView;
+			global::Com.Syncfusion.Autocomplete.Resource.Layout.CustomizedView1 = global::XForms.Droid.Resource.Layout.CustomizedView1;
+			global::Com.Syncfusion.Autocomplete.Resource.Layout.sfautocomplete_layout = global::XForms.Droid.Resource.Layout.sfautocomplete_layout;
+			global::Com.Syncfusion.Autocomplete.Resource.String.library_name = global::XForms.Droid.Resource.String.library_name;
+			global::Com.Syncfusion.Autocomplete.Resource.Styleable.RecyclerView = global::XForms.Droid.Resource.Styleable.RecyclerView;
+			global::Com.Syncfusion.Autocomplete.Resource.Styleable.RecyclerView_android_descendantFocusability = global::XForms.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Com.Syncfusion.Autocomplete.Resource.Styleable.RecyclerView_android_orientation = global::XForms.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Com.Syncfusion.Autocomplete.Resource.Styleable.RecyclerView_layoutManager = global::XForms.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Com.Syncfusion.Autocomplete.Resource.Styleable.RecyclerView_reverseLayout = global::XForms.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Com.Syncfusion.Autocomplete.Resource.Styleable.RecyclerView_spanCount = global::XForms.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Com.Syncfusion.Autocomplete.Resource.Styleable.RecyclerView_stackFromEnd = global::XForms.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Fadein = global::XForms.Droid.Resource.Animation.Fadein;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Fadeout = global::XForms.Droid.Resource.Animation.Fadeout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Scale_in = global::XForms.Droid.Resource.Animation.Scale_in;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Scale_out = global::XForms.Droid.Resource.Animation.Scale_out;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.annotationLayout = global::XForms.Droid.Resource.Id.annotationLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.axisLayout = global::XForms.Droid.Resource.Id.axisLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.bottom_labels = global::XForms.Droid.Resource.Id.bottom_labels;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartBehaviorLayout = global::XForms.Droid.Resource.Id.chartBehaviorLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartLegendScrollView = global::XForms.Droid.Resource.Id.chartLegendScrollView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.content = global::XForms.Droid.Resource.Id.content;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.dataMarkerLayout = global::XForms.Droid.Resource.Id.dataMarkerLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLineLayout = global::XForms.Droid.Resource.Id.gridLineLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLinesLayout = global::XForms.Droid.Resource.Id.gridLinesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.iconView = global::XForms.Droid.Resource.Id.iconView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.label = global::XForms.Droid.Resource.Id.label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendHeader = global::XForms.Droid.Resource.Id.legendHeader;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendItemsLayout = global::XForms.Droid.Resource.Id.legendItemsLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendLayout = global::XForms.Droid.Resource.Id.legendLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendScrollView = global::XForms.Droid.Resource.Id.legendScrollView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendViewGroup = global::XForms.Droid.Resource.Id.legendViewGroup;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.rootLayout = global::XForms.Droid.Resource.Id.rootLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.seriesLayout = global::XForms.Droid.Resource.Id.seriesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.stripLinesLayout = global::XForms.Droid.Resource.Id.stripLinesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.technicalIndicatorLayout = global::XForms.Droid.Resource.Id.technicalIndicatorLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.thumbLayout = global::XForms.Droid.Resource.Id.thumbLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.titleLayout = global::XForms.Droid.Resource.Id.titleLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.top_labels = global::XForms.Droid.Resource.Id.top_labels;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_layout = global::XForms.Droid.Resource.Layout.chart_layout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend = global::XForms.Droid.Resource.Layout.chart_legend;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend_item = global::XForms.Droid.Resource.Layout.chart_legend_item;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.range_navigator_layout = global::XForms.Droid.Resource.Layout.range_navigator_layout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.q = global::XForms.Droid.Resource.String.q;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.quarter = global::XForms.Droid.Resource.String.quarter;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_close_label = global::XForms.Droid.Resource.String.sfchart_close_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_high_label = global::XForms.Droid.Resource.String.sfchart_high_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_low_label = global::XForms.Droid.Resource.String.sfchart_low_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_open_label = global::XForms.Droid.Resource.String.sfchart_open_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.w = global::XForms.Droid.Resource.String.w;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.week = global::XForms.Droid.Resource.String.week;
 			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.Layout.ScrollViewer = global::XForms.Droid.Resource.Layout.ScrollViewer;
 			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.String.library_name = global::XForms.Droid.Resource.String.library_name;
 			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_copy = global::XForms.Droid.Resource.String.sfpdfviewer_copy;
@@ -142,6 +204,13 @@ namespace XForms.Droid
 			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_hyperlink_title = global::XForms.Droid.Resource.String.sfpdfviewer_hyperlink_title;
 			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_strikethrough = global::XForms.Droid.Resource.String.sfpdfviewer_strikethrough;
 			global::Syncfusion.SfPdfViewer.XForms.Droid.Resource.String.sfpdfviewer_underline = global::XForms.Droid.Resource.String.sfpdfviewer_underline;
+			global::Syncfusion.SfRadialMenu.Android.Resource.String.library_name = global::XForms.Droid.Resource.String.library_name;
+			global::Com.Syncfusion.Rotator.Resource.Dimension.btn_Size = global::XForms.Droid.Resource.Dimension.btn_Size;
+			global::Com.Syncfusion.Rotator.Resource.Dimension.conc_circle = global::XForms.Droid.Resource.Dimension.conc_circle;
+			global::Com.Syncfusion.Rotator.Resource.Dimension.dot_space = global::XForms.Droid.Resource.Dimension.dot_space;
+			global::Com.Syncfusion.Rotator.Resource.Dimension.inner_circle = global::XForms.Droid.Resource.Dimension.inner_circle;
+			global::Com.Syncfusion.Rotator.Resource.Dimension.outerCircle = global::XForms.Droid.Resource.Dimension.outerCircle;
+			global::Com.Syncfusion.Rotator.Resource.Dimension.thumb_padding = global::XForms.Droid.Resource.Dimension.thumb_padding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::XForms.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -191,10 +260,22 @@ namespace XForms.Droid
 			public const int design_snackbar_out = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int tooltip_enter = 2130968590;
+			public const int Fadein = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int tooltip_exit = 2130968591;
+			public const int Fadeout = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int Scale_in = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int Scale_out = 2130968593;
+			
+			// aapt resource value: 0x7f040012
+			public const int tooltip_enter = 2130968594;
+			
+			// aapt resource value: 0x7f040013
+			public const int tooltip_exit = 2130968595;
 			
 			static Animation()
 			{
@@ -2067,6 +2148,9 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f070013
 			public const int abc_text_size_title_material_toolbar = 2131165203;
 			
+			// aapt resource value: 0x7f0700a4
+			public const int btn_Size = 2131165348;
+			
 			// aapt resource value: 0x7f07000c
 			public const int cardview_compat_inset_shadow = 2131165196;
 			
@@ -2090,6 +2174,9 @@ namespace XForms.Droid
 			
 			// aapt resource value: 0x7f070098
 			public const int compat_control_corner_material = 2131165336;
+			
+			// aapt resource value: 0x7f0700a7
+			public const int conc_circle = 2131165351;
 			
 			// aapt resource value: 0x7f070072
 			public const int design_appbar_elevation = 2131165298;
@@ -2211,6 +2298,9 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f07005a
 			public const int disabled_alpha_material_light = 2131165274;
 			
+			// aapt resource value: 0x7f0700a8
+			public const int dot_space = 2131165352;
+			
 			// aapt resource value: 0x7f070000
 			public const int fastscroll_default_thickness = 2131165184;
 			
@@ -2240,6 +2330,9 @@ namespace XForms.Droid
 			
 			// aapt resource value: 0x7f070061
 			public const int hint_pressed_alpha_material_light = 2131165281;
+			
+			// aapt resource value: 0x7f0700a6
+			public const int inner_circle = 2131165350;
 			
 			// aapt resource value: 0x7f070003
 			public const int item_touch_helper_max_drag_scroll_per_frame = 2131165187;
@@ -2313,8 +2406,14 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f0700a3
 			public const int notification_top_pad_large_text = 2131165347;
 			
-			// aapt resource value: 0x7f0700a4
-			public const int progress_inner_size = 2131165348;
+			// aapt resource value: 0x7f0700a5
+			public const int outerCircle = 2131165349;
+			
+			// aapt resource value: 0x7f0700aa
+			public const int progress_inner_size = 2131165354;
+			
+			// aapt resource value: 0x7f0700a9
+			public const int thumb_padding = 2131165353;
 			
 			// aapt resource value: 0x7f070062
 			public const int tooltip_corner_radius = 2131165282;
@@ -2611,26 +2710,26 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f020055
 			public const int avd_hide_password = 2130837589;
 			
-			// aapt resource value: 0x7f020151
-			public const int avd_hide_password_1 = 2130837841;
-			
-			// aapt resource value: 0x7f020152
-			public const int avd_hide_password_2 = 2130837842;
-			
 			// aapt resource value: 0x7f020153
-			public const int avd_hide_password_3 = 2130837843;
+			public const int avd_hide_password_1 = 2130837843;
+			
+			// aapt resource value: 0x7f020154
+			public const int avd_hide_password_2 = 2130837844;
+			
+			// aapt resource value: 0x7f020155
+			public const int avd_hide_password_3 = 2130837845;
 			
 			// aapt resource value: 0x7f020056
 			public const int avd_show_password = 2130837590;
 			
-			// aapt resource value: 0x7f020154
-			public const int avd_show_password_1 = 2130837844;
-			
-			// aapt resource value: 0x7f020155
-			public const int avd_show_password_2 = 2130837845;
-			
 			// aapt resource value: 0x7f020156
-			public const int avd_show_password_3 = 2130837846;
+			public const int avd_show_password_1 = 2130837846;
+			
+			// aapt resource value: 0x7f020157
+			public const int avd_show_password_2 = 2130837847;
+			
+			// aapt resource value: 0x7f020158
+			public const int avd_show_password_3 = 2130837848;
 			
 			// aapt resource value: 0x7f020057
 			public const int Camera = 2130837591;
@@ -3322,11 +3421,11 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f02013c
 			public const int notification_icon_background = 2130837820;
 			
-			// aapt resource value: 0x7f02014f
-			public const int notification_template_icon_bg = 2130837839;
+			// aapt resource value: 0x7f020151
+			public const int notification_template_icon_bg = 2130837841;
 			
-			// aapt resource value: 0x7f020150
-			public const int notification_template_icon_low_bg = 2130837840;
+			// aapt resource value: 0x7f020152
+			public const int notification_template_icon_low_bg = 2130837842;
 			
 			// aapt resource value: 0x7f02013d
 			public const int notification_tile_bg = 2130837821;
@@ -3362,25 +3461,31 @@ namespace XForms.Droid
 			public const int sendmail = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int SplashImage = 2130837832;
+			public const int sfclosebutton = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int tooltip_frame_dark = 2130837833;
+			public const int SplashImage = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int tooltip_frame_light = 2130837834;
+			public const int styleinfo = 2130837834;
 			
 			// aapt resource value: 0x7f02014b
-			public const int User = 2130837835;
+			public const int tooltip_frame_dark = 2130837835;
 			
 			// aapt resource value: 0x7f02014c
-			public const int Web = 2130837836;
+			public const int tooltip_frame_light = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int XamApp = 2130837837;
+			public const int User = 2130837837;
 			
 			// aapt resource value: 0x7f02014e
-			public const int xamarin_logo = 2130837838;
+			public const int Web = 2130837838;
+			
+			// aapt resource value: 0x7f02014f
+			public const int XamApp = 2130837839;
+			
+			// aapt resource value: 0x7f020150
+			public const int xamarin_logo = 2130837840;
 			
 			static Drawable()
 			{
@@ -3404,6 +3509,9 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080033
 			public const int FUNCTION = 2131230771;
 			
+			// aapt resource value: 0x7f08009d
+			public const int Itemname = 2131230877;
+			
 			// aapt resource value: 0x7f080034
 			public const int META = 2131230772;
 			
@@ -3413,8 +3521,8 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080036
 			public const int SYM = 2131230774;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int action0 = 2131230902;
+			// aapt resource value: 0x7f0800c9
+			public const int action0 = 2131230921;
 			
 			// aapt resource value: 0x7f08007c
 			public const int action_bar = 2131230844;
@@ -3437,17 +3545,17 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08005a
 			public const int action_bar_title = 2131230810;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int action_container = 2131230899;
+			// aapt resource value: 0x7f0800c6
+			public const int action_container = 2131230918;
 			
 			// aapt resource value: 0x7f08007d
 			public const int action_context_bar = 2131230845;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int action_divider = 2131230906;
+			// aapt resource value: 0x7f0800cd
+			public const int action_divider = 2131230925;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int action_image = 2131230900;
+			// aapt resource value: 0x7f0800c7
+			public const int action_image = 2131230919;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -3464,11 +3572,11 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08005c
 			public const int action_mode_close_button = 2131230812;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int action_text = 2131230901;
+			// aapt resource value: 0x7f0800c8
+			public const int action_text = 2131230920;
 			
-			// aapt resource value: 0x7f0800c3
-			public const int actions = 2131230915;
+			// aapt resource value: 0x7f0800d6
+			public const int actions = 2131230934;
 			
 			// aapt resource value: 0x7f08005d
 			public const int activity_chooser_view_content = 2131230813;
@@ -3485,11 +3593,17 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080037
 			public const int always = 2131230775;
 			
+			// aapt resource value: 0x7f080095
+			public const int annotationLayout = 2131230869;
+			
 			// aapt resource value: 0x7f080055
 			public const int async = 2131230805;
 			
 			// aapt resource value: 0x7f080043
 			public const int auto = 2131230787;
+			
+			// aapt resource value: 0x7f080092
+			public const int axisLayout = 2131230866;
 			
 			// aapt resource value: 0x7f08002e
 			public const int beginning = 2131230766;
@@ -3500,11 +3614,14 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08003c
 			public const int bottom = 2131230780;
 			
+			// aapt resource value: 0x7f0800da
+			public const int bottom_labels = 2131230938;
+			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int cancel_action = 2131230903;
+			// aapt resource value: 0x7f0800ca
+			public const int cancel_action = 2131230922;
 			
 			// aapt resource value: 0x7f080044
 			public const int center = 2131230788;
@@ -3515,11 +3632,17 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080046
 			public const int center_vertical = 2131230790;
 			
+			// aapt resource value: 0x7f080094
+			public const int chartBehaviorLayout = 2131230868;
+			
+			// aapt resource value: 0x7f080098
+			public const int chartLegendScrollView = 2131230872;
+			
 			// aapt resource value: 0x7f080073
 			public const int checkbox = 2131230835;
 			
-			// aapt resource value: 0x7f0800bf
-			public const int chronometer = 2131230911;
+			// aapt resource value: 0x7f0800d2
+			public const int chronometer = 2131230930;
 			
 			// aapt resource value: 0x7f080059
 			public const int clip = 2131230809;
@@ -3533,14 +3656,17 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080038
 			public const int collapseActionView = 2131230776;
 			
-			// aapt resource value: 0x7f08008d
-			public const int container = 2131230861;
+			// aapt resource value: 0x7f0800a0
+			public const int container = 2131230880;
+			
+			// aapt resource value: 0x7f0800db
+			public const int content = 2131230939;
 			
 			// aapt resource value: 0x7f080066
 			public const int contentPanel = 2131230822;
 			
-			// aapt resource value: 0x7f08008e
-			public const int coordinator = 2131230862;
+			// aapt resource value: 0x7f0800a1
+			public const int coordinator = 2131230881;
 			
 			// aapt resource value: 0x7f08006d
 			public const int custom = 2131230829;
@@ -3548,26 +3674,29 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08006c
 			public const int customPanel = 2131230828;
 			
+			// aapt resource value: 0x7f080090
+			public const int dataMarkerLayout = 2131230864;
+			
 			// aapt resource value: 0x7f08007a
 			public const int decor_content_parent = 2131230842;
 			
 			// aapt resource value: 0x7f080060
 			public const int default_activity_button = 2131230816;
 			
-			// aapt resource value: 0x7f080090
-			public const int design_bottom_sheet = 2131230864;
+			// aapt resource value: 0x7f0800a3
+			public const int design_bottom_sheet = 2131230883;
 			
-			// aapt resource value: 0x7f080097
-			public const int design_menu_item_action_area = 2131230871;
+			// aapt resource value: 0x7f0800aa
+			public const int design_menu_item_action_area = 2131230890;
 			
-			// aapt resource value: 0x7f080096
-			public const int design_menu_item_action_area_stub = 2131230870;
+			// aapt resource value: 0x7f0800a9
+			public const int design_menu_item_action_area_stub = 2131230889;
 			
-			// aapt resource value: 0x7f080095
-			public const int design_menu_item_text = 2131230869;
+			// aapt resource value: 0x7f0800a8
+			public const int design_menu_item_text = 2131230888;
 			
-			// aapt resource value: 0x7f080094
-			public const int design_navigation_view = 2131230868;
+			// aapt resource value: 0x7f0800a7
+			public const int design_navigation_view = 2131230887;
 			
 			// aapt resource value: 0x7f08001f
 			public const int disableHome = 2131230751;
@@ -3578,8 +3707,8 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08002f
 			public const int end = 2131230767;
 			
-			// aapt resource value: 0x7f0800c5
-			public const int end_padder = 2131230917;
+			// aapt resource value: 0x7f0800d8
+			public const int end_padder = 2131230936;
 			
 			// aapt resource value: 0x7f08003e
 			public const int enterAlways = 2131230782;
@@ -3614,6 +3743,12 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08000a
 			public const int ghost_view = 2131230730;
 			
+			// aapt resource value: 0x7f08008d
+			public const int gridLineLayout = 2131230861;
+			
+			// aapt resource value: 0x7f0800dc
+			public const int gridLinesLayout = 2131230940;
+			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
 			
@@ -3623,8 +3758,11 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080062
 			public const int icon = 2131230818;
 			
-			// aapt resource value: 0x7f0800c4
-			public const int icon_group = 2131230916;
+			// aapt resource value: 0x7f08009b
+			public const int iconView = 2131230875;
+			
+			// aapt resource value: 0x7f0800d7
+			public const int icon_group = 2131230935;
 			
 			// aapt resource value: 0x7f080039
 			public const int ifRoom = 2131230777;
@@ -3632,8 +3770,8 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08005f
 			public const int image = 2131230815;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int info = 2131230912;
+			// aapt resource value: 0x7f0800d3
+			public const int info = 2131230931;
 			
 			// aapt resource value: 0x7f080058
 			public const int italic = 2131230808;
@@ -3641,11 +3779,29 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f08008c
-			public const int largeLabel = 2131230860;
+			// aapt resource value: 0x7f08009c
+			public const int label = 2131230876;
+			
+			// aapt resource value: 0x7f08009f
+			public const int largeLabel = 2131230879;
 			
 			// aapt resource value: 0x7f080048
 			public const int left = 2131230792;
+			
+			// aapt resource value: 0x7f080097
+			public const int legendHeader = 2131230871;
+			
+			// aapt resource value: 0x7f08009a
+			public const int legendItemsLayout = 2131230874;
+			
+			// aapt resource value: 0x7f080093
+			public const int legendLayout = 2131230867;
+			
+			// aapt resource value: 0x7f080099
+			public const int legendScrollView = 2131230873;
+			
+			// aapt resource value: 0x7f080096
+			public const int legendViewGroup = 2131230870;
 			
 			// aapt resource value: 0x7f080017
 			public const int line1 = 2131230743;
@@ -3659,14 +3815,14 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int masked = 2131230922;
+			// aapt resource value: 0x7f0800e2
+			public const int masked = 2131230946;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int media_actions = 2131230905;
+			// aapt resource value: 0x7f0800cc
+			public const int media_actions = 2131230924;
 			
-			// aapt resource value: 0x7f0800c8
-			public const int message = 2131230920;
+			// aapt resource value: 0x7f0800e0
+			public const int message = 2131230944;
 			
 			// aapt resource value: 0x7f080030
 			public const int middle = 2131230768;
@@ -3674,86 +3830,86 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080052
 			public const int mini = 2131230802;
 			
-			// aapt resource value: 0x7f0800a5
-			public const int mr_art = 2131230885;
-			
-			// aapt resource value: 0x7f08009a
-			public const int mr_chooser_list = 2131230874;
-			
-			// aapt resource value: 0x7f08009d
-			public const int mr_chooser_route_desc = 2131230877;
-			
-			// aapt resource value: 0x7f08009b
-			public const int mr_chooser_route_icon = 2131230875;
-			
-			// aapt resource value: 0x7f08009c
-			public const int mr_chooser_route_name = 2131230876;
-			
-			// aapt resource value: 0x7f080099
-			public const int mr_chooser_title = 2131230873;
-			
-			// aapt resource value: 0x7f0800a2
-			public const int mr_close = 2131230882;
-			
-			// aapt resource value: 0x7f0800a8
-			public const int mr_control_divider = 2131230888;
-			
-			// aapt resource value: 0x7f0800ae
-			public const int mr_control_playback_ctrl = 2131230894;
-			
-			// aapt resource value: 0x7f0800b1
-			public const int mr_control_subtitle = 2131230897;
-			
-			// aapt resource value: 0x7f0800b0
-			public const int mr_control_title = 2131230896;
-			
-			// aapt resource value: 0x7f0800af
-			public const int mr_control_title_container = 2131230895;
-			
-			// aapt resource value: 0x7f0800a3
-			public const int mr_custom_control = 2131230883;
-			
-			// aapt resource value: 0x7f0800a4
-			public const int mr_default_control = 2131230884;
-			
-			// aapt resource value: 0x7f08009f
-			public const int mr_dialog_area = 2131230879;
-			
-			// aapt resource value: 0x7f08009e
-			public const int mr_expandable_area = 2131230878;
-			
-			// aapt resource value: 0x7f0800b2
-			public const int mr_group_expand_collapse = 2131230898;
-			
-			// aapt resource value: 0x7f0800a6
-			public const int mr_media_main_control = 2131230886;
-			
-			// aapt resource value: 0x7f0800a1
-			public const int mr_name = 2131230881;
-			
-			// aapt resource value: 0x7f0800a7
-			public const int mr_playback_control = 2131230887;
-			
-			// aapt resource value: 0x7f0800a0
-			public const int mr_title_bar = 2131230880;
-			
-			// aapt resource value: 0x7f0800a9
-			public const int mr_volume_control = 2131230889;
-			
-			// aapt resource value: 0x7f0800aa
-			public const int mr_volume_group_list = 2131230890;
-			
-			// aapt resource value: 0x7f0800ac
-			public const int mr_volume_item_icon = 2131230892;
+			// aapt resource value: 0x7f0800b8
+			public const int mr_art = 2131230904;
 			
 			// aapt resource value: 0x7f0800ad
-			public const int mr_volume_slider = 2131230893;
+			public const int mr_chooser_list = 2131230893;
+			
+			// aapt resource value: 0x7f0800b0
+			public const int mr_chooser_route_desc = 2131230896;
+			
+			// aapt resource value: 0x7f0800ae
+			public const int mr_chooser_route_icon = 2131230894;
+			
+			// aapt resource value: 0x7f0800af
+			public const int mr_chooser_route_name = 2131230895;
+			
+			// aapt resource value: 0x7f0800ac
+			public const int mr_chooser_title = 2131230892;
+			
+			// aapt resource value: 0x7f0800b5
+			public const int mr_close = 2131230901;
+			
+			// aapt resource value: 0x7f0800bb
+			public const int mr_control_divider = 2131230907;
+			
+			// aapt resource value: 0x7f0800c1
+			public const int mr_control_playback_ctrl = 2131230913;
+			
+			// aapt resource value: 0x7f0800c4
+			public const int mr_control_subtitle = 2131230916;
+			
+			// aapt resource value: 0x7f0800c3
+			public const int mr_control_title = 2131230915;
+			
+			// aapt resource value: 0x7f0800c2
+			public const int mr_control_title_container = 2131230914;
+			
+			// aapt resource value: 0x7f0800b6
+			public const int mr_custom_control = 2131230902;
+			
+			// aapt resource value: 0x7f0800b7
+			public const int mr_default_control = 2131230903;
+			
+			// aapt resource value: 0x7f0800b2
+			public const int mr_dialog_area = 2131230898;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int mr_expandable_area = 2131230897;
+			
+			// aapt resource value: 0x7f0800c5
+			public const int mr_group_expand_collapse = 2131230917;
+			
+			// aapt resource value: 0x7f0800b9
+			public const int mr_media_main_control = 2131230905;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int mr_name = 2131230900;
+			
+			// aapt resource value: 0x7f0800ba
+			public const int mr_playback_control = 2131230906;
+			
+			// aapt resource value: 0x7f0800b3
+			public const int mr_title_bar = 2131230899;
+			
+			// aapt resource value: 0x7f0800bc
+			public const int mr_volume_control = 2131230908;
+			
+			// aapt resource value: 0x7f0800bd
+			public const int mr_volume_group_list = 2131230909;
+			
+			// aapt resource value: 0x7f0800bf
+			public const int mr_volume_item_icon = 2131230911;
+			
+			// aapt resource value: 0x7f0800c0
+			public const int mr_volume_slider = 2131230912;
 			
 			// aapt resource value: 0x7f080026
 			public const int multiply = 2131230758;
 			
-			// aapt resource value: 0x7f080093
-			public const int navigation_header_container = 2131230867;
+			// aapt resource value: 0x7f0800a6
+			public const int navigation_header_container = 2131230886;
 			
 			// aapt resource value: 0x7f08003a
 			public const int never = 2131230778;
@@ -3764,14 +3920,14 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08001d
 			public const int normal = 2131230749;
 			
-			// aapt resource value: 0x7f0800c2
-			public const int notification_background = 2131230914;
+			// aapt resource value: 0x7f0800d5
+			public const int notification_background = 2131230933;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int notification_main_column = 2131230908;
+			// aapt resource value: 0x7f0800cf
+			public const int notification_main_column = 2131230927;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int notification_main_column_container = 2131230907;
+			// aapt resource value: 0x7f0800ce
+			public const int notification_main_column_container = 2131230926;
 			
 			// aapt resource value: 0x7f08004b
 			public const int parallax = 2131230795;
@@ -3797,11 +3953,14 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080049
 			public const int right = 2131230793;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int right_icon = 2131230913;
+			// aapt resource value: 0x7f0800d4
+			public const int right_icon = 2131230932;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int right_side = 2131230909;
+			// aapt resource value: 0x7f0800d0
+			public const int right_side = 2131230928;
+			
+			// aapt resource value: 0x7f08008b
+			public const int rootLayout = 2131230859;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -3863,6 +4022,9 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08008a
 			public const int select_dialog_listview = 2131230858;
 			
+			// aapt resource value: 0x7f08008f
+			public const int seriesLayout = 2131230863;
+			
 			// aapt resource value: 0x7f080074
 			public const int shortcut = 2131230836;
 			
@@ -3875,17 +4037,17 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080024
 			public const int showTitle = 2131230756;
 			
-			// aapt resource value: 0x7f0800c6
-			public const int sliding_tabs = 2131230918;
+			// aapt resource value: 0x7f0800de
+			public const int sliding_tabs = 2131230942;
 			
-			// aapt resource value: 0x7f08008b
-			public const int smallLabel = 2131230859;
+			// aapt resource value: 0x7f08009e
+			public const int smallLabel = 2131230878;
 			
-			// aapt resource value: 0x7f080092
-			public const int snackbar_action = 2131230866;
+			// aapt resource value: 0x7f0800a5
+			public const int snackbar_action = 2131230885;
 			
-			// aapt resource value: 0x7f080091
-			public const int snackbar_text = 2131230865;
+			// aapt resource value: 0x7f0800a4
+			public const int snackbar_text = 2131230884;
 			
 			// aapt resource value: 0x7f080042
 			public const int snap = 2131230786;
@@ -3908,8 +4070,11 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08004a
 			public const int start = 2131230794;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int status_bar_latest_event_content = 2131230904;
+			// aapt resource value: 0x7f0800cb
+			public const int status_bar_latest_event_content = 2131230923;
+			
+			// aapt resource value: 0x7f08008e
+			public const int stripLinesLayout = 2131230862;
 			
 			// aapt resource value: 0x7f080076
 			public const int submenuarrow = 2131230838;
@@ -3919,6 +4084,9 @@ namespace XForms.Droid
 			
 			// aapt resource value: 0x7f08001e
 			public const int tabMode = 2131230750;
+			
+			// aapt resource value: 0x7f080091
+			public const int technicalIndicatorLayout = 2131230865;
 			
 			// aapt resource value: 0x7f080019
 			public const int text = 2131230745;
@@ -3932,8 +4100,8 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f080098
-			public const int text_input_password_toggle = 2131230872;
+			// aapt resource value: 0x7f0800ab
+			public const int text_input_password_toggle = 2131230891;
 			
 			// aapt resource value: 0x7f080014
 			public const int textinput_counter = 2131230740;
@@ -3941,8 +4109,11 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800be
-			public const int time = 2131230910;
+			// aapt resource value: 0x7f0800dd
+			public const int thumbLayout = 2131230941;
+			
+			// aapt resource value: 0x7f0800d1
+			public const int time = 2131230929;
 			
 			// aapt resource value: 0x7f08001b
 			public const int title = 2131230747;
@@ -3950,11 +4121,14 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080071
 			public const int titleDividerNoCustom = 2131230833;
 			
+			// aapt resource value: 0x7f08008c
+			public const int titleLayout = 2131230860;
+			
 			// aapt resource value: 0x7f08006f
 			public const int title_template = 2131230831;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int toolbar = 2131230919;
+			// aapt resource value: 0x7f0800df
+			public const int toolbar = 2131230943;
 			
 			// aapt resource value: 0x7f08003d
 			public const int top = 2131230781;
@@ -3962,8 +4136,11 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f08006e
 			public const int topPanel = 2131230830;
 			
-			// aapt resource value: 0x7f08008f
-			public const int touch_outside = 2131230863;
+			// aapt resource value: 0x7f0800d9
+			public const int top_labels = 2131230937;
+			
+			// aapt resource value: 0x7f0800a2
+			public const int touch_outside = 2131230882;
 			
 			// aapt resource value: 0x7f08000f
 			public const int transition_current_scene = 2131230735;
@@ -3992,11 +4169,11 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800c9
-			public const int visible = 2131230921;
+			// aapt resource value: 0x7f0800e1
+			public const int visible = 2131230945;
 			
-			// aapt resource value: 0x7f0800ab
-			public const int volume_item_container = 2131230891;
+			// aapt resource value: 0x7f0800be
+			public const int volume_item_container = 2131230910;
 			
 			// aapt resource value: 0x7f08003b
 			public const int withText = 2131230779;
@@ -4176,133 +4353,157 @@ namespace XForms.Droid
 			public const int abc_select_dialog_material = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int design_bottom_navigation_item = 2130903067;
+			public const int chart_layout = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int design_bottom_sheet_dialog = 2130903068;
+			public const int chart_legend = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int design_layout_snackbar = 2130903069;
+			public const int chart_legend_item = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int design_layout_snackbar_include = 2130903070;
+			public const int CustomizedView = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_layout_tab_icon = 2130903071;
+			public const int CustomizedView1 = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_layout_tab_text = 2130903072;
+			public const int design_bottom_navigation_item = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_menu_item_action_area = 2130903073;
+			public const int design_bottom_sheet_dialog = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_navigation_item = 2130903074;
+			public const int design_layout_snackbar = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int design_navigation_item_header = 2130903075;
+			public const int design_layout_snackbar_include = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int design_navigation_item_separator = 2130903076;
+			public const int design_layout_tab_icon = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int design_navigation_item_subheader = 2130903077;
+			public const int design_layout_tab_text = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int design_navigation_menu = 2130903078;
+			public const int design_menu_item_action_area = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int design_navigation_menu_item = 2130903079;
+			public const int design_navigation_item = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int design_text_input_password_icon = 2130903080;
+			public const int design_navigation_item_header = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int mr_chooser_dialog = 2130903081;
+			public const int design_navigation_item_separator = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int mr_chooser_list_item = 2130903082;
+			public const int design_navigation_item_subheader = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int mr_controller_material_dialog_b = 2130903083;
+			public const int design_navigation_menu = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int mr_controller_volume_item = 2130903084;
+			public const int design_navigation_menu_item = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int mr_playback_control = 2130903085;
+			public const int design_text_input_password_icon = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int mr_volume_control = 2130903086;
+			public const int mr_chooser_dialog = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_action = 2130903087;
+			public const int mr_chooser_list_item = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_action_tombstone = 2130903088;
+			public const int mr_controller_material_dialog_b = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_media_action = 2130903089;
+			public const int mr_controller_volume_item = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_media_cancel_action = 2130903090;
+			public const int mr_playback_control = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_template_big_media = 2130903091;
+			public const int mr_volume_control = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_template_big_media_custom = 2130903092;
+			public const int notification_action = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_template_big_media_narrow = 2130903093;
+			public const int notification_action_tombstone = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_template_big_media_narrow_custom = 2130903094;
+			public const int notification_media_action = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_template_custom_big = 2130903095;
+			public const int notification_media_cancel_action = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_template_icon_group = 2130903096;
+			public const int notification_template_big_media = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_template_lines_media = 2130903097;
+			public const int notification_template_big_media_custom = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_media = 2130903098;
+			public const int notification_template_big_media_narrow = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_media_custom = 2130903099;
+			public const int notification_template_big_media_narrow_custom = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_part_chronometer = 2130903100;
+			public const int notification_template_custom_big = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_template_part_time = 2130903101;
+			public const int notification_template_icon_group = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int ScrollViewer = 2130903102;
+			public const int notification_template_lines_media = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int select_dialog_item_material = 2130903103;
+			public const int notification_template_media = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int select_dialog_multichoice_material = 2130903104;
+			public const int notification_template_media_custom = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int select_dialog_singlechoice_material = 2130903105;
+			public const int notification_template_part_chronometer = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int support_simple_spinner_dropdown_item = 2130903106;
+			public const int notification_template_part_time = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int Tabbar = 2130903107;
+			public const int range_navigator_layout = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int Toolbar = 2130903108;
+			public const int ScrollViewer = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int tooltip = 2130903109;
+			public const int select_dialog_item_material = 2130903109;
+			
+			// aapt resource value: 0x7f030046
+			public const int select_dialog_multichoice_material = 2130903110;
+			
+			// aapt resource value: 0x7f030047
+			public const int select_dialog_singlechoice_material = 2130903111;
+			
+			// aapt resource value: 0x7f030048
+			public const int sfautocomplete_layout = 2130903112;
+			
+			// aapt resource value: 0x7f030049
+			public const int sfbusyindicator_layout = 2130903113;
+			
+			// aapt resource value: 0x7f03004a
+			public const int support_simple_spinner_dropdown_item = 2130903114;
+			
+			// aapt resource value: 0x7f03004b
+			public const int Tabbar = 2130903115;
+			
+			// aapt resource value: 0x7f03004c
+			public const int Toolbar = 2130903116;
+			
+			// aapt resource value: 0x7f03004d
+			public const int tooltip = 2130903117;
 			
 			static Layout()
 			{
@@ -4316,6 +4517,12 @@ namespace XForms.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f090048
+			public const int ApplicationName = 2131296328;
+			
+			// aapt resource value: 0x7f090047
+			public const int Hello = 2131296327;
 			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;
@@ -4419,8 +4626,8 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f090038
 			public const int character_counter_pattern = 2131296312;
 			
-			// aapt resource value: 0x7f090046
-			public const int library_name = 2131296326;
+			// aapt resource value: 0x7f09003e
+			public const int library_name = 2131296318;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;
@@ -4500,35 +4707,59 @@ namespace XForms.Droid
 			// aapt resource value: 0x7f09003d
 			public const int path_password_strike_through = 2131296317;
 			
+			// aapt resource value: 0x7f09004a
+			public const int q = 2131296330;
+			
+			// aapt resource value: 0x7f090049
+			public const int quarter = 2131296329;
+			
 			// aapt resource value: 0x7f090028
 			public const int search_menu_title = 2131296296;
 			
-			// aapt resource value: 0x7f09003e
-			public const int sfpdfviewer_copy = 2131296318;
+			// aapt resource value: 0x7f090050
+			public const int sfchart_close_label = 2131296336;
+			
+			// aapt resource value: 0x7f09004d
+			public const int sfchart_high_label = 2131296333;
+			
+			// aapt resource value: 0x7f09004e
+			public const int sfchart_low_label = 2131296334;
+			
+			// aapt resource value: 0x7f09004f
+			public const int sfchart_open_label = 2131296335;
 			
 			// aapt resource value: 0x7f09003f
-			public const int sfpdfviewer_highlight = 2131296319;
-			
-			// aapt resource value: 0x7f090045
-			public const int sfpdfviewer_hyperlink_cancel = 2131296325;
-			
-			// aapt resource value: 0x7f090043
-			public const int sfpdfviewer_hyperlink_message = 2131296323;
-			
-			// aapt resource value: 0x7f090044
-			public const int sfpdfviewer_hyperlink_open = 2131296324;
-			
-			// aapt resource value: 0x7f090042
-			public const int sfpdfviewer_hyperlink_title = 2131296322;
-			
-			// aapt resource value: 0x7f090041
-			public const int sfpdfviewer_strikethrough = 2131296321;
+			public const int sfpdfviewer_copy = 2131296319;
 			
 			// aapt resource value: 0x7f090040
-			public const int sfpdfviewer_underline = 2131296320;
+			public const int sfpdfviewer_highlight = 2131296320;
+			
+			// aapt resource value: 0x7f090046
+			public const int sfpdfviewer_hyperlink_cancel = 2131296326;
+			
+			// aapt resource value: 0x7f090044
+			public const int sfpdfviewer_hyperlink_message = 2131296324;
+			
+			// aapt resource value: 0x7f090045
+			public const int sfpdfviewer_hyperlink_open = 2131296325;
+			
+			// aapt resource value: 0x7f090043
+			public const int sfpdfviewer_hyperlink_title = 2131296323;
+			
+			// aapt resource value: 0x7f090042
+			public const int sfpdfviewer_strikethrough = 2131296322;
+			
+			// aapt resource value: 0x7f090041
+			public const int sfpdfviewer_underline = 2131296321;
 			
 			// aapt resource value: 0x7f090029
 			public const int status_bar_notification_info_overflow = 2131296297;
+			
+			// aapt resource value: 0x7f09004c
+			public const int w = 2131296332;
+			
+			// aapt resource value: 0x7f09004b
+			public const int week = 2131296331;
 			
 			static String()
 			{
