@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.SfControls.SfChart"
+             xmlns:sfchrt="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms">
+    <!--xmlns:datans="clr-namespace:XForms.Views.SfControls">-->
+
+    <!--<ContentPage.BindingContext>
+        <datans:DataModel></datans:DataModel>
+    </ContentPage.BindingContext>-->
+    
+    <ContentPage.Content>
+        
+        <StackLayout>
+
+            <sfchrt:DoughnutSeries ItemsSource ="{Binding ChartData}"
+	                                XBindingPath="Category"
+	                                YBindingPath="Value"    >
+                
+            </sfchrt:DoughnutSeries>
+
+            <!--<sfchrt:SfChart>
+
+                <sfchrt:SfChart.PrimaryAxis>
+
+                    <sfchrt:CategoryAxis>
+
+                    </sfchrt:CategoryAxis>
+
+                </sfchrt:SfChart.PrimaryAxis>
+
+                <sfchrt:SfChart.SecondaryAxis>
+
+                    <sfchrt:NumericalAxis>
+
+                    </sfchrt:NumericalAxis>
+
+                </sfchrt:SfChart.SecondaryAxis>
+
+            </sfchrt:SfChart>-->
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
