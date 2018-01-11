@@ -34,12 +34,27 @@ namespace XForms.Views.SfControls
 
             //this.Content = chart;
 
+            if (!(Device.OS == TargetPlatform.Android || Device.OS == TargetPlatform.iOS))
+            {
+                Chart.Series[0].AnimationDuration = 2;
+                (Chart.Series[0] as PieSeries).StartAngle = 0;
+                (Chart.Series[0] as PieSeries).EndAngle = 360;
+            }
+
+            if (Device.OS == TargetPlatform.Windows || Device.OS == TargetPlatform.iOS ||
+               Device.OS == TargetPlatform.WinPhone)
+            {
+                DataMarkerLabelStyle style = new DataMarkerLabelStyle();
+                style.Margin = new Thickness(3, 2, 3, 2);
+                dataMarker.LabelStyle = style;
+            }
+
         }
     }
 
-    public class Data
+    public class ChartData
     {
-        public Data(string category, double value)
+        public ChartData(string category, double value)
         {
 
             this.Category = category;
@@ -55,18 +70,30 @@ namespace XForms.Views.SfControls
 
     public class DataModel
     {
-        public ObservableCollection<Data> ChartData { get; set; }
+        public ObservableCollection<ChartData> ChartDataModel { get; set; }
+
+        //2nd ObservableCollection added for column sharts specifically
+        public ObservableCollection<ChartData> ColumnData1 { get; set; }
 
         public DataModel()
         {
-            ChartData = new ObservableCollection<Data>();
+            ChartDataModel = new ObservableCollection<ChartData>();
 
-            ChartData.Add(new Data("Fruits", 42 ));
-            ChartData.Add(new Data("Vegs", 44 ));
-            ChartData.Add(new Data("Meat", 53 ));
-            ChartData.Add(new Data("Furniture", 64 ));
-            ChartData.Add(new Data("Electronics", 75 ));
-            ChartData.Add(new Data("Utensils", 83 ));
+            ChartDataModel.Add(new ChartData("Fruits", 42 ));
+            ChartDataModel.Add(new ChartData("Vegs", 44 ));
+            ChartDataModel.Add(new ChartData("Meat", 53 ));
+            ChartDataModel.Add(new ChartData("Furniture", 64 ));
+            ChartDataModel.Add(new ChartData("Electronics", 75 ));
+            ChartDataModel.Add(new ChartData("Utensils", 83 ));
+
+            ColumnData1 = new ObservableCollection<ChartData>
+            {
+                new ChartData("USA", 50),
+                new ChartData("China", 40),
+                new ChartData("Japan", 70),
+                new ChartData("Australia", 60),
+                new ChartData("France", 50)
+           };
 
         }
 

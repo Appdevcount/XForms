@@ -2,43 +2,131 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.SfControls.SfChart"
-             xmlns:sfchrt="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms">
-    <!--xmlns:datans="clr-namespace:XForms.Views.SfControls">-->
-
-    <!--<ContentPage.BindingContext>
-        <datans:DataModel></datans:DataModel>
-    </ContentPage.BindingContext>-->
+             xmlns:sfchrt="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+    xmlns:datans="clr-namespace:XForms.Views.SfControls">
     
     <ContentPage.Content>
         
         <StackLayout>
+       
+            <Label Text="PieChart" TextColor="Purple" FontAttributes="Bold" FontSize="Large"></Label>
+            
+            <sfchrt:SfChart x:Name="Chart" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-            <sfchrt:DoughnutSeries ItemsSource ="{Binding ChartData}"
-	                                XBindingPath="Category"
-	                                YBindingPath="Value"    >
-                
-            </sfchrt:DoughnutSeries>
+                <sfchrt:SfChart.Title>
+                    <sfchrt:ChartTitle Text="Expenditures" Font="15"/>
+                </sfchrt:SfChart.Title>
 
-            <!--<sfchrt:SfChart>
+                <sfchrt:SfChart.BindingContext>
+                    <datans:DataModel />
+                </sfchrt:SfChart.BindingContext>
 
-                <sfchrt:SfChart.PrimaryAxis>
+                <sfchrt:SfChart.Legend>
+                    <sfchrt:ChartLegend/>
+                </sfchrt:SfChart.Legend>
 
-                    <sfchrt:CategoryAxis>
+                <sfchrt:SfChart.Series>
+                    <sfchrt:PieSeries ItemsSource="{Binding ChartDataModel}" XBindingPath="Category" YBindingPath="Value" 
+                                      StartAngle="55"  EnableAnimation="True"
+                         EndAngle ="415" EnableSmartLabels="True" ConnectorLineType = "Bezier" DataMarkerPosition = "OutsideExtended"
+                                      LegendIcon="Rectangle"  StrokeWidth="1" StrokeColor="White">
+                        <!--CircularCoefficient="0.65"-->  
+                        <sfchrt:PieSeries.DataMarker>
+                            <sfchrt:ChartDataMarker x:Name="dataMarker" LabelContent="Percentage" ShowLabel="True">
+                            </sfchrt:ChartDataMarker>
+                        </sfchrt:PieSeries.DataMarker>
+                    </sfchrt:PieSeries>
+                </sfchrt:SfChart.Series>
 
-                    </sfchrt:CategoryAxis>
+            </sfchrt:SfChart>
 
-                </sfchrt:SfChart.PrimaryAxis>
+            <!--=============-->
+            <!--<Label Text="DoughnutChart" TextColor="Purple" FontAttributes="Bold" FontSize="Large"></Label>
+            <sfchrt:SfChart x:Name="DChart" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-                <sfchrt:SfChart.SecondaryAxis>
+                <sfchrt:SfChart.Title>
+                    <sfchrt:ChartTitle Text="Project Cost Breakdown" Font="15"/>
+                </sfchrt:SfChart.Title>
 
-                    <sfchrt:NumericalAxis>
+                <sfchrt:SfChart.BindingContext>
+                    <datans:DataModel />
+                </sfchrt:SfChart.BindingContext>
 
-                    </sfchrt:NumericalAxis>
+                <sfchrt:SfChart.Legend>
+                    <sfchrt:ChartLegend/>
+                </sfchrt:SfChart.Legend>
 
-                </sfchrt:SfChart.SecondaryAxis>
+                <sfchrt:SfChart.Series>
+                    <sfchrt:DoughnutSeries ItemsSource="{Binding ChartDataModel}" XBindingPath="Category" YBindingPath="Value" ExplodeOnTouch="True" LegendIcon="Rectangle"  EnableAnimation="True" StrokeWidth="1" StrokeColor="White">
+                        <sfchrt:DoughnutSeries.DataMarker>
+                            <sfchrt:ChartDataMarker LabelContent="Percentage" ShowLabel="True">
+                            </sfchrt:ChartDataMarker>
+                        </sfchrt:DoughnutSeries.DataMarker>
+                    </sfchrt:DoughnutSeries>
+                </sfchrt:SfChart.Series>
 
             </sfchrt:SfChart>-->
             
+            <!--===============-->
+
+            <Label Text="ColumnChart" TextColor="Purple" FontAttributes="Bold" FontSize="Large"></Label>
+
+            <sfchrt:SfChart HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                <sfchrt:SfChart.Title>
+                    <sfchrt:ChartTitle Text="Olympic Medals" Font="15"/>
+                </sfchrt:SfChart.Title>
+
+                <sfchrt:SfChart.BindingContext>
+                    <datans:DataModel />
+                </sfchrt:SfChart.BindingContext>
+
+                <sfchrt:SfChart.PrimaryAxis>
+                    <sfchrt:CategoryAxis LabelPlacement="BetweenTicks">
+                        <sfchrt:CategoryAxis.Title>
+                            <sfchrt:ChartAxisTitle Text="Countries">
+                                <sfchrt:ChartAxisTitle.Font>
+                                    <OnPlatform x:TypeArguments="Font" iOS="12"/>
+                                </sfchrt:ChartAxisTitle.Font>
+                                <sfchrt:ChartAxisTitle.Margin>
+                                    <OnPlatform x:TypeArguments="Thickness"    Android="0,10,0,0" iOS="0,0,0,10"/>
+                                </sfchrt:ChartAxisTitle.Margin>
+                            </sfchrt:ChartAxisTitle>
+                        </sfchrt:CategoryAxis.Title>
+                    </sfchrt:CategoryAxis>
+                </sfchrt:SfChart.PrimaryAxis>
+
+                <sfchrt:SfChart.SecondaryAxis>
+                    <sfchrt:NumericalAxis Maximum="80" Minimum="0" Interval="20">
+                        <sfchrt:NumericalAxis.Title>
+                            <sfchrt:ChartAxisTitle Text="Values">
+                                <sfchrt:ChartAxisTitle.Font>
+                                    <OnPlatform x:TypeArguments="Font" iOS="12"/>
+                                </sfchrt:ChartAxisTitle.Font>
+                                <sfchrt:ChartAxisTitle.Margin>
+                                    <OnPlatform x:TypeArguments="Thickness" Android="0,0,10,0"/>
+                                </sfchrt:ChartAxisTitle.Margin>
+                            </sfchrt:ChartAxisTitle>
+                        </sfchrt:NumericalAxis.Title>
+                    </sfchrt:NumericalAxis>
+                </sfchrt:SfChart.SecondaryAxis>
+
+                <sfchrt:SfChart.Legend>
+                    <sfchrt:ChartLegend ToggleSeriesVisibility="True" DockPosition="Bottom"/>
+                </sfchrt:SfChart.Legend>
+
+                <sfchrt:SfChart.Series>
+                    <sfchrt:ColumnSeries x:Name ="columnSeries1" ItemsSource="{Binding ChartDataModel}" XBindingPath="Category" YBindingPath="Value" LegendIcon="Rectangle" Label="Gold" EnableTooltip="True" EnableAnimation="True">
+                    </sfchrt:ColumnSeries>
+
+                    <sfchrt:ColumnSeries x:Name ="columnSeries2" ItemsSource="{Binding ColumnData1}" XBindingPath="Category" YBindingPath="Value" LegendIcon="Rectangle" Label="Silver" EnableTooltip="True" EnableAnimation="True">
+                    </sfchrt:ColumnSeries>
+
+                </sfchrt:SfChart.Series>
+
+            </sfchrt:SfChart>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

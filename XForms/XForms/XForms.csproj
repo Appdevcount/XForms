@@ -269,6 +269,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets\BlaBla.pdf" />
+    <None Include="ANote\Quickstart-Guide_Xamarin Forms.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
