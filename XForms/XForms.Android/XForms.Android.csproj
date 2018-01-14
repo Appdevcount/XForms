@@ -321,6 +321,7 @@
     <Compile Include="MyMainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\LibraryPOCs\QRScanningService.cs" />
     <Compile Include="SQLite\SQLite_Android.cs" />
   </ItemGroup>
   <ItemGroup>

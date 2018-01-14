@@ -33,6 +33,9 @@ namespace XForms.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
+            //Added below line for Barcode scanning 
+            //ZXing.Net.Mobile.Forms.Android.Platform.Init();
+
             LoadApplication(new App());
         }
 
@@ -40,5 +43,13 @@ namespace XForms.Droid
         {
             base.OnActivityResult(requestCode, resultCode, data);
         }
+
+        //public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        //{
+        //    //base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        //    //Overridden  method and added below line  for Barcode scanning 
+        //    //ZXing.Net.Mobile for Xamarin.Forms also handles the new Android permission request model for you, but you will need to add the following override implementation to your main Activity as well
+        //    ZXing.Net.Mobile.Forms.Android.PermissionsHandler.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        //}
     }
 }

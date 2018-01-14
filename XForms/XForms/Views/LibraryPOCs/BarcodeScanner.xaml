@@ -5,8 +5,8 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Call Barcode Scanner Page from here!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" />
             <Button Text="Scan Barcode" Clicked="ScanBrcde_Clicked" x:Name="ScanBrcde"></Button>
         </StackLayout>
     </ContentPage.Content>
