@@ -11,6 +11,7 @@ using XForms.Views.XControls;
 using XForms.Views.SfControls;
 using XForms.Views.NavgDrawer;
 using XForms.Views.MasterDetNavg;
+using XForms.Views.LibraryPOCs;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XForms
@@ -103,7 +104,9 @@ namespace XForms
 
             //MainPage = new SfListview();
 
-            MainPage = new SfChart();
+            //MainPage = new SfChart();
+
+            MainPage = new BarcodeScanner();
         }
     }
 }
