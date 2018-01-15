@@ -42,7 +42,6 @@
     <Compile Include="CrossPieCharts\CrossPieChartsView.cs" />
     <Compile Include="DAL\StaticData.cs" />
     <Compile Include="Models\Item.cs" />
-    <Compile Include="Models\Services\LibraryPOCs\IQRScanningService.cs" />
     <Compile Include="Models\XModel\TextToColorConverter.cs" />
     <Compile Include="Models\XModel\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,8 +109,8 @@
     <Compile Include="Views\SfControls\SfAutocomplete.xaml.cs">
       <DependentUpon>SfAutocomplete.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\SfControls\SfChart.xaml.cs">
-      <DependentUpon>SfChart.xaml</DependentUpon>
+    <Compile Include="Views\SfControls\SnfChart.xaml.cs">
+      <DependentUpon>SnfChart.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SfControls\SfDataGrid.xaml.cs">
       <DependentUpon>SfDataGrid.xaml</DependentUpon>
@@ -168,8 +167,8 @@
     <Compile Include="Views\XControls\GenPage1.xaml.cs">
       <DependentUpon>GenPage1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\XControls\ListView.xaml.cs">
-      <DependentUpon>ListView.xaml</DependentUpon>
+    <Compile Include="Views\XControls\GListView.xaml.cs">
+      <DependentUpon>GListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\XControls\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
@@ -224,7 +223,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\XControls\ListView.xaml">
+    <EmbeddedResource Include="Views\XControls\GListView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -528,7 +527,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\SfControls\SfChart.xaml">
+    <EmbeddedResource Include="Views\SfControls\SnfChart.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

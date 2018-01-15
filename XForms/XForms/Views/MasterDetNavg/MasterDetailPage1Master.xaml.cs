@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.SfChart.XForms;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -9,6 +10,10 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XForms.Views.LibraryPOCs;
+using XForms.Views.SfControls;
+using XForms.Views.XControls;
+using XForms.Views.XPlugins;
 
 namespace XForms.Views.MasterDetNavg
 {
@@ -31,18 +36,74 @@ namespace XForms.Views.MasterDetNavg
 
             public MasterDetailPage1MasterViewModel()
             {
+                //MenuItems = new ObservableCollection<MasterDetailPage1MenuItem>(new[]
+                //{
+                //    new MasterDetailPage1MenuItem { Id = 0, Title = "Page 1" },
+                //    new MasterDetailPage1MenuItem { Id = 1, Title = "Page 2" },
+                //    new MasterDetailPage1MenuItem { Id = 2, Title = "Page 3" },
+                //    new MasterDetailPage1MenuItem { Id = 3, Title = "Page 4" },
+                //    new MasterDetailPage1MenuItem { Id = 4, Title = "Page 5" },
+                //    new MasterDetailPage1MenuItem { Id = 0, Title = "Page 6" },
+                //    new MasterDetailPage1MenuItem { Id = 1, Title = "Page 7" },
+                //    new MasterDetailPage1MenuItem { Id = 2, Title = "Page 8" },
+                //    new MasterDetailPage1MenuItem { Id = 3, Title = "Page 9" },
+                //    new MasterDetailPage1MenuItem { Id = 4, Title = "Page 10" }
+                //});
+
+
                 MenuItems = new ObservableCollection<MasterDetailPage1MenuItem>(new[]
                 {
-                    new MasterDetailPage1MenuItem { Id = 0, Title = "Page 1" },
-                    new MasterDetailPage1MenuItem { Id = 1, Title = "Page 2" },
-                    new MasterDetailPage1MenuItem { Id = 2, Title = "Page 3" },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "Page 4" },
-                    new MasterDetailPage1MenuItem { Id = 4, Title = "Page 5" },
-                    new MasterDetailPage1MenuItem { Id = 0, Title = "Page 6" },
-                    new MasterDetailPage1MenuItem { Id = 1, Title = "Page 7" },
-                    new MasterDetailPage1MenuItem { Id = 2, Title = "Page 8" },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "Page 9" },
-                    new MasterDetailPage1MenuItem { Id = 4, Title = "Page 10" }
+                    new MasterDetailPage1MenuItem { Id = 0, Title = "BarcodeScanner",
+                    TargetType=typeof(BarcodeScanner)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 1, Title = "SnfChart" ,
+                    TargetType=typeof(SnfChart)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 2, Title = "SfFormUI",
+                    TargetType=typeof(SfFormUI)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "SfPDFViewer" ,
+                    TargetType=typeof(SfPDFViewer)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 4, Title = "SfGen",
+                    TargetType=typeof(SfGen)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 0, Title = "GenPage",
+                     TargetType=typeof(GenPage)// Needs param in contructor so it will fail from this listview,when called separately with parameter it will work
+                    },
+                    new MasterDetailPage1MenuItem { Id = 1, Title = "CarouselPage" ,
+                     TargetType=typeof(CarouselPage)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 2, Title = "Communicator" ,
+                     TargetType=typeof(Communicator)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "GenPage1" ,
+                     TargetType=typeof(GenPage1)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 4, Title = "GenPage2" ,
+                     TargetType=typeof(GenPage2)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 2, Title = "MenuPage" ,
+                     TargetType=typeof(MenuPage)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "Styles" ,
+                     TargetType=typeof(Styles)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "GenPlugins" ,
+                     TargetType=typeof(GenPlugins)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 4, Title = "MicroCharts" ,
+                     TargetType=typeof(MicroCharts)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 2, Title = "OnPlatform" ,
+                     TargetType=typeof(OnPlatform)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "MVVM.TwoWayBindedPage" ,
+                     TargetType=typeof(MVVM.TwoWayBindedPage)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "MVVM.BindedPage" ,
+                     TargetType=typeof(MVVM.BindedPage)
+                    }
                 });
             }
 

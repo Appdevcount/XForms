@@ -11,9 +11,9 @@ using XForms.DAL;
 namespace XForms.Views.XControls
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ListView : ContentPage
+    public partial class GListView : ContentPage
     {
-        public ListView()
+        public GListView()
         {
             InitializeComponent();
 

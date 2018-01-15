@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XForms.Views.XControls.ListView"
-             Title="ListView">
+             x:Class="XForms.Views.XControls.GListView"
+             Title="GListView">
     <ContentPage.Content>
         <!--<StackLayout>
             <ListView x:Name="LVstring" BackgroundColor="Purple" >

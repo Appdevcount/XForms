@@ -7,7 +7,7 @@
             <Label Text="Call Barcode Scanner Page from here!"
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" />
-            <Button Text="Scan Barcode" Clicked="ScanBrcde_Clicked" x:Name="ScanBrcde"></Button>
+            <Button Text="Scan Barcode" Clicked="ScanBrcde_Clicked" x:Name="ScanBrcde" BackgroundColor="Black" TextColor="White"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -100,13 +100,15 @@ namespace XForms
 
             //MainPage = new MasterDetailNav();
 
-            //MainPage = new MasterDetailPage1();//Working with Xamarin forms Master detail template
+            MainPage = new MasterDetailPage1();//Working with Xamarin forms Master detail template
 
             //MainPage = new SfListview();
 
             //MainPage = new SfChart();
 
-            MainPage = new BarcodeScanner();
+            //MainPage =new NavigationPage(new BarcodeScanner()); //MainPage = new BarcodeScanner() causes Error while navigating to scan page on button click-pushasync is not supportebally on android . please use a navigation page
+            //Suggestion from Xamarin forum  -  https://forums.xamarin.com/discussion/88557/pushasync-is-not-supported-globally-on-android-please-use-a-navigationpage  Make your root page a navigation page. And then do await Navigation.PushAsync(new OverLoading()); in your page
+
         }
     }
 }

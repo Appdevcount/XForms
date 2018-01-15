@@ -19,3 +19,4 @@ namespace XForms.Views.MasterDetNavg
         public Type TargetType { get; set; }
     }
 }
+

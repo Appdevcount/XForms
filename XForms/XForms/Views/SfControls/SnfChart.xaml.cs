@@ -14,9 +14,9 @@ using Xamarin.Forms.Xaml;
 namespace XForms.Views.SfControls
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SfChart : ContentPage
+    public partial class SnfChart : ContentPage
     {
-        public SfChart()
+        public SnfChart()
         {
             InitializeComponent();
 

@@ -20,7 +20,7 @@
     </MasterDetailPage.Master>
 
     <MasterDetailPage.Detail>
-        <local:ListView></local:ListView>
+        <local:GListView></local:GListView>
         <!--Added required namespace to display desired Page in Deatil part of MasterDetailPage-->
     </MasterDetailPage.Detail>
 
