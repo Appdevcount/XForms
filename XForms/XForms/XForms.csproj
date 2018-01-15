@@ -127,6 +127,9 @@
     <Compile Include="Views\SfControls\SfGen.xaml.cs">
       <DependentUpon>SfGen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SfControls\SnfDataGrid.xaml.cs">
+      <DependentUpon>SnfDataGrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\XControls\GenPage2.xaml.cs">
       <DependentUpon>GenPage2.xaml</DependentUpon>
     </Compile>
@@ -540,6 +543,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\SfControls\SfAutocomplete.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SfControls\SnfDataGrid.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

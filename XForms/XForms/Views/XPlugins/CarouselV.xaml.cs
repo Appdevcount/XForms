@@ -23,7 +23,7 @@ namespace XForms.Views.XPlugins
 
             List<string> CarouselViewSource = new List<string>
             {
-                "http://wowslider.com/sliders/demo-93/data1/images/sunset.jpg","Carousel2.jpg","Carousel1.jpg","Carousel3.jpg","Carousel4.jpg"
+                "http://wowslider.com/sliders/demo-93/data1/images/sunset.jpg","carousel2.jpg","Carousel1.jpg","Carousel3.jpg","Carousel4.jpg"
             };
 
             XCarouselV.ItemsSource = CarouselViewSource;

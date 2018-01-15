@@ -71,8 +71,8 @@ namespace XForms.Views.MasterDetNavg
                     new MasterDetailPage1MenuItem { Id = 0, Title = "GenPage",
                      TargetType=typeof(GenPage)// Needs param in contructor so it will fail from this listview,when called separately with parameter it will work
                     },
-                    new MasterDetailPage1MenuItem { Id = 1, Title = "CarouselPage" ,
-                     TargetType=typeof(CarouselPage)
+                    new MasterDetailPage1MenuItem { Id = 1, Title = "CarouselV" ,
+                     TargetType=typeof(CarouselV)
                     },
                     new MasterDetailPage1MenuItem { Id = 2, Title = "Communicator" ,
                      TargetType=typeof(Communicator)
