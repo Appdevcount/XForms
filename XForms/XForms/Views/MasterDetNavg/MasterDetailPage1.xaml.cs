@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XForms.Views.Tabbed;
+using XForms.Views.XControls;
+using XForms.Views.XPlugins;
 
 namespace XForms.Views.MasterDetNavg
 {
@@ -27,7 +30,33 @@ namespace XForms.Views.MasterDetNavg
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
 
-            Detail = new NavigationPage(page);
+            //For testing purpose -Checking Tabbed detail page
+            if (page.Equals(new CarouselV() { Title = item.Title })) //(Page)Activator.CreateInstance(typeof(CarouselV)))
+            {
+                Detail = new NavigationPage(
+                    new TabbedPage
+                    {
+                        Children =
+                        {
+                        new CarouselV(),
+                        new GenPage("Tabbed Page Load")
+                           }
+                    });
+            }
+            else
+            {
+                Detail = new NavigationPage(
+                    new TabbedPage
+                    {
+                        Children =
+                        {
+                            page,
+                            new GenPage("Tabbed Page Load")
+                        }
+                    });
+                //Detail = new NavigationPage(page);
+            }
+
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;

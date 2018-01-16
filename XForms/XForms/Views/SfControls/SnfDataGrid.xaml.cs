@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,9 +18,35 @@ namespace XForms.Views.SfControls
         {
             InitializeComponent();
         }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        //    private void ExportToExcel_Clicked(object sender, EventArgs e)
+        //    {
+
+
+        //        //DataGridExcelExportingController excelExport = new DataGridExcelExportingController();
+        //        //var excelEngine = excelExport.ExportToExcel(this.dataGrid);
+        //        //var workbook = excelEngine.Excel.Workbooks[0];
+        //        //MemoryStream stream = new MemoryStream();
+        //        //workbook.SaveAs(stream);
+        //        //workbook.Close();
+        //        //excelEngine.Dispose();
+
+        //        //Xamarin.Forms.DependencyService.Get<ISave>().Save("DataGrid.xlsx", "application/msexcel", stream);
+        //    }
+
+        //    private void ExportToPdf_Clicked(object sender, EventArgs e)
+        //    {
+
+        //    }
+        //}
+
+        
     }
-
-
     //DataGrid DataModel
     public class OrderInfo
     {

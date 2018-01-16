@@ -2,10 +2,86 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.SfControls.SnfDataGrid"
-             xmlns:sfdg="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms">
+             xmlns:sfdg="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             xmlns:local="clr-namespace:XForms.Views.SfControls">
+    <ContentPage.BindingContext>
+        <local:OrderInfoRepository x:Name="viewModel" />
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
-        <StackLayout>
-            <sfdg:SfDataGrid x:Name=""></sfdg:SfDataGrid>
+
+        <!--When you load SfDataGrid inside a StackLayout, you have to set the Horizontal and/or VerticalOptions of the SfDataGrid and its parent to “LayoutOptions.FillAndExpand”
+        based on the orientation of the container in which SfDataGrid is loaded.
+        Refer the following code example to load the SfDataGrid control inside a StackLayout. 
+        The VerticalOptions of the StackLayout and SfDataGrid alone is set as “FillAndExpand” as the default orientation of the StackLayout is vertical.-->
+        <StackLayout VerticalOptions="FillAndExpand">
+            <SearchBar Placeholder="UserName" TextChanged="SearchBar_TextChanged" />
+            <sfdg:SfDataGrid x:Name="dataGrid"
+            ColumnSizer="Star"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding OrderInfoCollection}" VerticalOptions="FillAndExpand" ScrollingMode="Pixel">
+
+                <sfdg:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+                    <sfdg:GridTextColumn HeaderText="Order ID" 
+                                   MappingName="OrderID" />
+                    <sfdg:GridTextColumn HeaderText="Customer ID"
+                                   MappingName="CustomerID" />
+                    <sfdg:GridTextColumn MappingName="Customer" />
+                    <sfdg:GridTextColumn HeaderText="Ship Country"
+                                   MappingName="ShipCountry" />
+                </sfdg:SfDataGrid.Columns>
+
+             
+                
+            </sfdg:SfDataGrid>
         </StackLayout>
+
+        <!--<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            
+            <sfdg:SfDataGrid x:Name="CdataGrid"
+            ColumnSizer="Star"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding OrderInfoCollection}">
+
+                <sfdg:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+                    <sfdg:GridTextColumn MappingName="Customer" />
+                    <sfdg:GridTextColumn HeaderText="Ship Country"
+                                   MappingName="ShipCountry" />
+                </sfdg:SfDataGrid.Columns>
+            </sfdg:SfDataGrid>
+        </StackLayout>-->
+        <!--<sfdg:SfDataGrid.TableSummaryRows>
+                    <sfdg:GridTableSummaryRow Title="Total Customers :{CustomersCount} "
+                                Position="Top"
+                                ShowSummaryInRow="True">
+                        <sfdg:GridTableSummaryRow.SummaryColumns>
+                            -->
+        <!--<sfdg:GridSummaryColumn Name="TotalSalary"
+                                      Format="{}{Sum:c}"
+                                      MappingName="CustomerID"
+                                      SummaryType="DoubleAggregate" />-->
+        <!--
+                            <sfdg:GridSummaryColumn Name="CustomersCount"
+                                      Format="{}{Count}"
+                                      MappingName="Customer"
+                                      SummaryType="CountAggregate" />
+                        </sfdg:GridTableSummaryRow.SummaryColumns>
+                    </sfdg:GridTableSummaryRow>
+                    
+                </sfdg:SfDataGrid.TableSummaryRows>-->
+        
+        <!--<Button BackgroundColor="Gray"
+                Clicked="ExportToExcel_Clicked"
+                FontSize="12"
+                Text="Export to Excel"
+                TextColor="White"
+                WidthRequest="110" x:Name="ExportToExcel" />
+        <Button BackgroundColor="Gray"
+                Clicked="ExportToPdf_Clicked"
+                FontSize="12"
+                Text="Export to PDF"
+                TextColor="White"
+                WidthRequest="110" x:Name="ExportToPdf" />-->
+        
     </ContentPage.Content>
 </ContentPage>
