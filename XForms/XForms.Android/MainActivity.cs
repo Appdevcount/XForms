@@ -7,7 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using Plugin.MediaManager.Forms.Android;
 
 namespace XForms.Droid
 {
@@ -30,6 +30,9 @@ namespace XForms.Droid
             //Added below line for Xam.Plugin.Media intialization for platforms separately,
             //since its async method call , added await and async to this calling parent menthod
             await Plugin.Media.CrossMedia.Current.Initialize();
+
+            //Below Initialization for Plugin.Mediamanager media player
+            VideoViewRenderer.Init();
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 

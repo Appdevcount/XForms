@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.XPlugins.MediaManager"
+             xmlns:mm="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="MediaControl" Text="Play" TextColor="Green" Clicked="MediaControl_Clicked"></Button>
+            <mm:VideoView WidthRequest="200" HeightRequest="200" 
+                          Source="http://video.ch9.ms/ch9/334f/891b78a5-642d-40b4-8d02-ff40ffdd334f/LoginToLinkedinUSingXamarinAuth_mid.mp4"
+                          x:Name="mmgr" ></mm:VideoView>
+            <!--https://www.youtube.com/embed/oQ28k-dHH-E
+            http://video.ch9.ms/ch9/334f/891b78a5-642d-40b4-8d02-ff40ffdd334f/LoginToLinkedinUSingXamarinAuth_mid.mp4-->
+            <WebView WidthRequest="200" HeightRequest="200" Source="https://www.youtube.com/embed/oQ28k-dHH-E"></WebView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

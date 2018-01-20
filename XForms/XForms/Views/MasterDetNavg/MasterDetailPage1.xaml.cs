@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XForms.Views.SfControls;
 using XForms.Views.Tabbed;
 using XForms.Views.XControls;
 using XForms.Views.XPlugins;
@@ -39,7 +40,7 @@ namespace XForms.Views.MasterDetNavg
                         Children =
                         {
                         new CarouselV(),
-                        new GenPage("Tabbed Page Load")
+                        new SnfDataGrid()
                            }
                     });
             }

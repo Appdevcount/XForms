@@ -63,3 +63,9 @@ Using Barcode Scanner -  ZXing.NET Mobile (Zebra crossing) library for Barcode s
 ============================================================================================
 Checked Camera and Flashlight permission in Android project manifest properties for the application
 Downloaded the nugget pkg from https://components.xamarin.com/gettingstarted/zxing.net.mobile.forms
+
+
+Using Plugin.MediaManager - For streaming/Playing videos
+========================================================
+
+
