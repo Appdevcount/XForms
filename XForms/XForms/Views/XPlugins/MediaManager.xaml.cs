@@ -20,18 +20,20 @@ namespace XForms.Views.XPlugins
             InitializeComponent();
         }
 
-        private void MediaControl_Clicked(object sender, EventArgs e)
-        {
-            if (MediaControl.Text == "Play")
-            {
-                CrossMediaManager.Current.Play(PTLive, Plugin.MediaManager.Abstractions.Enums.MediaFileType.Video);
-                MediaControl.Text = "Stop";
-            }
-            else
-            {
-                CrossMediaManager.Current.Stop();
-                MediaControl.Text = "Play";
-            }
-        }
+        //private void MediaControl_Clicked(object sender, EventArgs e)
+        //{
+        //    if (MediaControl.Text == "Play")
+        //    {
+        //        CrossMediaManager.Current.Play(Vidurl, Plugin.MediaManager.Abstractions.Enums.MediaFileType.Video);
+        //        MediaControl.Text = "Stop";
+        //        MediaControl.TextColor = Color.Red;
+        //    }
+        //    else
+        //    {
+        //        CrossMediaManager.Current.Stop();
+        //        MediaControl.Text = "Play";
+        //        MediaControl.TextColor = Color.Green;
+        //    }
+        //}
     }
 }

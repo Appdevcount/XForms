@@ -25,6 +25,8 @@
                                 WinPhone="25"/>
                 </Label.FontSize>
             </Label>
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
