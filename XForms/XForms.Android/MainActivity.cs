@@ -41,7 +41,7 @@ namespace XForms.Droid
             global::ZXing.Net.Mobile.Forms.Android.Platform.Init();
 
 
-            LoadApplication(new App());
+            LoadApplication(new App());//Portable App class instance passed to the LoadApplication method which is where the MainPage is loaded and displayed to the user
         }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)

@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Concepts\AppFundamentals\Behaviours.cs" />
     <Compile Include="CrossPieCharts\CrossPieChartsSample.cs" />
     <Compile Include="CrossPieCharts\CrossPieChartsView.cs" />
     <Compile Include="DAL\StaticData.cs" />
@@ -265,6 +266,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Concepts\DataAndCloudServices\" />
+    <Folder Include="Concepts\PlatformFeatures\" />
+    <Folder Include="Concepts\UserInterface\" />
     <Folder Include="Views\Converters\" />
   </ItemGroup>
   <ItemGroup>

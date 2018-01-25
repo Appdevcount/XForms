@@ -12,6 +12,7 @@ using XForms.Views.SfControls;
 using XForms.Views.NavgDrawer;
 using XForms.Views.MasterDetNavg;
 using XForms.Views.LibraryPOCs;
+using System.Diagnostics;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XForms
@@ -20,7 +21,21 @@ namespace XForms
     {
         public App()
         {
-            InitializeComponent();
+            InitializeComponent(); //method to load and parse the associated XAML.
+
+            //The Application subclass has a static Properties dictionary which can be used to store data, in particular for use in the 
+            //    OnStart, OnSleep, and OnResume methods.This can be accessed from anywhere in your Xamarin.Forms code using Application.Current.Properties.
+            Application.Current.Properties["id"] = 1;// someClass.ID;
+           //In the OnStart or OnResume methods you can then use this value to recreate the user's experience in some way. 
+            //The Properties dictionary stores objects so you need to cast its value before using it.
+            //    Note: the Properties dictionary can only serialize primitive types for storage.Attempting to store other types(such as List<string>) can fail silently.
+            //if (Application.Current.Properties.ContainsKey("id"))
+            //{
+            //    var id = Application.Current.Properties["id"] as int;
+            //    // do something with id
+            //}
+
+
 
             #region Actual Main Page snippet
             //if (Device.RuntimePlatform == Device.iOS)
@@ -109,6 +124,18 @@ namespace XForms
             //MainPage =new NavigationPage(new BarcodeScanner()); //MainPage = new BarcodeScanner() causes Error while navigating to scan page on button click-pushasync is not supportebally on android . please use a navigation page
             //Suggestion from Xamarin forum  -  https://forums.xamarin.com/discussion/88557/pushasync-is-not-supported-globally-on-android-please-use-a-navigationpage  Make your root page a navigation page. And then do await Navigation.PushAsync(new OverLoading()); in your page
 
+        }
+
+        protected override void OnStart()
+        {
+            // Handle when your app starts
+            Debug.WriteLine("OnStart");
+            base.OnStart();
+        }
+
+        protected override void OnSleep()
+        {
+            base.OnSleep();
         }
     }
 }
