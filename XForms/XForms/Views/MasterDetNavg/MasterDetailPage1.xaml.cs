@@ -52,7 +52,7 @@ namespace XForms.Views.MasterDetNavg
                         Children =
                         {
                             page,
-                            new GenPage("Tabbed Page Load")
+                            new GenPage()//"Tabbed Page Load")
                         }
                     });
                 //Detail = new NavigationPage(page);

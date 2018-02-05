@@ -12,10 +12,10 @@ namespace XForms.Views.XControls
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GenPage : ContentPage
     {
-        public GenPage(string GenPageParam)
+        public GenPage()//string GenPageParam)
         {
             InitializeComponent();
-            GPagelbl.Text = GenPageParam;
+            //GPagelbl.Text = GenPageParam;
         }
 
         protected override async void OnAppearing()
@@ -57,11 +57,11 @@ namespace XForms.Views.XControls
 
         }
 
-        ////Price Slider
-        //private void PriceSlider_ValueChanged(object sender, ValueChangedEventArgs e)
-        //{
-        //    SliderLbl.Text = PriceSlider.Value.ToString();
-        //}
+        //Price Slider
+        private void PriceSlider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            SliderLbl.Text = PriceSlider.Value.ToString();
+        }
 
         //ToolbarItem menu Item click
         private void ToolbarItem_Clicked(object sender, EventArgs e)
@@ -69,11 +69,11 @@ namespace XForms.Views.XControls
 
         }
 
-        //private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
-        //{
-        //    string Dateselected = e.NewDate.ToString();
-        //    string PrevDateselected = e.OldDate.ToString();
-        //}
+        private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
+        {
+            string Dateselected = e.NewDate.ToString();
+            string PrevDateselected = e.OldDate.ToString();
+        }
 
         private void Switch_Toggled(object sender, ToggledEventArgs e)
         {

@@ -26,7 +26,7 @@ namespace XForms.Views
 
         private async void Navigate_Clicked(object sender, EventArgs e)
         {
-           await Navigation.PushAsync(new GenPage("Test param from Home"));
+            await Navigation.PushAsync(new GenPage());//"Test param from Home"));
         }
     }
 }
