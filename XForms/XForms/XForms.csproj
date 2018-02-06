@@ -131,8 +131,23 @@
     <Compile Include="Views\SfControls\SnfDataGrid.xaml.cs">
       <DependentUpon>SnfDataGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\XControls\CodeBehinds.xaml.cs">
+      <DependentUpon>CodeBehinds.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\XControls\GenPage2.xaml.cs">
       <DependentUpon>GenPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XControls\GridOrientationDemo.xaml.cs">
+      <DependentUpon>GridOrientationDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XControls\LayoutOptions.xaml.cs">
+      <DependentUpon>LayoutOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XControls\StackLayoutDemo.xaml.cs">
+      <DependentUpon>StackLayoutDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\XControls\StackOrientationDemo.xaml.cs">
+      <DependentUpon>StackOrientationDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\XPlugins\CarouselV.xaml.cs">
       <DependentUpon>CarouselV.xaml</DependentUpon>
@@ -571,6 +586,36 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\XPlugins\MediaManager.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XControls\StackLayoutDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XControls\LayoutOptions.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XControls\StackOrientationDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XControls\GridOrientationDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\XControls\CodeBehinds.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

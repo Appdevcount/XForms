@@ -54,6 +54,7 @@ namespace XForms.Views.MasterDetNavg
                             page,
                             new GenPage()//"Tabbed Page Load")
                         }
+                         
                     });
                 //Detail = new NavigationPage(page);
             }

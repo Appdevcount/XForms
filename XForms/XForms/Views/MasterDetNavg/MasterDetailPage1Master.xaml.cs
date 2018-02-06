@@ -101,7 +101,7 @@ namespace XForms.Views.MasterDetNavg
                     new MasterDetailPage1MenuItem { Id = 3, Title = "MVVM.TwoWayBindedPage" ,
                      TargetType=typeof(MVVM.TwoWayBindedPage)
                     },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "67I6I.BindedPage" ,
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "BindedPage" ,
                      TargetType=typeof(MVVM.BindedPage)
                     },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "SnfDataGrid" ,
@@ -109,7 +109,19 @@ namespace XForms.Views.MasterDetNavg
                     },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "MediaManager" ,
                      TargetType=typeof(MediaManager)
-                    }
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "StackLayout" ,
+                     TargetType=typeof(XControls.StackLayoutDemo)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "LayoutOptions" ,
+                     TargetType=typeof(XControls.LayoutOptions)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "StackOrientation" ,
+                     TargetType=typeof(XControls.StackOrientationDemo)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "GridOrientation" ,
+                     TargetType=typeof(XControls.GridOrientationDemo)
+                    },
                 });
             }
 

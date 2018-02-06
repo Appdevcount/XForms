@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.XControls.StackOrientationDemo">
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="5" Orientation="Vertical"
+        x:Name="outerStack">
+            <!-- can change orientation to make responsive -->
+            <ScrollView>
+                <StackLayout Spacing="5" HorizontalOptions="FillAndExpand"
+                    WidthRequest="1000">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Name: " WidthRequest="75"
+                            HorizontalOptions="Start" />
+                        <Entry Text="deer.jpg"
+                            HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Date: " WidthRequest="75"
+                            HorizontalOptions="Start" />
+                        <Entry Text="07/05/2015"
+                            HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Tags:" WidthRequest="75"
+                            HorizontalOptions="Start" />
+                        <Entry Text="deer, tiger"
+                            HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Save" HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <Image  Source="deer.jpg" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
