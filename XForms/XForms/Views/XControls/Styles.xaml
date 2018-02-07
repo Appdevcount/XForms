@@ -4,7 +4,8 @@
              x:Class="XForms.Views.XControls.Styles">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style x:Key="Lblstyle" TargetType="Label" > <!--For some elements intellisense is not available-->
+            <Style x:Key="Lblstyle" TargetType="Label" >
+                <!--For some elements intellisense is not available-->
                 <Setter Property="TextColor" Value="Blue"></Setter>
                 <Setter Property="FontAttributes" Value="Bold"></Setter>
                 <Setter Property="FontSize" Value="Large"></Setter>
@@ -17,15 +18,38 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
-    
+
+
     <ContentPage.Content>
-        <StackLayout Margin="20" >
-            <Label Text="FName" Style="{StaticResource Lblstyle}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
-            <Entry Text="FName" Style="{StaticResource Entrystyle}"></Entry>
-            <Label Text="LName" Style="{StaticResource Lblstyle}" ></Label>
-            <Entry Text="LName" Style="{StaticResource Entrystyle}"></Entry>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Margin="20" >
+                <Label Text="FName" Style="{StaticResource Lblstyle}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+                <Entry Text="FName" Style="{StaticResource Entrystyle}"></Entry>
+                <Label Text="LName" Style="{StaticResource Lblstyle}" ></Label>
+                <Entry Text="LName" Style="{StaticResource Entrystyle}"></Entry>
+
+                <!--Theme Builtin StyleClass-->
+                <!--To use the Light Theme:
+1. Add Nuget packages
+Xamarin.Forms.Theme.Base
+Xamarin.Forms.Theme.Light
+2. Add to the Resource Dictionary
+In the App.xaml file add a new custom xmlns for the theme, and then ensure the theme's resources are merged with the application's resource dictionary. An example XAML file is shown below:-->
+                <Label Text="Theme Builtin StyleClass"  ></Label>
+                <StackLayout Padding="20">
+                    <Button Text="Button Default" />
+                    <Button Text="Button Class Default" StyleClass="Default" />
+                    <Button Text="Button Class Primary" StyleClass="Primary" />
+                    <Button Text="Button Class Success" StyleClass="Success" />
+                    <Button Text="Button Class Info" StyleClass="Info" />
+                    <Button Text="Button Class Warning" StyleClass="Warning" />
+                    <Button Text="Button Class Danger" StyleClass="Danger" />
+                    <Button Text="Button Class Link" StyleClass="Link" />
+                    <Button Text="Button Class Default Small" StyleClass="Small" />
+                    <Button Text="Button Class Default Large" StyleClass="Large" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
-    
+
 </ContentPage>

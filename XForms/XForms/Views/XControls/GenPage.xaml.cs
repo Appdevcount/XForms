@@ -16,6 +16,8 @@ namespace XForms.Views.XControls
         {
             InitializeComponent();
             //GPagelbl.Text = GenPageParam;
+
+            EntryCell ec = new EntryCell { Keyboard = Keyboard.Numeric };
         }
 
         protected override async void OnAppearing()

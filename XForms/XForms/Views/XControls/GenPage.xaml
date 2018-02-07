@@ -70,15 +70,28 @@
                     <!--Displaying the IsToggled property of Swtch object using Binding .Binding is an alternative to using Switch_Toggled event-->
 
 
+                    <Label  Text="Stepper"></Label>
                     <Stepper Minimum="1" Maximum="10" Value="2" ></Stepper>
 
 
 
-                    <WebView Source="https://www.google.com" WidthRequest="200" HeightRequest="200"></WebView>
+                    <Label  Text="WebView"></Label>
+                    <WebView Source="https://www.google.com" WidthRequest="1000" HeightRequest="1000"></WebView>
 
+                    <Label  Text="TimePicker"></Label>
                     <TimePicker IsEnabled="True" ></TimePicker>
 
+                    <Label  Text="Editor"></Label>
                     <Editor WidthRequest="200" HeightRequest="200" Text="sample...."></Editor>
+
+                    <Label  Text="Entry/Cell for editables"></Label>
+                    <!--<EntryCell Keyboard="Keyboard.Numeric"></EntryCell>-->
+                    <!--<EntryCell Keyboard="Email"></EntryCell>
+                    <EntryCell Keyboard="Telephone"></EntryCell>
+                    <EntryCell Keyboard="Chat"></EntryCell>
+                    <EntryCell  Keyboard="Plain"></EntryCell>-->
+
+                    <Entry Keyboard="Telephone" />
                     
                 </StackLayout>
 

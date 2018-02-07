@@ -6,8 +6,9 @@
     xmlns:datans="clr-namespace:XForms.Views.SfControls">
     
     <ContentPage.Content>
-        
-        <StackLayout>
+        <ScrollView>
+            
+        <StackLayout Orientation="Vertical" >
        
             <Label Text="PieChart" TextColor="Purple" FontAttributes="Bold" FontSize="Large"></Label>
             
@@ -22,7 +23,7 @@
                 </sfchrt:SfChart.BindingContext>
 
                 <sfchrt:SfChart.Legend>
-                    <sfchrt:ChartLegend/>
+                    <sfchrt:ChartLegend  Orientation="Vertical"  />
                 </sfchrt:SfChart.Legend>
 
                 <sfchrt:SfChart.Series>
@@ -41,7 +42,7 @@
             </sfchrt:SfChart>
 
             <!--=============-->
-            <!--<Label Text="DoughnutChart" TextColor="Purple" FontAttributes="Bold" FontSize="Large"></Label>
+            <Label Text="DoughnutChart" TextColor="Purple" FontAttributes="Bold" FontSize="Large"></Label>
             <sfchrt:SfChart x:Name="DChart" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
                 <sfchrt:SfChart.Title>
@@ -65,7 +66,7 @@
                     </sfchrt:DoughnutSeries>
                 </sfchrt:SfChart.Series>
 
-            </sfchrt:SfChart>-->
+            </sfchrt:SfChart>
             
             <!--===============-->
 
@@ -128,5 +129,8 @@
 
 
         </StackLayout>
+
+        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>
