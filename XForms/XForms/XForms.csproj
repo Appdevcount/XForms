@@ -35,12 +35,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="API\APIHandler.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Concepts\AppFundamentals\Behaviours.cs" />
     <Compile Include="CrossPieCharts\CrossPieChartsSample.cs" />
     <Compile Include="CrossPieCharts\CrossPieChartsView.cs" />
+    <Compile Include="CustomControlsAndBehaviours\CustomBehavior\EmptyEntryValidatorBehavior.cs" />
+    <Compile Include="CustomControlsAndBehaviours\CustomEntry.cs" />
+    <Compile Include="CustomControlsAndBehaviours\ModelforCustomControls\RegisterModel.cs" />
+    <Compile Include="CustomControlsAndBehaviours\ValidationEntry.cs" />
+    <Compile Include="CustomControlsAndBehaviours\ViewModelforCustomControls\RegisterUserViewModel.cs" />
     <Compile Include="DAL\StaticData.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\XModel\TextToColorConverter.cs" />
@@ -60,6 +66,9 @@
     <Compile Include="ViewModels\XViewModels\MenuText.cs" />
     <Compile Include="ViewModels\XViewModels\PersonViewModelTwoWay.cs" />
     <Compile Include="ViewModels\XViewModels\PersonViewModel.cs" />
+    <Compile Include="Views\CustomXControls\CustomControls.xaml.cs">
+      <DependentUpon>CustomControls.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\DataTemplate\BigItemViewTemplate.xaml.cs">
       <DependentUpon>BigItemViewTemplate.xaml</DependentUpon>
     </Compile>
@@ -616,6 +625,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\XControls\CodeBehinds.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CustomXControls\CustomControls.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

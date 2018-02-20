@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XForms.CustomControlsAndBehavior;
 using XForms.Views.LibraryPOCs;
 using XForms.Views.SfControls;
 using XForms.Views.XControls;
@@ -121,6 +122,9 @@ namespace XForms.Views.MasterDetNavg
                     },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "GridOrientation" ,
                      TargetType=typeof(XControls.GridOrientationDemo)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "CustomControls" ,
+                     TargetType=typeof(CustomEntry)
                     },
                 });
             }

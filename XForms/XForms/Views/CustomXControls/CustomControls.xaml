@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.CustomXControls.CustomControls"
+             xmlns:custentry="clr-namespace:XForms.CustomControlsAndBehavior"
+             xmlns:custbeh="clr-namespace:XForms.CustomControlsAndBehaviours.CustomBehavior">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                
+                <!--Rounded Entry-->
+                
+                <custentry:CustomEntry  
+                             CornerRadius="18"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="LightBlue"      
+                             HorizontalTextAlignment="Center"  
+                             FontSize="17"  
+                             HeightRequest="40"  
+                             Placeholder="Custom Entry"  
+                             PlaceholderColor="Gray"  
+                             TextColor="Black"  
+                             FontAttributes="Bold"  
+                             WidthRequest="100"/>
+
+                <!--Validation Entry-->
+
+                <!--<custentry:ValidationEntry Placeholder="Name" ErrorText="{Binding User.FirstName.NotValidMessageError}"
+                                     BorderErrorColor="Red"
+                                     Text="{Binding User.FirstName.Name}"
+                                     HeightRequest="40"
+                                     IsBorderErrorVisible="{Binding User.FirstName.IsNotValid, Mode=TwoWay}">
+                    <custentry:ValidationEntry.Behaviors>
+                        <custbeh:EmptyEntryValidatorBehavior />
+                    </custentry:ValidationEntry.Behaviors>
+                </custentry:ValidationEntry>
+
+                <custentry:ValidationEntry Placeholder="Email" ErrorText="{Binding User.Email.NotValidMessageError}"
+                                     BorderErrorColor="Red"
+                                     Text="{Binding User.Email.Name}"
+                                     HeightRequest="40"
+                                     IsBorderErrorVisible="{Binding User.Email.IsNotValid, Mode=TwoWay}">
+                    <custentry:ValidationEntry.Behaviors>
+                        <custbeh:EmptyEntryValidatorBehavior />
+                    </custentry:ValidationEntry.Behaviors>
+                </custentry:ValidationEntry>
+
+                <custentry:ValidationEntry Placeholder="Password" ErrorText="{Binding User.Password.NotValidMessageError}"
+                                    BorderErrorColor="Red" IsPassword="true"
+                                     Text="{Binding User.Password.Name}"
+                                     HeightRequest="40"
+                                     IsBorderErrorVisible="{Binding User.Password.IsNotValid, Mode=TwoWay}">
+                    <custentry:ValidationEntry.Behaviors>
+                        <custbeh:EmptyEntryValidatorBehavior />
+                    </custentry:ValidationEntry.Behaviors>
+                </custentry:ValidationEntry>
+
+                <Button Text="Enter" 
+                      Command="{Binding OnValidationCommand}"
+                      BackgroundColor="Black"
+                      HorizontalOptions="FillAndExpand"
+                      TextColor="White"/>-->
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

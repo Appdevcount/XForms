@@ -315,6 +315,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CrossPieCharts\CrossPieChartsRenderer.cs" />
+    <Compile Include="CustomControlRenderers\CustomEntryRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="SQLite\SQLite_iOS.cs" />

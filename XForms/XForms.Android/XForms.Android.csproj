@@ -328,6 +328,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CrossPieCharts\CrossPieChartsRenderer.cs" />
+    <Compile Include="CustomControlRenderers\CustomEntryRenderer.cs" />
+    <Compile Include="CustomControlRenderers\ValidationEntryRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="MyMainActivity.cs" />
