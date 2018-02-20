@@ -11,8 +11,10 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XForms.CustomControlsAndBehavior;
+using XForms.Views.APIView;
 using XForms.Views.LibraryPOCs;
 using XForms.Views.SfControls;
+using XForms.Views.ThemeXControls;
 using XForms.Views.XControls;
 using XForms.Views.XPlugins;
 
@@ -125,6 +127,12 @@ namespace XForms.Views.MasterDetNavg
                     },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "CustomControls" ,
                      TargetType=typeof(CustomEntry)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "ThemeXControls" ,
+                     TargetType=typeof(SignUp)
+                    },
+                    new MasterDetailPage1MenuItem { Id = 3, Title = "APIView" ,
+                     TargetType=typeof(ReqRes)
                     },
                 });
             }

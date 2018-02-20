@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.APIView.ReqRes">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button x:Name="Get" Text="Get" Clicked="Get_Clicked"  ></Button>
+                <Button x:Name="GetAll" Text="GetAll" Clicked="GetAll_Clicked" ></Button>
+                <Button x:Name="Create" Text="Create" Clicked="Create_Clicked" ></Button>
+                <Button x:Name="Edit" Text="Edit" Clicked="Edit_Clicked" ></Button>
+                <Button x:Name="Update" Text="Update" Clicked="Update_Clicked" ></Button>
+                <Button x:Name="Delete" Text="Delete" Clicked="Delete_Clicked" ></Button>
+                <Label x:Name="ResponseLabel" ></Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -57,6 +57,8 @@
     <Compile Include="SQLite-AppSample\SQLiteSamplePage.cs" />
     <Compile Include="SQLite-AppSample\TodoItem.cs" />
     <Compile Include="SQLite\ISQLite.cs" />
+    <Compile Include="ThemeXControlResources\DoubleResources.cs" />
+    <Compile Include="ThemeXControlResources\ImagePathResources.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\ItemDetailViewModel.cs" />
@@ -66,6 +68,9 @@
     <Compile Include="ViewModels\XViewModels\MenuText.cs" />
     <Compile Include="ViewModels\XViewModels\PersonViewModelTwoWay.cs" />
     <Compile Include="ViewModels\XViewModels\PersonViewModel.cs" />
+    <Compile Include="Views\APIView\ReqRes.xaml.cs">
+      <DependentUpon>ReqRes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CustomXControls\CustomControls.xaml.cs">
       <DependentUpon>CustomControls.xaml</DependentUpon>
     </Compile>
@@ -139,6 +144,9 @@
     </Compile>
     <Compile Include="Views\SfControls\SnfDataGrid.xaml.cs">
       <DependentUpon>SnfDataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThemeXControls\SignUp.xaml.cs">
+      <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\XControls\CodeBehinds.xaml.cs">
       <DependentUpon>CodeBehinds.xaml</DependentUpon>
@@ -631,6 +639,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\CustomXControls\CustomControls.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ThemeXControls\SignUp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\APIView\ReqRes.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -10,7 +10,7 @@
                 
                 <!--Rounded Entry-->
                 
-                <custentry:CustomEntry  
+                <!--<custentry:CustomEntry  
                              CornerRadius="18"  
                              IsCurvedCornersEnabled="True"  
                              BorderColor="LightBlue"      
@@ -21,7 +21,10 @@
                              PlaceholderColor="Gray"  
                              TextColor="Black"  
                              FontAttributes="Bold"  
-                             WidthRequest="100"/>
+                             WidthRequest="100"/>-->
+
+                <!--<custentry:CustomEntry  
+                            />-->
 
                 <!--Validation Entry-->
 
