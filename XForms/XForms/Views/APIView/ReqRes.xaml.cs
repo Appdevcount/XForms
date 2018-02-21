@@ -22,6 +22,13 @@ namespace XForms.Views.APIView
         DataAccess da = new DataAccess();
         string Res;
 
+        private async void GetAll_Clicked(object sender, EventArgs e)
+        {
+            Res = await da.findAll();
+            //Res = Res.Replace('"', ' ').Substring(0, Res.Length - 1);
+            ResponseLabel.Text = (Res == "" | Res == null) ? "No Data GetAll" : Res;
+        }
+
         private void Get_Clicked(object sender, EventArgs e)
         {
             Res = da.find(1);
@@ -29,12 +36,7 @@ namespace XForms.Views.APIView
             ResponseLabel.Text = (Res == "" | Res == null) ? "No Data Get" : Res;
         }
 
-        private void GetAll_Clicked(object sender, EventArgs e)
-        {
-            Res = da.findAll();
-            //Res = Res.Replace('"', ' ').Substring(0, Res.Length - 1);
-            ResponseLabel.Text =( Res==""| Res ==null)? "No Data GetAll":Res;
-        }
+  
 
         private void Create_Clicked(object sender, EventArgs e)
         {

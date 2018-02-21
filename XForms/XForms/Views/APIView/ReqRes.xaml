@@ -5,8 +5,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Button x:Name="Get" Text="Get" Clicked="Get_Clicked"  ></Button>
                 <Button x:Name="GetAll" Text="GetAll" Clicked="GetAll_Clicked" ></Button>
+                <Button x:Name="Get" Text="Get" Clicked="Get_Clicked"  ></Button>
                 <Button x:Name="Create" Text="Create" Clicked="Create_Clicked" ></Button>
                 <Button x:Name="Edit" Text="Edit" Clicked="Edit_Clicked" ></Button>
                 <Button x:Name="Update" Text="Update" Clicked="Update_Clicked" ></Button>

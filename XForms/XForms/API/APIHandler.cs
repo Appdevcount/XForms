@@ -13,10 +13,12 @@ namespace XForms.API
     }
     public class DataAccess
     {
-        private string Base_URL = "https://reqres.in/api/";
+        private string Base_URL = "http://jsonplaceholder.typicode.com/posts";//
+        //private string Base_URL = "https://reqres.in/api/";
+        private readonly HttpClient _client = new HttpClient(); //Creating a new instance of HttpClient. (Microsoft.Net.Http)
 
         //public IEnumerable<Customer> findAll()
-        public string findAll()
+        public async  Task<string> findAll()
         {
             try
             {
@@ -41,6 +43,13 @@ namespace XForms.API
             {
                 return e.Message;// false;
             }
+
+
+            //string content = await _client.GetStringAsync(Base_URL); //Sends a GET request to the specified Uri and returns the response body as a string in an asynchronous operation
+            ////List<Post> posts = JsonConvert.DeserializeObject<List<Post>>(content); //Deserializes or converts JSON String into a collection of Post
+            ////_posts = new ObservableCollection<Post>(posts); //Converting the List to ObservalbleCollection of Post
+            ////MyListView.ItemsSource = _posts; //Assigning the ObservableCollection to MyListView in the XAML of this file
+            //return content;
         }
         //public Customer find(int id)
         public string find(int id)
