@@ -17,8 +17,12 @@ namespace XForms.API
         //private string Base_URL = "https://reqres.in/api/";
         private readonly HttpClient _client = new HttpClient(); //Creating a new instance of HttpClient. (Microsoft.Net.Http)
 
+        Exception InnerMostException;
+        string Exception_Messages;
+        int ExceptionCount = 0;
+
         //public IEnumerable<Customer> findAll()
-        public async  Task<string> findAll()
+        public async Task<string> findAll()
         {
             try
             {
@@ -39,9 +43,19 @@ namespace XForms.API
                 }
                 return null;
             }
-            catch (Exception e)
+            catch (Exception e)///// This while loop catch was prepared as the app was throwing message "One or more exception has occured "
             {
-                return e.Message;// false;
+                InnerMostException = e;//Initially assign first caught exception object, This will be used in case if there is no inner exception
+                ExceptionCount = 0;
+                ++ExceptionCount;
+                Exception_Messages = ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                while (InnerMostException.InnerException != null)
+                {
+                    ++ExceptionCount;
+                    InnerMostException = InnerMostException.InnerException;
+                    Exception_Messages = Exception_Messages + "\n" + ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                }
+                return Exception_Messages;// false;
             }
 
 
@@ -76,7 +90,17 @@ namespace XForms.API
             }
             catch (Exception e)
             {
-                return e.Message;// false;
+                InnerMostException = e;//Initially assign first caught exception object, This will be used in case if there is no inner exception
+                ExceptionCount = 0;
+                ++ExceptionCount;
+                Exception_Messages = ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                while (InnerMostException.InnerException != null)
+                {
+                    ++ExceptionCount;
+                    InnerMostException = InnerMostException.InnerException;
+                    Exception_Messages = Exception_Messages + "\n" + ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                }
+                return Exception_Messages;// false;
             }
         }
         //public bool Create(Customer customer)
@@ -98,7 +122,17 @@ namespace XForms.API
             }
             catch (Exception e)
             {
-                return e.Message;// false;
+                InnerMostException = e;//Initially assign first caught exception object, This will be used in case if there is no inner exception
+                ExceptionCount = 0;
+                ++ExceptionCount;
+                Exception_Messages = ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                while (InnerMostException.InnerException != null)
+                {
+                    ++ExceptionCount;
+                    InnerMostException = InnerMostException.InnerException;
+                    Exception_Messages = Exception_Messages + "\n" + ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                }
+                return Exception_Messages;// false;
             }
         }
         //public bool Edit(Customer customer)
@@ -119,7 +153,17 @@ namespace XForms.API
             }
             catch (Exception e)
             {
-                return e.Message;// false;
+                InnerMostException = e;//Initially assign first caught exception object, This will be used in case if there is no inner exception
+                ExceptionCount = 0;
+                ++ExceptionCount;
+                Exception_Messages = ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                while (InnerMostException.InnerException != null)
+                {
+                    ++ExceptionCount;
+                    InnerMostException = InnerMostException.InnerException;
+                    Exception_Messages = Exception_Messages + "\n" + ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                }
+                return Exception_Messages;// false;
             }
         }
         //public bool Delete(int id)
@@ -133,9 +177,19 @@ namespace XForms.API
                 HttpResponseMessage response = client.DeleteAsync("users/" + id).Result;
                 return response.StatusCode.ToString();// response.IsSuccessStatusCode;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                return e.Message;// false;
+                InnerMostException = e;//Initially assign first caught exception object, This will be used in case if there is no inner exception
+                ExceptionCount = 0;
+                ++ExceptionCount;
+                Exception_Messages = ExceptionCount + InnerMostException.GetType().ToString() + "  =[" + InnerMostException.Message + "] ";
+                while (InnerMostException.InnerException != null)
+                {
+                    ++ExceptionCount;
+                    InnerMostException = InnerMostException.InnerException;
+                    Exception_Messages = Exception_Messages + "\n" + ExceptionCount + InnerMostException.GetType().ToString()+"  =[" + InnerMostException.Message + "] ";
+                }
+                return Exception_Messages;// false;
             }
         }
     }
