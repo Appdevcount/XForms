@@ -145,6 +145,7 @@
     <Compile Include="Views\SfControls\SnfDataGrid.xaml.cs">
       <DependentUpon>SnfDataGrid.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SQLiteViews\SQLiteCRUD.cs" />
     <Compile Include="Views\ThemeXControls\SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>

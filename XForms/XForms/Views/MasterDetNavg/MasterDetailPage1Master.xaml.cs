@@ -10,10 +10,12 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinForms.SQLite;
 using XForms.CustomControlsAndBehavior;
 using XForms.Views.APIView;
 using XForms.Views.LibraryPOCs;
 using XForms.Views.SfControls;
+using XForms.Views.SQLiteViews;
 using XForms.Views.ThemeXControls;
 using XForms.Views.XControls;
 using XForms.Views.XPlugins;
@@ -133,6 +135,9 @@ namespace XForms.Views.MasterDetNavg
                     },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "APIView" ,
                      TargetType=typeof(ReqRes)
+                    },
+                     new MasterDetailPage1MenuItem { Id = 3, Title = "SQLiteSamplePage" ,
+                     TargetType=typeof(SQLiteCRUD)
                     },
                 });
             }

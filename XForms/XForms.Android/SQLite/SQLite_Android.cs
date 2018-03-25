@@ -13,8 +13,8 @@ namespace XamarinForms.SQLite.Droid.SQLite
         public SQLite_Android() { }
         public SQLiteConnection GetConnection()
         {
-            var sqliteFilename = "MySQLiteDB.db3";
-            string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal); // Documents folder
+            var sqliteFilename = "XFormsDB.db3";
+            string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments); // Documents folder //  Personal folder normally
             var path = Path.Combine(documentsPath, sqliteFilename);
             // Create the connection
             var conn = new SQLiteConnection(path);

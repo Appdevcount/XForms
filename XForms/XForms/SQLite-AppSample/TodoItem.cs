@@ -14,7 +14,7 @@ namespace XamarinForms.SQLite
 
         public override string ToString()
         {
-            return string.Format("Done : {0}, Text : {1}", Done, Text);
+            return string.Format("ID : {0}, Done : {1}, Text : {2}", ID, Done, Text);
         }
     }
 }

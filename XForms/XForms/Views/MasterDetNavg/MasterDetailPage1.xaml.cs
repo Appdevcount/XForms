@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinForms.SQLite;
 using XForms.Views.SfControls;
 using XForms.Views.Tabbed;
 using XForms.Views.XControls;
@@ -37,10 +38,10 @@ namespace XForms.Views.MasterDetNavg
             //For testing purpose -Checking Tabbed detail page
             if (page.GetType().Name.Equals(new CarouselV().GetType().Name))//page.Equals(new CarouselV() { Title = item.Title })) //(Page)Activator.CreateInstance(typeof(CarouselV)))
             {
-                CarouselV c= new CarouselV() { Title = item.Title };
-                DisplayAlert("", page.GetType().Name, "Cancel");
-                DisplayAlert("", c.GetType().Name, "Cancel");
-                DisplayAlert("", page.GetType().Name.Equals(new CarouselV().GetType().Name).ToString(), "Cancel");
+                CarouselV c = new CarouselV() { Title = item.Title };
+                //DisplayAlert("", page.GetType().Name, "Cancel");
+                //DisplayAlert("", c.GetType().Name, "Cancel");
+                //DisplayAlert("", page.GetType().Name.Equals(new CarouselV().GetType().Name).ToString(), "Cancel");
                 Detail = new NavigationPage(
                     new TabbedPage
                     {
@@ -67,6 +68,7 @@ namespace XForms.Views.MasterDetNavg
                 //        }
 
                 //    });
+
 
                 Detail = new NavigationPage(page);
             }

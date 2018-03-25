@@ -1,16 +1,23 @@
 ﻿using SQLite;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using Xamarin.Forms;
+using XamarinForms.SQLite;
 using XamarinForms.SQLite.SQLite;
 
-namespace XamarinForms.SQLite
+namespace XForms.Views.SQLiteViews
 {
-    //Not used this file for explicitly preparing POC for SQLite ,so refer SQLiteCRUD content page in SQLiteViews folder to learn about SQLite concepts
-    public class SQLiteSamplePage
+    public class SQLiteCRUD : ContentPage
     {
         private readonly SQLiteConnection _sqLiteConnection;
 
-        public SQLiteSamplePage()
+
+        public SQLiteCRUD()
         {
+            #region SQLiteDBInitialization
 
             _sqLiteConnection = DependencyService.Get<ISQLite>().GetConnection();
 
@@ -31,33 +38,29 @@ namespace XamarinForms.SQLite
                 Done = true,
             });
 
-            
+
             _sqLiteConnection.Insert(new TodoItem
             {
-                Text = "Meeting Friends at 11 AM" +System.DateTime.Now.ToString(),
+                Text = "Meeting Friends at 11 AM" + System.DateTime.Now.ToString(),
                 Done = true,
             });
 
             // DELETE
             _sqLiteConnection.Delete<TodoItem>(2);
-        }
 
-        /// <summary>
-        /// Gets a ContentPage that contains the items saved in the SQLite database.
-        /// </summary>
-        /// <returns></returns>
-        public ContentPage GetSampleContentPage()
-        {
+            #endregion SQLiteDBInitialization
 
-            var entry = new Entry
+
+            #region ContentPageCreation
+            Entry entry = new Entry
             {
                 Placeholder = "Text",
                 WidthRequest = Device.OnPlatform<double>(300, 300, 260)
             };
 
-            var switcher = new Switch();
+            Switch switcher = new Switch();
 
-            var addButton = new Button
+            Button addButton = new Button
             {
                 Text = "Add TodoItem"
             };
@@ -69,13 +72,22 @@ namespace XamarinForms.SQLite
                     Done = switcher.IsToggled,
                 });
             };
-
-            var listView = new ListView
+            Button DeleteButton = new Button
+            {
+                Text = "Delete 1st TodoItems"
+            };
+            DeleteButton.Clicked += DeleteButton_Clicked;
+            Button DeleteAllButton = new Button
+            {
+                Text = "Delete All TodoItems"
+            };
+            DeleteAllButton.Clicked += DeleteAllButton_Clicked;
+            ListView listView = new ListView
             {
                 ItemsSource = _sqLiteConnection.Table<TodoItem>()
             };
 
-            var refreshButton = new Button
+            Button refreshButton = new Button
             {
                 Text = "Refresh TodoItems"
             };
@@ -83,8 +95,7 @@ namespace XamarinForms.SQLite
             {
                 listView.ItemsSource = _sqLiteConnection.Table<TodoItem>();
             };
-
-            var contentPage = new ContentPage
+            Content =new ScrollView
             {
                 Content = new StackLayout
                 {
@@ -105,12 +116,24 @@ namespace XamarinForms.SQLite
                             }
                         },
                         addButton,
+                        DeleteButton,
+                        DeleteAllButton,
                         refreshButton,
                         listView,
                     }
                 }
             };
-            return contentPage;
+            #endregion ContentPageCreation
+        }
+
+        private void DeleteAllButton_Clicked(object sender, EventArgs e)
+        {
+            _sqLiteConnection.DeleteAll<TodoItem>();
+        }
+
+        private void DeleteButton_Clicked(object sender, EventArgs e)
+        {
+            _sqLiteConnection.Delete<TodoItem>(3);
         }
     }
 }
