@@ -2,26 +2,45 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.XPlugins.GenPlugins"
-             xmlns:translator="clr-namespace:XForms.Helpers">
-    <!--Calling the Translate Extension in Lable by passing the resource file Key-->
+             xmlns:translator="clr-namespace:XForms.Helpers"
+             xmlns:chkbx="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
     <ContentPage.Content>
-        <StackLayout>
-            
-            <!--Multilingual Plugin Usage-->
-            <!--<Label Text="{translator:Translate Hello}"
-                VerticalOptions="CenterAndExpand" 
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="Multilingual Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large" ></Label>
+                <!--Multilingual Plugin Usage-->
+                <!--Calling the Translate Extension in Lable by passing the resource file Key-->
+                <Label Text="{translator:Translate Hello}"></Label>
+                <!--VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />-->
 
-            <!--Media[Photo/Video] Plugin Usage-->
-            <Button x:Name="TakePhoto" Text="TakePhoto" Clicked="TakePhoto_Clicked"></Button>
-            <Button x:Name="PickPhoto" Text="PickPhoto" Clicked="PickPhoto_Clicked"></Button>
-            <Button x:Name="TakeVideo" Text="TakeVideo" Clicked="TakeVideo_Clicked"></Button>
-            <Button x:Name="PickVideo" Text="PickVideo" Clicked="PickVideo_Clicked"></Button>
-            <Label x:Name="FilePath" ></Label>
-            <!--Image not rendering in Phone-->
-            <Image x:Name="PicDisplay" ></Image>
-            
-            
-        </StackLayout>
+
+                <Label Text="Media[Photo/Video] Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large"  ></Label>
+                <!--Media[Photo/Video] Plugin Usage-->
+                <Button x:Name="TakePhoto" Text="TakePhoto" Clicked="TakePhoto_Clicked"></Button>
+                <Button x:Name="PickPhoto" Text="PickPhoto" Clicked="PickPhoto_Clicked"></Button>
+                <Button x:Name="TakeVideo" Text="TakeVideo" Clicked="TakeVideo_Clicked"></Button>
+                <Button x:Name="PickVideo" Text="PickVideo" Clicked="PickVideo_Clicked"></Button>
+                <Label x:Name="FilePath" ></Label>
+                <!--Image not rendering in Phone-->
+                <Image x:Name="PicDisplay" ></Image>
+
+                
+                <Label Text="Checkbox Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large"  ></Label>
+                <!--Using XLabs.Forms Plugin-->
+                <chkbx:CheckBox x:Name="Applechkbx" DefaultText="Apple" TextColor="Purple" ></chkbx:CheckBox>
+                <chkbx:CheckBox DefaultText="Orange" TextColor="Purple" ></chkbx:CheckBox>
+                <chkbx:CheckBox DefaultText="JackFruit" TextColor="Purple" ></chkbx:CheckBox>
+
+                <!--<Label Text="RadioButton Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large"  ></Label>
+                <chkbx:r DefaultText="Apple" TextColor="Purple" ></chkbx:r>
+                <chkbx:CheckBox DefaultText="Orange" TextColor="Purple" ></chkbx:CheckBox>
+                <chkbx:CheckBox DefaultText="JackFruit" TextColor="Purple" ></chkbx:CheckBox>-->
+
+
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

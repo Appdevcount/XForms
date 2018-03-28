@@ -16,7 +16,10 @@ namespace XForms.Views.XPlugins
 		public GenPlugins ()
 		{
 			InitializeComponent();
-		}
+
+            Applechkbx.Checked = true;
+            Applechkbx.IsEnabled = false;
+        }
 
 		private async void  TakePhoto_Clicked(object sender, EventArgs e)
 		{

@@ -4,13 +4,13 @@
              x:Class="XForms.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#2196F3</Color>
-            <Color x:Key="PrimaryDark">#1976D2</Color>
-            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="Primary">#E91E63</Color> <!--Pink-->
+            <Color x:Key="PrimaryDark">#C2185B</Color>
+            <Color x:Key="Accent">#E040FB</Color> <!--Purple-->
             <Color x:Key="LightBackgroundColor">#FAFAFA</Color>
             <Color x:Key="DarkBackgroundColor">#C0C0C0</Color>
-            <Color x:Key="MediumGrayTextColor">#4d4d4d</Color>
-            <Color x:Key="LightTextColor">#999999</Color>
+            <Color x:Key="MediumGrayTextColor">#212121</Color>
+            <Color x:Key="LightTextColor">#757575</Color>
             <!--Above looks like color definitions which can be used at any page with its key-->
 
             <!--Below looks like Navigation page design color assignment-->
@@ -20,4 +20,35 @@
             </Style>
         </ResourceDictionary>
     </Application.Resources>
+    
 </Application>
+
+<!--<color name="primary">#E91E63</color>
+  <color name="primary_dark">#C2185B</color>
+  <color name="primary_light">#F8BBD0</color>
+  <color name="accent">#E040FB</color>
+  <color name="primary_text">#212121</color>
+  <color name="secondary_text">#757575</color>
+  <color name="icons">#FFFFFF</color>
+  <color name="divider">#BDBDBD</color>-->
+
+    
+    <!--Original
+<Application.Resources>
+    <ResourceDictionary>
+        <Color x:Key="Primary">#2196F3</Color>
+        <Color x:Key="PrimaryDark">#1976D2</Color>
+        <Color x:Key="Accent">#96d1ff</Color>
+        <Color x:Key="LightBackgroundColor">#FAFAFA</Color>
+        <Color x:Key="DarkBackgroundColor">#C0C0C0</Color>
+        <Color x:Key="MediumGrayTextColor">#4d4d4d</Color>
+        <Color x:Key="LightTextColor">#999999</Color>
+        --><!--Above looks like color definitions which can be used at any page with its key-->
+
+        <!--Below looks like Navigation page design color assignment--><!--
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
+            <Setter Property="BarTextColor" Value="White" />
+        </Style>
+    </ResourceDictionary>
+</Application.Resources>-->

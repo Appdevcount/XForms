@@ -73,3 +73,14 @@ Modifying styles.xml in Android project for different color change in the defaul
 =======================================================================================
 Custom modified from references - https://www.materialpalette.com/pink/teal  https://developer.xamarin.com/guides/xamarin-forms/platform-features/android/appcompat/   
 -Reverted back
+
+
+Checkbox plugin -XLabs.Forms by XLabs Team  - Refernce - https://devlinduldulao.pro/how-to-create-checkboxes-in-xamarin-forms/
+=============================
+Error		Failed to add reference. The package 'XLabs.Platform' tried to add a framework reference to 'Mono.Android.Export' 
+which was not found in the GAC. This is possibly a bug in the package. Please contact the package owners for assistance.
+
+Then as per reference article - https://stackoverflow.com/questions/31085554/you-need-to-add-a-reference-to-mono-android-export-dll-when-you-use-exportattrib 
+Added manually the latest version of Mono.Android.Export as reference in Android project from C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v8.1
+
+Then tried installing nuget pkg again and succeded

@@ -24,33 +24,64 @@
     <item name="windowNoTitle">true</item>
     <!--We will be using the toolbar so no need to show ActionBar-->
     <item name="windowActionBar">false</item>
-    <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
-    <!-- colorPrimary is used for the default action bar background -->
+     <!--Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette
+     colorPrimary is used for the default action bar background--> 
     <item name="colorPrimary">#2196F3</item>
-    <!-- colorPrimaryDark is used for the status bar -->
+     <!--colorPrimaryDark is used for the status bar--> 
     <item name="colorPrimaryDark">#1976D2</item>
-    <!-- colorAccent is used as the default value for colorControlActivated
-         which is used to tint widgets -->
+     <!--colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets--> 
     <item name="colorAccent">#FF4081</item>
-    <!-- You can also set colorControlNormal, colorControlActivated
-         colorControlHighlight and colorSwitchThumbNormal. -->
+     <!--You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight and colorSwitchThumbNormal.--> 
     <item name="windowActionModeOverlay">true</item>
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
 
     <!--This Box is custom modified from references - https://www.materialpalette.com/pink/teal  https://developer.xamarin.com/guides/xamarin-forms/platform-features/android/appcompat/   
-    {-->
-    <!--<color name="colorPrimary">#E91E63</color>
+    {
+    <color name="colorPrimary">#E91E63</color>
     <color name="colorPrimaryDark">#C2185B</color>
     <color name="primary_light">#F8BBD0</color>
     <color name="colorAccent">#009688</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>
-    <color name="divider">#BDBDBD</color>-->
-    <!--}
+    <color name="divider">#BDBDBD</color>
+    }
     This Box is custom modified from references - https://www.materialpalette.com/pink/teal  https://developer.xamarin.com/guides/xamarin-forms/platform-features/android/appcompat/-->
     
   </style>
+  
+  
+  
+  <!--Custom Theme from https://www.materialpalette.com-->
+  <!--<style name="MyTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+     <item name="windowNoTitle">true</item>
+    --><!--We will be using the toolbar so no need to show ActionBar--><!--
+    <item name="windowActionBar">false</item>
+     --><!--Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette
+     colorPrimary is used for the default action bar background--><!-- 
+    <item name="colorPrimary">#E91E63</item>
+     --><!--colorPrimaryDark is used for the status bar--><!-- 
+    <item name="colorPrimaryDark">#C2185B</item>
+     --><!--colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets--><!-- 
+    <item name="colorAccent">#E040FB</item>
+     --><!--You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight and colorSwitchThumbNormal.--><!-- 
+    <item name="windowActionModeOverlay">true</item>
+    <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+
+  --><!--<color name="primary">#E91E63</color>
+  <color name="primary_dark">#C2185B</color>
+  <color name="primary_light">#F8BBD0</color>
+  <color name="accent">#E040FB</color>
+  <color name="primary_text">#212121</color>
+  <color name="secondary_text">#757575</color>
+  <color name="icons">#FFFFFF</color>
+  <color name="divider">#BDBDBD</color>--><!--
+  </style>-->
+    
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
     <item name="colorAccent">#FF4081</item>
   </style>
