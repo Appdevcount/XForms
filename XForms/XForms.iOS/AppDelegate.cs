@@ -1,5 +1,6 @@
 ﻿
 using Foundation;
+using Lottie.Forms.iOS.Renderers;
 using UIKit;
 
 namespace XForms.iOS
@@ -12,7 +13,10 @@ namespace XForms.iOS
 			global::Xamarin.Forms.Forms.Init();
 			LoadApplication(new App());
 
-			return base.FinishedLaunching(app, options);
+            //Lottie Animation Init
+            AnimationViewRenderer.Init();
+
+            return base.FinishedLaunching(app, options);
 		}
 	}
 }

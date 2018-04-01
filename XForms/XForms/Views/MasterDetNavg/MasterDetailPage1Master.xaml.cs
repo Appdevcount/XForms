@@ -139,6 +139,9 @@ namespace XForms.Views.MasterDetNavg
                      new MasterDetailPage1MenuItem { Id = 3, Title = "SQLiteSamplePage" ,
                      TargetType=typeof(SQLiteCRUD)
                     },
+                     new MasterDetailPage1MenuItem { Id = 3, Title = "AnimationPage" ,
+                     TargetType=typeof(AnimationPage)
+                    },
                 });
             }
 

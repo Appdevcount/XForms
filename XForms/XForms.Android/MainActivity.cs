@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.MediaManager.Forms.Android;
+using Lottie.Forms.Droid;
 
 namespace XForms.Droid
 {
@@ -40,6 +41,8 @@ namespace XForms.Droid
             //ZXing.Net.Mobile.Forms.Android.Platform.Init();
             global::ZXing.Net.Mobile.Forms.Android.Platform.Init();
 
+            //Lottie Animation Init
+            AnimationViewRenderer.Init();
 
             LoadApplication(new App());//Portable App class instance passed to the LoadApplication method which is where the MainPage is loaded and displayed to the user
         }

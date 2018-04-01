@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.XPlugins.AnimationPage"
+             xmlns:LottieN="clr-namespace:Lottie.Forms;assembly=Lottie.Forms">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lottie Animation Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large" ></Label>
+
+            <Label Text="Lottie Animation Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large" ></Label>
+            <Label Text="Lottie Animation Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large" ></Label>
+            <Image x:Name="ImgLink" Source="https://cdn.mos.cms.futurecdn.net/GbVQFAZZh6dncKHUKnjTTa-970-80.jpg" ></Image>
+            
+            <LottieN:AnimationView 
+	                    x:Name="LottieAnimationView" 
+	                    Grid.Row="1"
+	                    Animation="Lottie_checked_done.json" 
+	                    Loop="False" 
+	                    AutoPlay="True"
+                     VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+	                    ></LottieN:AnimationView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

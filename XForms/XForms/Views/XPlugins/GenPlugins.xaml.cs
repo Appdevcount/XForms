@@ -176,5 +176,20 @@ namespace XForms.Views.XPlugins
 			//image.Dispose();
 
 		}
-	}
+
+        private void StartAnimate_Clicked(object sender, EventArgs e)
+        {
+            LottieAnimationView.IsEnabled = true;
+            LottieAnimationView.IsPlaying = true;
+            LottieAnimationView.IsVisible = true;
+
+            Task.Delay(6000);
+
+            LottieAnimationView.IsEnabled = false;
+            LottieAnimationView.IsPlaying = false;
+            LottieAnimationView.IsVisible = false;
+
+
+        }
+    }
 }

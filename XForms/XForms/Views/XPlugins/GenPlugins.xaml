@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XForms.Views.XPlugins.GenPlugins"
              xmlns:translator="clr-namespace:XForms.Helpers"
-             xmlns:chkbx="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+             xmlns:chkbx="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             xmlns:LottieN="clr-namespace:Lottie.Forms;assembly=Lottie.Forms">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -26,7 +27,7 @@
                 <!--Image not rendering in Phone-->
                 <Image x:Name="PicDisplay" ></Image>
 
-                
+
                 <Label Text="Checkbox Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large"  ></Label>
                 <!--Using XLabs.Forms Plugin-->
                 <chkbx:CheckBox x:Name="Applechkbx" DefaultText="Apple" TextColor="Purple" ></chkbx:CheckBox>
@@ -38,6 +39,24 @@
                 <chkbx:CheckBox DefaultText="Orange" TextColor="Purple" ></chkbx:CheckBox>
                 <chkbx:CheckBox DefaultText="JackFruit" TextColor="Purple" ></chkbx:CheckBox>-->
 
+                <Label Text="Lottie Animation Plugin Usage" TextColor="Black" FontAttributes="Bold" FontSize="Large" ></Label>
+                <Button x:Name="StartAnimate" Text="StartAnimate" Clicked="StartAnimate_Clicked"></Button>
+
+                <LottieN:AnimationView 
+	                    x:Name="LottieAnimationView" 
+	                    Grid.Row="1"
+	                    Animation="Lottie_preloader.json" 
+	                    Loop="True" 
+	                    AutoPlay="True"
+                     VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+	                    ></LottieN:AnimationView>
+                <!--OnFinish="Handle_OnFinish"
+                        PlaybackStartedCommand="{Binding PlayingCommand}"
+	                    PlaybackFinishedCommand="{Binding FinishedCommand}" 
+	                    ClickedCommand="{Binding ClickedCommand}"
+	                    VerticalOptions="FillAndExpand" 
+	                    HorizontalOptions="FillAndExpand"  />-->
 
 
             </StackLayout>

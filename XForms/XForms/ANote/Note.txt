@@ -84,3 +84,23 @@ Then as per reference article - https://stackoverflow.com/questions/31085554/you
 Added manually the latest version of Mono.Android.Export as reference in Android project from C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v8.1
 
 Then tried installing nuget pkg again and succeded
+
+Lottie Animations Plugin Com.Airbnb.Xamarin.Forms.Lottie Reference - https://blog.verslu.is/xamarin/xamarin-forms-xamarin/xamarin-app-lottie-animations/ ,https://xamgirl.com/lottie-animations-step-by-step-in-xamarin-forms/
+===========================
+<forms:AnimationView 
+	x:Name="animationView" 
+	Grid.Row="1"
+	Animation="LottieLogo1.json" 
+	Loop="false" 
+	AutoPlay="false"
+	OnFinish="Handle_OnFinish"
+	PlaybackStartedCommand="{Binding PlayingCommand}"
+	PlaybackFinishedCommand="{Binding FinishedCommand}" 
+	ClickedCommand="{Binding ClickedCommand}"
+	VerticalOptions="FillAndExpand" 
+	HorizontalOptions="FillAndExpand" />
+
+Star on Github if this project helps you: https://github.com/martijn00/LottieXamarin
+
+Syncfussion tabs position control - Syncfusion.Xamarin.SfTabView.16.1.0.32
+================================
