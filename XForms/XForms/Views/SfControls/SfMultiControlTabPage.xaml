@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Views.SfControls.SfMultiControlTabPage"
+             xmlns:SfTabv="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             xmlns:SfBusyD="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms">
+    <ContentPage.Content>
+
+
+        <!--<SfTabv:SfTabView >
+            <SfTabv:SfTabItem Title="Call">
+                <SfTabv:SfTabItem.Content>
+                    <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                </SfTabv:SfTabItem.Content>
+            </SfTabv:SfTabItem>
+            <SfTabv:SfTabItem Title="Favorites">
+                <SfTabv:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
+                </SfTabv:SfTabItem.Content>
+            </SfTabv:SfTabItem>
+            <SfTabv:SfTabItem Title="Contacts">
+                <SfTabv:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </SfTabv:SfTabItem.Content>
+            </SfTabv:SfTabItem>
+        </SfTabv:SfTabView>-->
+
+        <!--<SfTabv:SfTabView x:Name="MasterTabView" VisibleHeaderCount="3" DisplayMode="ImageWithText" TabHeaderPosition="Bottom" >
+
+            <SfTabv:SfTabView.SelectionIndicatorSettings>
+                <SfTabv:SelectionIndicatorSettings
+                           Color="Yellow"
+                           Position="Fill"
+                           StrokeThickness="10" />
+            </SfTabv:SfTabView.SelectionIndicatorSettings>
+
+            <SfTabv:SfTabItem Title="Call" TitleFontAttributes="Bold" TitleFontColor="Black" TitleFontSize="22">
+                <SfTabv:SfTabItem.Content>
+                    -->
+        <!--<Grid BackgroundColor="Red" x:Name="AllContactsGrid" />-->
+        <!--<Button x:Name="StartAnimate1" Text="StartAnimate" Clicked="StartAnimate1_Clicked"></Button>
+                    <SfBusyD:SfBusyIndicator x:Name="busyindicator1" AnimationType="DoubleCircle"  Title="Loading..." ViewBoxWidth = "150" ViewBoxHeight="150" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>-->
+        <!--
+                </SfTabv:SfTabItem.Content>
+            </SfTabv:SfTabItem>
+
+            <SfTabv:SfTabItem Title="Favorites" TitleFontAttributes="Bold" TitleFontColor="Black" TitleFontSize="22">
+                <SfTabv:SfTabItem.Content>
+                    -->
+        <!--<Grid BackgroundColor="Green" x:Name="FavoritesGrid" />-->
+        <!--<Button x:Name="StartAnimate2" Text="StartAnimate" Clicked="StartAnimate2_Clicked"></Button>
+                    <SfBusyD:SfBusyIndicator x:Name="busyindicator2" AnimationType="MovieTimer"  Title="Loading..." ViewBoxWidth = "150" ViewBoxHeight="150" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>-->
+        <!--
+                </SfTabv:SfTabItem.Content>
+            </SfTabv:SfTabItem>
+
+            <SfTabv:SfTabItem Title="Contacts" TitleFontAttributes="Bold" TitleFontColor="Black" TitleFontSize="22">
+                <SfTabv:SfTabItem.Content>
+                    -->
+        <!--<Grid BackgroundColor="Blue" x:Name="ContactsGrid" />-->
+        <!--<Button x:Name="StartAnimate3" Text="StartAnimate" Clicked="StartAnimate3_Clicked"></Button>
+                    <SfBusyD:SfBusyIndicator x:Name="busyindicator3" AnimationType="ZoomingTarget"  Title="Loading..." ViewBoxWidth = "150" ViewBoxHeight="150" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>-->
+        <!--
+                </SfTabv:SfTabItem.Content>
+            </SfTabv:SfTabItem>
+
+        </SfTabv:SfTabView>-->
+
+
+    </ContentPage.Content>
+</ContentPage>

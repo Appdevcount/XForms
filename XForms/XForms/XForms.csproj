@@ -124,6 +124,9 @@
     <Compile Include="Views\SfControls\SfAutocomplete.xaml.cs">
       <DependentUpon>SfAutocomplete.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SfControls\SfMultiControlTabPage.xaml.cs">
+      <DependentUpon>SfMultiControlTabPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SfControls\SnfChart.xaml.cs">
       <DependentUpon>SnfChart.xaml</DependentUpon>
     </Compile>
@@ -683,6 +686,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\XPlugins\AnimationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SfControls\SfMultiControlTabPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
