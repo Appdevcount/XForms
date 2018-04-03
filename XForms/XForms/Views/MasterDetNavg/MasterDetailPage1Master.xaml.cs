@@ -142,9 +142,9 @@ namespace XForms.Views.MasterDetNavg
                      new MasterDetailPage1MenuItem { Id = 3, Title = "AnimationPage" ,
                      TargetType=typeof(AnimationPage)
                     },
-                    // new MasterDetailPage1MenuItem { Id = 3, Title = "SfMultiControl" ,
-                    // TargetType=typeof(SfMultiControl)
-                    //},
+                     new MasterDetailPage1MenuItem { Id = 3, Title = "SfMultiControlTabPage" ,
+                     TargetType=typeof(SfMultiControlTabPage)
+                    },
                 });
             }
 

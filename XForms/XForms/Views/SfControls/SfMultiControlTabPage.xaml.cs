@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.SfBusyIndicator.XForms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,6 +41,22 @@ namespace XForms.Views.SfControls
 
             //tabView.Items = tabItems;
             //this.Content = tabView;
+
+
+            //SfBusyIndicator busyIndicator = new SfBusyIndicator();
+            //busyIndicator.IsBusy = true;
+
+            //this.Content = busyIndicator;
+        }
+
+        private void StartAnimate1_Clicked(object sender, EventArgs e)
+        {
+
+            busyindicator1.IsVisible= true;
+            busyindicator1.IsBusy = true;
+            Task.Delay(5000);
+            busyindicator1.IsVisible = false;
+            busyindicator1.IsBusy = false;
         }
     }
 }
