@@ -48,20 +48,21 @@ namespace XForms.Views.XPlugins
 			FilePath.Text = file.AlbumPath;
 
 
-			PicDisplay.Source = ImageSource.FromStream(() =>
-			{
-				var stream = file.GetStream();
-				file.Dispose();
-				return stream;
-			});
 
-			//PicDisplay.Source = file.Path;
+            //PicDisplay.Source = ImageSource.FromStream(() =>
+            //{
+            //	var stream = file.GetStream();
+            //	file.Dispose();
+            //	return stream;
+            //});
 
-			//or:
-			//image.Source = ImageSource.FromFile(file.Path);
-			//image.Dispose();
+            PicDisplay.Source = file.Path;
 
-		}
+            //or:
+            //image.Source = ImageSource.FromFile(file.Path);
+            //image.Dispose();
+
+        }
 
 		private async void PickPhoto_Clicked(object sender, EventArgs e)
 		{

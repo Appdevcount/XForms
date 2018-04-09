@@ -6,15 +6,16 @@
              xmlns:SfBusyD="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms">
     <ContentPage.Content>
 
-        <ScrollView>
+        <StackLayout x:Name="SL">
 
-            <Button x:Name="StartAnimate1" Text="StartAnimate" Clicked="StartAnimate1_Clicked"></Button>
+            <Button x:Name="StartAnimate1" Text="StartAnimate" HorizontalOptions="Center"  Clicked="StartAnimate1_Clicked"></Button>
             <!--<SfBusyD:SfBusyIndicator x:Name="busyindicator1" IsVisible="True" IsBusy="True" AnimationType="DoubleCircle"  Title="Loading..." ViewBoxWidth = "80" ViewBoxHeight="80" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>-->
             <!--<SfBusyD:SfBusyIndicator x:Name="busyindicator1" IsVisible="True" IsBusy="True" AnimationType="ZoomingTarget"  Title="Loading..." ViewBoxWidth = "80" ViewBoxHeight="80" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>-->
             <!--<SfBusyD:SfBusyIndicator x:Name="busyindicator1" IsVisible="True" IsBusy="True" AnimationType="Gear"  Title="Loading..." ViewBoxWidth = "80" ViewBoxHeight="80" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>-->
-            <SfBusyD:SfBusyIndicator x:Name="busyindicator1"  AnimationType="SlicedCircle"  Title="Loading..." ViewBoxWidth = "80" ViewBoxHeight="80" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>
+            <!--<SfBusyD:SfBusyIndicator x:Name="busyindicator1"  AnimationType="SlicedCircle"  Title="Loading..." ViewBoxWidth = "80" ViewBoxHeight="80" IsBusy="False" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>-->
             <!--<SfBusyD:SfBusyIndicator x:Name="busyindicator1" IsVisible="True" IsBusy="True" AnimationType="Ball"  Title="Loading..." ViewBoxWidth = "80" ViewBoxHeight="80" TextColor="BlueViolet" ></SfBusyD:SfBusyIndicator>-->
 
+            <Label x:Name="Resultlbl"></Label>
 
             <!--<SfTabv:SfTabView x:Name="TEST" >
             <SfTabv:SfTabItem Title="Call">
@@ -75,6 +76,7 @@
 
         </SfTabv:SfTabView>-->
 
-        </ScrollView>
+        </StackLayout>
+   
     </ContentPage.Content>
 </ContentPage>

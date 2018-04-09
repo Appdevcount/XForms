@@ -47,16 +47,59 @@ namespace XForms.Views.SfControls
             //busyIndicator.IsBusy = true;
 
             //this.Content = busyIndicator;
+
+
+            //busyindicator1.IsVisible = true;
+            //busyindicator1.IsBusy = true;
+
+            //busyindicator1.IsVisible = false;
+            //busyindicator1.IsBusy = false;
         }
 
-        private void StartAnimate1_Clicked(object sender, EventArgs e)
+        private async void StartAnimate1_Clicked(object sender, EventArgs e)
         {
 
-            busyindicator1.IsVisible= true;
-            busyindicator1.IsBusy = true;
-            Task.Delay(5000);
-            busyindicator1.IsVisible = false;
-            busyindicator1.IsBusy = false;
+            //busyindicator1.IsVisible = true;
+            //busyindicator1.IsBusy = true;
+
+            ////simulated delay for 10 seconds
+            //var startDt = DateTime.Now;
+            //while (true)
+            //{
+            //    if ((DateTime.Now - startDt).TotalSeconds >= 10)
+            //        break;
+            //}
+            //Resultlbl.Text = "Details Received"+DateTime.Now;
+
+            ////busyindicator1.IsVisible = false;
+            ////busyindicator1.IsBusy = false;
+
+            //Syncfussion busy indicator doesn't help much with button click
+
+            StartAnimate1.IsEnabled = false;
+
+            ActivityIndicator indicator = new ActivityIndicator { IsRunning = true, IsVisible = true, Color = Color.Purple};
+
+            SfBusyIndicator sfbi = new SfBusyIndicator { IsBusy = true, IsEnabled = true, IsVisible = true, TextColor = Color.Purple,AnimationType=AnimationTypes.Gear };
+
+            Lottie.Forms.AnimationView LA = new Lottie.Forms.AnimationView { Animation = "Lottie_preloader.json", Loop = true, AutoPlay = true, IsEnabled = true, IsVisible = true, IsPlaying = true };
+
+
+            //SL.Children.Add(indicator);
+            //SL.Children.Add(sfbi);
+            SL.Children.Add(LA);
+            await Task.Delay(7000);
+            Resultlbl.Text = "Details Received" + DateTime.Now;
+            indicator.IsRunning = false;
+            indicator.IsVisible = false;
+            sfbi.IsVisible = false;
+            sfbi.IsEnabled = true;
+            sfbi.IsBusy = false;
+            LA.IsEnabled = false;
+            LA.IsVisible = false;
+            LA.IsPlaying = false;
+
+            StartAnimate1.IsEnabled = true;
         }
     }
 }
