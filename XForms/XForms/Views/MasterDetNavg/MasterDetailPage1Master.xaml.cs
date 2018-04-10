@@ -61,32 +61,17 @@ namespace XForms.Views.MasterDetNavg
                     new MasterDetailPage1MenuItem { Id = 0, Title = "BarcodeScanner",
                     TargetType=typeof(BarcodeScanner)
                     },
-                    new MasterDetailPage1MenuItem { Id = 1, Title = "SnfChart" ,
-                    TargetType=typeof(SnfChart)
-                    },
-                    new MasterDetailPage1MenuItem { Id = 2, Title = "SfFormUI",
+                    new MasterDetailPage1MenuItem { Id = 2, Title = "SfControls",
                     TargetType=typeof(SfFormUI)
-                    },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "SfPDFViewer" ,
-                    TargetType=typeof(SfPDFViewer)
-                    },
-                    new MasterDetailPage1MenuItem { Id = 4, Title = "SfGen",
-                    TargetType=typeof(SfGen)
                     },
                     new MasterDetailPage1MenuItem { Id = 0, Title = "GenPage",
                      TargetType=typeof(GenPage)// Needs param in contructor so it will fail from this listview,when called separately with parameter it will work
                     },
-                    new MasterDetailPage1MenuItem { Id = 1, Title = "CarouselV" ,
+                    new MasterDetailPage1MenuItem { Id = 1, Title = "TabbedCarousel" ,
                      TargetType=typeof(CarouselV)
                     },
                     new MasterDetailPage1MenuItem { Id = 2, Title = "Communicator" ,
                      TargetType=typeof(Communicator)
-                    },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "GenPage1" ,
-                     TargetType=typeof(GenPage1)
-                    },
-                    new MasterDetailPage1MenuItem { Id = 4, Title = "GenPage2" ,
-                     TargetType=typeof(GenPage2)
                     },
                     new MasterDetailPage1MenuItem { Id = 2, Title = "MenuPage" ,
                      TargetType=typeof(MenuPage)
@@ -115,17 +100,8 @@ namespace XForms.Views.MasterDetNavg
                     new MasterDetailPage1MenuItem { Id = 3, Title = "MediaManager" ,
                      TargetType=typeof(MediaManager)
                     },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "StackLayout" ,
+                     new MasterDetailPage1MenuItem { Id = 3, Title = "Layouts" ,
                      TargetType=typeof(XControls.StackLayoutDemo)
-                    },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "LayoutOptions" ,
-                     TargetType=typeof(XControls.LayoutOptions)
-                    },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "StackOrientation" ,
-                     TargetType=typeof(XControls.StackOrientationDemo)
-                    },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "GridOrientation" ,
-                     TargetType=typeof(XControls.GridOrientationDemo)
                     },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "CustomControls" ,
                      TargetType=typeof(CustomEntry)
@@ -141,9 +117,6 @@ namespace XForms.Views.MasterDetNavg
                     },
                      new MasterDetailPage1MenuItem { Id = 3, Title = "AnimationPage" ,
                      TargetType=typeof(AnimationPage)
-                    },
-                     new MasterDetailPage1MenuItem { Id = 3, Title = "SfMultiControlTabPage" ,
-                     TargetType=typeof(SfMultiControlTabPage)
                     },
                 });
             }

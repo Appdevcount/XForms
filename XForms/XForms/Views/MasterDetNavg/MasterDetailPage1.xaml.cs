@@ -52,6 +52,51 @@ namespace XForms.Views.MasterDetNavg
                            }
                     });
             }
+            else if (page.GetType().Name.Equals(new GenPage().GetType().Name))
+            {
+                Detail = new NavigationPage(
+                    new TabbedPage
+                    {
+                        Children =
+                        {
+                        new GenPage(){ Title="GenPage" ,Icon="Web.png"},
+                        new GenPage1(){ Title="GenPage1" },
+                        new GenPage2(){ Title="GenPage2" }//,Icon="save.png"}
+                           }
+                    });
+            }
+            else if (page.GetType().Name.Equals(new StackLayoutDemo().GetType().Name))
+            {
+                Detail = new NavigationPage(
+                    new TabbedPage
+                    {
+                        Children =
+                        {
+                        new StackLayoutDemo(){ Title="StackLayoutDemo" ,Icon="Web.png"},
+                        new XControls.LayoutOptions(){ Title="LayoutOptions" },
+                        new StackOrientationDemo(){ Title="StackOrientationDemo" },//,Icon="save.png"}
+                        new GridOrientationDemo(){ Title="GridOrientationDemo" }//,Icon="save.png"}
+                           }
+                    });
+
+            }
+            else if (page.GetType().Name.Equals(new SfFormUI().GetType().Name))
+            {
+                Detail = new NavigationPage(
+                    new TabbedPage
+                    {
+                        Children =
+                        {
+                        new SfFormUI(){ Title="SfFormUI" ,Icon="Web.png"},
+                        new SfPDFViewer(){ Title="SfPDFViewer" },
+                        new SfGen(){ Title="SfGen" },//,Icon="save.png"}
+                        new SnfChart(){ Title="SnfChart" },//,Icon="save.png"}
+                        new SfMultiControlTabPage(){ Title="SfMultiControlTabPage" }//,Icon="save.png"}
+                        
+                           }
+                    });
+
+            }
             else
             {
                 CarouselV c = new CarouselV() { Title = item.Title };
