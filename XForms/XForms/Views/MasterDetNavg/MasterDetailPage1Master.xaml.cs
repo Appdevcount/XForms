@@ -94,9 +94,6 @@ namespace XForms.Views.MasterDetNavg
                     new MasterDetailPage1MenuItem { Id = 3, Title = "BindedPage" ,
                      TargetType=typeof(MVVM.BindedPage)
                     },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "SnfDataGrid" ,
-                     TargetType=typeof(SnfDataGrid)
-                    },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "MediaManager" ,
                      TargetType=typeof(MediaManager)
                     },

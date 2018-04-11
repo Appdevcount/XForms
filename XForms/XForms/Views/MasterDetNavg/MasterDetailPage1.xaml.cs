@@ -87,13 +87,14 @@ namespace XForms.Views.MasterDetNavg
                     {
                         Children =
                         {
-                        new SfFormUI(){ Title="SfFormUI" ,Icon="Web.png"},
-                        new SfPDFViewer(){ Title="SfPDFViewer" },
+                        new SfFormUI(){ Title="UI" ,Icon="Web.png"},
+                        new SfPDFViewer(){ Title="PDF" },
                         new SfGen(){ Title="SfGen" },//,Icon="save.png"}
-                        new SnfChart(){ Title="SnfChart" },//,Icon="save.png"}
-                        new SfMultiControlTabPage(){ Title="SfMultiControlTabPage" }//,Icon="save.png"}
-                        
-                           }
+                        new SnfChart(){ Title="Chart" },//,Icon="save.png"}
+                        new SfMultiControlTabPage(){ Title="MultiControl" },//,Icon="save.png"}
+                    new SnfDataGrid {  Title = "DataGrid" }
+
+                    }
                     });
 
             }
