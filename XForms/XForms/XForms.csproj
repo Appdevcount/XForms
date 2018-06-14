@@ -124,6 +124,9 @@
     <Compile Include="Views\SfControls\SfAutocomplete.xaml.cs">
       <DependentUpon>SfAutocomplete.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SfControls\SfFormUI.xaml.cs">
+      <DependentUpon>SfFormUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SfControls\SfMultiControlTabPage.xaml.cs">
       <DependentUpon>SfMultiControlTabPage.xaml</DependentUpon>
     </Compile>
@@ -132,9 +135,6 @@
     </Compile>
     <Compile Include="Views\SfControls\SfDataGrid.xaml.cs">
       <DependentUpon>SfDataGrid.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\SfControls\SfFormUI.xaml.cs">
-      <DependentUpon>SfFormUI.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SfControls\SfListview.xaml.cs">
       <DependentUpon>SfListview.xaml</DependentUpon>
@@ -547,12 +547,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\SfControls\SfFormUI.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Views\SfControls\SfDataGrid.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -693,6 +687,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Views\SfControls\SfMultiControlTabPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SfControls\SfFormUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

@@ -16,9 +16,9 @@
 
                 <Label Text="Enter Value" FontSize="Large"  Grid.Row="0" Grid.Column="0" FontAttributes="Bold"
                        HorizontalOptions="Center" VerticalOptions="Center"></Label>
-                <sfnumud:SfNumericUpDown Grid.Row="0"  Grid.Column="1" x:Name="sfnumupdwn2" MaximumDecimalDigits="3" Minimum="2"
+                <!--<sfnumud:SfNumericUpDown Grid.Row="0"  Grid.Column="1" x:Name="sfnumupdwn2" MaximumDecimalDigits="3" Minimum="2"
                                          Maximum="10" Value="3" StepValue="1"
-                                   UpDownButtonColor="Purple" HorizontalOptions="Center" VerticalOptions="Center"   ></sfnumud:SfNumericUpDown>
+                                   UpDownButtonColor="Purple" HorizontalOptions="Center" VerticalOptions="Center"   ></sfnumud:SfNumericUpDown>-->
 
             </Grid>
         </StackLayout>
